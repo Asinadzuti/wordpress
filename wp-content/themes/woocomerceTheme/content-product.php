@@ -32,9 +32,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_link_open - 10
 	 */
 	do_action( 'woocommerce_before_shop_loop_item' );
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-
-
 	/**
 	 * Hook: woocommerce_before_shop_loop_item_title.
 	 *

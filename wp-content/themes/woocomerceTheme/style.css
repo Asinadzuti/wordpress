@@ -205,3 +205,9 @@ height: 260px;
 	border-radius: 0px 0 15px 15px!important;
 	color: #fff!important;
 }
+.woocommerce-breadcrumb{
+	color: #2a2a2a;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+}

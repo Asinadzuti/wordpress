@@ -30,3 +30,9 @@ Stack trace:
 
 2019-02-10T15:55:54+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\content-product.php on line 47
 
+2019-02-10T19:01:28+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\archive-product.php on line 29
+
+2019-02-10T19:07:26+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\archive-product.php on line 38
+
+2019-02-10T19:10:59+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\archive-product.php on line 29
+
