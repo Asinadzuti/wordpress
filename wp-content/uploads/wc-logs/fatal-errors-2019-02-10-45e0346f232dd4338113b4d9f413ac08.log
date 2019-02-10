@@ -1,0 +1,22 @@
+2019-02-10T09:20:02+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on null in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php:23
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown в C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php на строке 23
+
+2019-02-10T11:03:31+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 172
+
+2019-02-10T11:04:17+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 152
+
+2019-02-10T11:04:20+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 152
+
+2019-02-10T11:04:28+00:00 CRITICAL Cannot redeclare wtcpl_plugin_scripts() (previously declared in C:\xampp\htdocs\wordpress\wp-content\plugins\woo-tabbed-category-product-listing\woo-tabbed-category-product-listing.php:304) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 20
+
+2019-02-10T11:05:28+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 65
+
+2019-02-10T11:05:53+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 74
+
+2019-02-10T11:06:09+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 74
+
