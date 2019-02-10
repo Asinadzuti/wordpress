@@ -20,3 +20,13 @@ Stack trace:
 
 2019-02-10T11:06:09+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerce.gitub.io\page.php on line 74
 
+2019-02-10T15:36:21+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\archive-product.php on line 109
+
+2019-02-10T15:36:27+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\archive-product.php on line 109
+
+2019-02-10T15:41:36+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\archive-product.php on line 99
+
+2019-02-10T15:55:35+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\content-product.php on line 47
+
+2019-02-10T15:55:54+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\content-product.php on line 47
+
