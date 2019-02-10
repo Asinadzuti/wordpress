@@ -211,3 +211,7 @@ font-family: Poppins;
 font-size: 13px;
 font-weight: 400;
 }
+a.wp-post-image{
+	width: 436px;
+	height: 493px;
+}
