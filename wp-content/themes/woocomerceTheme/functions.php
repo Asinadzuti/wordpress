@@ -142,7 +142,6 @@ wp_register_style('et-googleFonts',
 'https://fonts.googleapis.com/css?family=Poppins:300,400,600');          
    wp_enqueue_style( 'et-googleFonts');         
 }     
-
 add_action('wp_print_styles', 'load_fonts');
 /**
  * Implement the Custom Header feature.
@@ -176,7 +175,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+	require get_template_directory() . '/woocommerce/includes/wc-function-archive.php';
 }
+
 
 // widgets
 register_sidebar( array(
