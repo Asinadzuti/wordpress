@@ -6,6 +6,10 @@
  *
  * @package woocomerce
  */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+	require get_template_directory() . '/woocommerce//wc-functions.php';
+}
 
 if ( ! function_exists( 'woocomerce_setup' ) ) :
 	/**
@@ -23,7 +27,7 @@ if ( ! function_exists( 'woocomerce_setup' ) ) :
 		 * to change 'woocomerce' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'woocomerce', get_template_directory() . '/languages' );
-
+		
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -175,6 +179,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
 // widgets
 register_sidebar( array(
 	'name' => __( 'information', '' ),
@@ -212,6 +217,7 @@ register_sidebar( array(
 	'before_title' => '<h2>',
 	'after_title' => '</h2>',
 ) );
+
 ?>
 <?php
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );

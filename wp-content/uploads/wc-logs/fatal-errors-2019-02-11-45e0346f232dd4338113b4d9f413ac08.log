@@ -1,0 +1,45 @@
+2019-02-11T08:26:56+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+
+2019-02-11T08:39:55+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 23
+
+2019-02-11T08:40:39+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 23
+
+2019-02-11T08:41:13+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 23
+
+2019-02-11T08:43:47+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 23
+
+2019-02-11T09:12:05+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 22
+
+2019-02-11T09:26:31+00:00 CRITICAL Cannot use Carbon_Fields\Container as Container because the name is already in use in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 240
+
+2019-02-11T09:27:01+00:00 CRITICAL Cannot use Carbon_Fields\Container as Container because the name is already in use in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 241
+
+2019-02-11T09:27:22+00:00 CRITICAL Cannot use Carbon_Fields\Container as Container because the name is already in use in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 241
+
+2019-02-11T09:27:32+00:00 CRITICAL Uncaught Error: Class 'Carbon_Fields\Container' not found in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php:241
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(443): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(88): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin.php(31): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 241
+
+2019-02-11T09:28:22+00:00 CRITICAL Uncaught Error: Class 'Carbon_Fields\Container' not found in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php:241
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(443): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(88): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin.php(31): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 241
+
+2019-02-11T09:28:25+00:00 CRITICAL Uncaught Error: Class 'Carbon_Fields\Container' not found in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php:241
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(443): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(88): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin.php(31): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 241
+
