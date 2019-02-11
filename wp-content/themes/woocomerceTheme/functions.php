@@ -32,8 +32,11 @@ if ( ! function_exists( 'woocomerce_setup' ) ) :
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
+
 		add_theme_support( 'title-tag' );
 
+		// admin folder
+		include_once get_template_directory().'/admin/admin-init.php';
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
