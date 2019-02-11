@@ -6,11 +6,6 @@
  *
  * @package woocomerce
  */
-if ( class_exists( 'WooCommerce' ) ) {
-	require get_template_directory() . '/inc/woocommerce.php';
-	require get_template_directory() . '/woocommerce//wc-functions.php';
-}
-
 if ( ! function_exists( 'woocomerce_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -218,9 +213,4 @@ register_sidebar( array(
 	'after_title' => '</h2>',
 ) );
 
-?>
-<?php
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
-
-add_action( 'woocommerce_single_product_summary','woocommerce_template_single_excerpt', 45 );
 ?>
