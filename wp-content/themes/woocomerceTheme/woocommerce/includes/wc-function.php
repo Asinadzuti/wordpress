@@ -13,3 +13,5 @@ function estore_add_sidebar_only_archive() {
 		woocommerce_get_sidebar();
 	}
 }
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
