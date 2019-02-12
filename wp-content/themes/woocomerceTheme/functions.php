@@ -116,6 +116,15 @@ function woocomerce_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+register_sidebar( array(
+	'name'          => esc_html__( 'Сайдбар магазина', 'estore' ),
+	'id'            => 'sidebar-shop',
+	'description'   => esc_html__( 'Add widgets here.', 'estore' ),
+	'before_widget' => '<section id="%1$s" class="widget shop_bar %2$s">',
+	'after_widget'  => '</div></section>',
+	'before_title'  => '<h3 class="widget-title">',
+	'after_title'   => '</h3><div class="sidebar_shop">',
+) );
 add_action( 'widgets_init', 'woocomerce_widgets_init' );
 
 /**

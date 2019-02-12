@@ -11,6 +11,6 @@ if ( ! is_active_sidebar( 'sidebar-shop' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area col-md-4 w3ls_mobiles_grid_left">
+<aside id="secondary" class="widget-area col-lg-4">
 	<?php dynamic_sidebar( 'sidebar-shop' ); ?>
 </aside><!-- #secondary -->
