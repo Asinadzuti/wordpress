@@ -217,9 +217,10 @@ ul.products li.product {
     margin-right: -2.2%!important;
 }
 ul.products {
-    display: block!important;
+    display: flow-root!important;
+
 }
 .products {
-    margin-left: 23px !important;
+    margin-left: 40px !important;
     margin-right: -24px !important;
 }

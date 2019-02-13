@@ -14,7 +14,7 @@ function bbloomer_change_number_related_products( $args ) {
  $args['columns'] = 4; // # of columns per row
  return $args;
 }
-
+// img size
 add_filter( 'woocommerce_get_image_size_thumbnail', function( $size ) {
 return array(
 'width' => 262,
@@ -22,6 +22,15 @@ return array(
 'crop' => 0,
 );
 } ); 
+// cart
+add_filter( 'woocommerce_loop_add_to_cart_args', 'estore_add_class_add__to_cart' );
+function estore_add_class_add__to_cart($args){
+	
+	$args['class'] =  $args['class'] . ' w3ls-cart';
+
+	return $args;
+}
+
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
 add_filter( 'wc_product_sku_enabled', '__return_false' );
