@@ -1,0 +1,6 @@
+2019-02-13T07:17:02+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\class-wp-comments-list-table.php on line 18
+
+2019-02-13T08:38:03+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+
+2019-02-13T09:55:32+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\content-product.php on line 61
+

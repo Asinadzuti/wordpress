@@ -2,3 +2,7 @@
 
 2019-02-12T13:15:36+00:00 CRITICAL syntax error, unexpected '' );' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-function-archive.php on line 30
 
+2019-02-12T13:57:01+00:00 CRITICAL Cannot redeclare estore_add_sidebar_only_archive() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-function.php:16) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-function-archive.php on line 36
+
+2019-02-12T15:25:58+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+

@@ -194,7 +194,7 @@ text-decoration: none;
 }
 .size-woocommerce_thumbnail{
 	width: 262px;
-height: 260px;
+	height: 260px;
 }
 .onsale {
 	border-color: #000!important;
@@ -210,8 +210,4 @@ height: 260px;
 font-family: Poppins;
 font-size: 13px;
 font-weight: 400;
-}
-a.wp-post-image{
-	width: 436px;
-	height: 493px;
 }
