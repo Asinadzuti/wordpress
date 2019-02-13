@@ -61,12 +61,6 @@ if ( ! function_exists( 'woocomerce_setup' ) ) :
 			'caption',
 		) );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'woocomerce_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -226,5 +220,12 @@ register_sidebar( array(
 	'before_title' => '<h2>',
 	'after_title' => '</h2>',
 ) );
-
+// Hook in
+add_filter( 'woocommerce_get_availability', 'custom_override_get_availability', 10, 10);
+ 
+// The hook in function $availability is passed via the filter!
+function custom_override_get_availability( $availability, $_product ) {
+if ( $_product->is_in_stock() ) $availability['availability'] = __('In Stock', 'woocommerce');
+return $availability;
+}
 ?>

@@ -192,10 +192,6 @@ text-decoration: none;
 #nav-holder{
 	background-color: #fff;
 }
-.size-woocommerce_thumbnail{
-	width: 262px;
-	height: 260px;
-}
 .onsale {
 	border-color: #000!important;
 	position: absolute!important;
@@ -210,4 +206,20 @@ text-decoration: none;
 font-family: Poppins;
 font-size: 13px;
 font-weight: 400;
+}
+.woocommerce-tabs ul.tabs li a {
+    display: inline!important;
+}
+.woocommerce-tabs ul.tabs li {
+    display: inline!important;
+}
+ul.products li.product {
+    margin-right: -2.2%!important;
+}
+ul.products {
+    display: block!important;
+}
+.products {
+    margin-left: 23px !important;
+    margin-right: -24px !important;
 }

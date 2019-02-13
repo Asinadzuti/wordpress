@@ -7,7 +7,21 @@ add_filter('loop_shop_columns', 'my_loop_columns', 99);
 function my_loop_columns() {
 		return 3; // 4 products per row
 }
+add_filter( 'woocommerce_output_related_products_args', 'bbloomer_change_number_related_products', 9999 );
+ 
+function bbloomer_change_number_related_products( $args ) {
+ $args['posts_per_page'] = 4; // # of related products
+ $args['columns'] = 4; // # of columns per row
+ return $args;
+}
 
+add_filter( 'woocommerce_get_image_size_thumbnail', function( $size ) {
+return array(
+'width' => 262,
+'height' => 260,
+'crop' => 0,
+);
+} ); 
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
 add_filter( 'wc_product_sku_enabled', '__return_false' );
