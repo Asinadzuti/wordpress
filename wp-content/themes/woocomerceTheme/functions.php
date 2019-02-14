@@ -179,7 +179,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 	require get_template_directory() . '/woocommerce/includes/wc-function.php';
-
+	require get_template_directory() . '/woocommerce/includes/wc-functions-cart.php';
+	require get_template_directory() . '/woocommerce/includes/wc-function-archive.php';
+	require get_template_directory() . '/woocommerce/includes/wc-functions-checkout.php';
 }
 
 

@@ -224,3 +224,188 @@ ul.products {
     margin-left: 40px !important;
     margin-right: -24px !important;
 }
+/* test */
+.checkout-left-basket h4{
+    padding: 1em;
+    background:#3c43a4;
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 1em;
+}
+.checkout-left {
+    margin: 2em 0 0;
+}
+.checkout-left-basket ul li{
+    list-style-type:none;
+    margin-bottom:1em;
+    font-size:14px;
+    color:#999;
+}
+.checkout-left-basket {
+    float: left;
+    width: 25%;
+}
+.checkout-right-basket{
+    float: right;
+    margin: 8em 0 0 0em;
+}
+.checkout-left-basket ul li span {
+    float: right;
+}
+.checkout-left-basket ul li:nth-child(5) {
+    font-size: 1em;
+    color: #212121;
+    font-weight: 600;
+    padding: 1em 0;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    margin: 2em 0 0;
+}
+.checkout-right-basket a{
+    padding:10px 30px;
+    color:#fff;
+    font-size:1em;
+    background:#212121;
+    text-decoration:none;
+}
+.checkout-right-basket a:hover{
+    background:#3c43a4;
+}
+.checkout-right-basket a span {
+    left: -.5em;
+    top: 0.1em;
+}
+.w3view-cart {
+	background-color: #d58e32;
+    border: none;
+    -moz-border-radius: 7%;
+    -webkit-border-radius: 7%;
+    border-radius: 7%;
+	width: 50px;
+    bottom: -13px;
+    right: 22px;
+    height: 44px;
+    text-align: center;
+    outline: none;
+    display: inline-block;
+    position: relative;
+}
+
+
+.w3view-cart i.fa {
+    font-size: 1.8em;
+    color: #ffffff;
+    vertical-align: middle;
+	line-height: 40px;
+	position: relative;
+    bottom: 21px;
+}
+.count{
+	position: relative;
+    left: 30px;
+    top: 10px;
+    padding: 5px;
+	color: #ffffff;
+	background-color: #363636;
+	border-radius: 50%;
+}
+.site-header-cart {
+    position: relative
+}
+.cart-box.site-header-cart {
+    position: fixed;
+    right: 14%;
+    z-index: 999;
+    padding-top: 7px;
+}
+.site-header-cart .widget_shopping_cart {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 999999;
+    font-size: .875em;
+    left: -999em;
+    display: block;
+    background: #fcfcfc;
+    box-shadow: 0 4px 5px -3px #d2d2d2;
+    color: #d5d9db;
+    min-width: 290px;
+}
+
+.site-header-cart .widget_shopping_cart.sub-menu--is-touch-device {
+    display: none;
+    left: 0
+}
+
+.site-header-cart .widget_shopping_cart h2.widgettitle {
+    display: none
+}
+
+.site-header-cart .widget_shopping_cart .product_list_widget li a.remove {
+    position: relative;
+    /* float: left; */
+    top: auto;
+    color: red;
+    margin-right: 5px;
+}
+.site-header-cart .product_list_widget {
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    max-width: 300px;
+}
+.site-header-cart .product_list_widget li img {
+    max-width: 60px;
+    float: right;
+    width: 100%;
+    height: auto;
+}
+.site-header-cart ul.product_list_widget li {
+    list-style: none;
+    margin-left: 0;
+    background: #fcfcfc;
+    padding: 10px 15px;
+    width: 100%;
+    min-width: 280px;
+    vertical-align: middle;
+    display: inline-table;
+}
+.site-header-cart ul.product_list_widget li:hover {
+    background: #f7f7f7;
+}
+.site-header-cart .widget_shopping_cart .product_list_widget li a.remove:before {
+    text-align: left
+}
+
+.site-header-cart.focus .widget_shopping_cart,
+.site-header-cart:hover .widget_shopping_cart {
+    left: -20em;
+    display: block
+}
+.site-header-cart .woocommerce-mini-cart__empty-message{
+    padding: 1rem;
+}
+.site-header-cart .woocommerce-mini-cart__total{
+    background: #e8e8e8;
+    padding: 10px 15px;
+    display: block;
+}
+.site-header-cart .woocommerce-mini-cart__buttons a {
+    padding: 19px 7px;
+    display: inline-block;
+    width: 50%;
+    background: #6b70b4;
+    color: #fff;
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-size: 95%;
+    opacity: .9;
+}
+.site-header-cart .woocommerce-mini-cart__buttons a:hover {
+    opacity: 1;
+}
+.site-header-cart .woocommerce-mini-cart__buttons a.button.checkout {
+    background: #c01f3b;
+}

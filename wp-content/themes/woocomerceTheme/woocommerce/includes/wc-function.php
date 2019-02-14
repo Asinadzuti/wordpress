@@ -81,3 +81,28 @@ function estore_wrapper_product_entry_end() {
 </div>
 	<?php
 }
+add_action( 'wp_footer', 'estore_modal_window' );
+function estore_modal_window(){
+	?>
+	<div class="modal video-modal fade" id="modal-product" tabindex="-1" role="dialog" aria-labelledby="modal-product">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<section>
+				
+				</section>
+			</div>
+		</div>
+	</div>
+	<?php
+}
+
+add_action( 'post_class', function ($classes ){
+	if ( wc_get_loop_prop( 'is_shortcode' ) ) {
+		$classes[] = 'col-md-4';
+	}
+
+	return $classes;
+} );
