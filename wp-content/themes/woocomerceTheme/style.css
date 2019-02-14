@@ -409,3 +409,6 @@ ul.products {
 .site-header-cart .woocommerce-mini-cart__buttons a.button.checkout {
     background: #c01f3b;
 }
+.cart_totals{
+    margin-bottom: 20px;
+}

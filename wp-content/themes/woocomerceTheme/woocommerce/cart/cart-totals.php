@@ -21,7 +21,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<div class="cart_totals col-md-4 <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
+			<tr>
+				<td colspan="6" class="actions form-inline">
+
+					<?php if ( wc_coupons_enabled() ) { ?>
+						<div class="coupon col-md-6">
+							<label for="coupon_code">
+								<?php esc_html_e( 'Coupon:', 'woocommerce' ); ?>
+							</label>
+							<input
+								type="text"
+								name="coupon_code"
+								class="input-text form-control"
+								id="coupon_code"
+								value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" />
+							<button
+								type="submit"
+								class="button btn btn-default"
+								name="apply_coupon"
+								value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>">
+								<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
+							<?php do_action( 'woocommerce_cart_coupon' ); ?>
+							
+					<button type="submit" class="button btn btn-default" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
+					<?php do_action( 'woocommerce_cart_actions' ); ?>
+
+					<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+						</div>
+					<?php } ?>
+
+				</td>
+			</tr>
+<div class="cart_totals col-md-6 <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 

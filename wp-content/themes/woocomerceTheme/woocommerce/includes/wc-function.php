@@ -106,3 +106,4 @@ add_action( 'post_class', function ($classes ){
 
 	return $classes;
 } );
+

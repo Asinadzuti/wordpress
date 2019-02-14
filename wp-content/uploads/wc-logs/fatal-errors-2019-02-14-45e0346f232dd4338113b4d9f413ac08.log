@@ -40,3 +40,7 @@
 
 2019-02-14T18:20:08+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\no-sidebar.php on line 35
 
+2019-02-14T18:54:47+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-function.php on line 110
+
+2019-02-14T18:54:56+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-function.php on line 110
+
