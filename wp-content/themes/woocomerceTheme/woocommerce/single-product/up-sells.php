@@ -22,12 +22,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $upsells ) : ?>
 
-	<section class="up-sells upsells products w3l_related_products">
-		<div class="container">
-		<h3><?php esc_html_e( 'You may also like&hellip;', 'woocommerce' ) ?></h3>
-			
-			
-			<ul id="flexisel-upsells" class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+	<section class="up-sells upsells products">
+
+		<h2><?php esc_html_e( 'You may also like&hellip;', 'woocommerce' ) ?></h2>
+
+		<?php woocommerce_product_loop_start(); ?>
+
 			<?php foreach ( $upsells as $upsell ) : ?>
 
 				<?php
@@ -38,35 +38,9 @@ if ( $upsells ) : ?>
 					wc_get_template_part( 'content', 'product' ); ?>
 
 			<?php endforeach; ?>
-			</ul>
-			<script type="text/javascript">
-                jQuery(window).load(function() {
-                    jQuery("#flexisel-upsells").flexisel({
-                        visibleItems:5,
-                        animationSpeed: 1000,
-                        autoPlay: false,
-                        autoPlaySpeed: 3000,
-                        pauseOnHover: true,
-                        enableResponsiveBreakpoints: true,
-                        responsiveBreakpoints: {
-                            portrait: {
-                                changePoint:480,
-                                visibleItems: 1
-                            },
-                            landscape: {
-                                changePoint:640,
-                                visibleItems:2
-                            },
-                            tablet: {
-                                changePoint:768,
-                                visibleItems: 3
-                            }
-                        }
-                    });
 
-                });
-			</script>
-		</div>
+		<?php woocommerce_product_loop_end(); ?>
+
 	</section>
 
 <?php endif;
