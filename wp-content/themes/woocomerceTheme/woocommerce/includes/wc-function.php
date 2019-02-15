@@ -30,7 +30,7 @@ function estore_add_class_add__to_cart($args){
 
 	return $args;
 }
-
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 ); 
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
 add_filter( 'wc_product_sku_enabled', '__return_false' );

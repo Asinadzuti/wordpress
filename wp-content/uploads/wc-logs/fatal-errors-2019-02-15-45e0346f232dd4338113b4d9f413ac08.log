@@ -1,0 +1,56 @@
+2019-02-15T08:07:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\wp-db.php on line 1924
+
+2019-02-15T08:07:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\wp-db.php on line 1924
+
+2019-02-15T08:15:50+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+
+2019-02-15T08:19:47+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\class-wp-filesystem-direct.php on line 76
+
+2019-02-15T09:44:25+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/woocomerceTheme/woocommerce/includes/wc-functions.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 181
+
+2019-02-15T09:44:26+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/woocomerceTheme/woocommerce/includes/wc-functions.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php on line 181
+
+2019-02-15T09:45:06+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T09:46:26+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T09:46:27+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T09:48:26+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T09:50:26+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T09:52:27+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T09:54:27+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T10:01:46+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T10:04:50+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T10:05:28+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_default_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:9) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 12
+
+2019-02-15T10:05:42+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_billing_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:10) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 23
+
+2019-02-15T10:06:16+00:00 CRITICAL Cannot redeclare estore_woocommerce_custom_checkout_fields() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php:8) in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 13
+
+2019-02-15T10:06:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_filter(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php on line 7 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\plugin.php:106
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\woocommerce\includes\wc-functions-checkout.php(7): add_filter('woocommerce_for...')
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\woocomerceTheme\functions.php(184): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(443): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(88): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 106
+
+2019-02-15T11:37:06+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Lesson_09.3/woocommerce/includes/wc-functions-remove.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.3\functions.php on line 80
+
+2019-02-15T11:37:31+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Lesson_09.3/woocommerce/includes/wc-functions-checkout.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.3\functions.php on line 84
+
+2019-02-15T11:38:08+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.3\functions.php on line 84
+
+2019-02-15T11:38:12+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.3\functions.php on line 84
+
