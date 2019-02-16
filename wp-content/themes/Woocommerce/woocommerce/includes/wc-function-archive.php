@@ -6,25 +6,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'woocommerce_before_main_content', 'estore_archive_wrapper_start', 40 );
 function estore_archive_wrapper_start(){
 ?>
-	<div class="mobiles">
 		<div class="container">
-			<div class="w3ls_mobiles_grids">
+			<div class="row">
 <?php
 }
 add_action( 'woocommerce_after_main_content', 'estore_archive_wrapper_end', 30 );
 function estore_archive_wrapper_end(){
 ?>
-				<div class="clearfix"> </div>
-			</div>
+							</div>
 		</div>
-	</div>
 	<?php
 }
 
 add_action( 'woocommerce_before_main_content', 'estore_archive_content_wrapper_start', 60 );
 function estore_archive_content_wrapper_start(){
 	?>
-	<div class="col-md-8 w3ls_mobiles_grid_right">
+	<div class="col-md-9">
 	<?php
 }
 add_action( 'woocommerce_after_main_content', 'estore_archive_content_wrapper_end', 25 );
@@ -45,7 +42,7 @@ function estore_out_subcategories() {
 }
 add_filter( 'product_cat_class', 'estore_add_classes_product_cat' );
 function estore_add_classes_product_cat($classes){
-	$classes[] = 'col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles';
+	$classes[] = 'col-md-4';
 return $classes;
 }
 add_filter( 'woocommerce_subcategory_count_html', 'estore_remove_count_categories' );
