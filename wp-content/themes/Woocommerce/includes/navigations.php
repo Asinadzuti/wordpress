@@ -8,14 +8,9 @@ register_nav_menus(array(
 
 ));
 
-function estore_primary_menu(){
-	wp_nav_menu( array(
-		'theme_location' => 'primary',
-		'menu_id'        => 'primary-menu',
-		'menu_class'        => 'nav navbar-nav',
-		'walker' => new EST_Walker_Nav,
-	) );
-}
+		register_nav_menus( array(
+			'menu-1' => esc_html__( 'Primary', 'woocomerce' ),
+		) );
 class EST_Walker_Nav extends Walker_Nav_Menu{
 	public $star_row = '';
 	public $end_row = '';

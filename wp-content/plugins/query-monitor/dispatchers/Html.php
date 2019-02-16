@@ -301,6 +301,13 @@ class QM_Dispatcher_Html extends QM_Dispatcher {
 				}
 			}
 		}
+
+		printf(
+			'<option value="%1$s">%2$s</option>',
+			'#qm-settings',
+			esc_html__( 'Settings', 'query-monitor' )
+		);
+
 		echo '</select>';
 
 		echo '</div>';
@@ -370,7 +377,9 @@ class QM_Dispatcher_Html extends QM_Dispatcher {
 
 		echo '<p><button class="qm-auth qm-button" data-qm-text-on="' . esc_attr( $text['on'] ) . '" data-qm-text-off="' . esc_attr( $text['off'] ) . '">' . esc_html( $text[ $state ] ) . '</button></p>';
 		echo '</section>';
+		echo '</div>';
 
+		echo '<div class="qm-boxed">';
 		$constants = array(
 			'QM_DB_EXPENSIVE'          => array(
 				/* translators: %s: The default value for a PHP constant */
@@ -472,7 +481,7 @@ class QM_Dispatcher_Html extends QM_Dispatcher {
 		window.addEventListener('load', function() {
 			if ( ( 'undefined' === typeof QM_i18n ) || ( 'undefined' === typeof jQuery ) || ! window.jQuery ) {
 				/* Fallback for worst case scenario */
-				document.getElementById( 'query-monitor' ).className += ' qm-broken';
+				document.getElementById( 'query-monitor-main' ).className += ' qm-broken';
 				console.error( document.getElementById( 'qm-broken' ).textContent );
 
 				if ( 'undefined' === typeof QM_i18n ) {
@@ -490,11 +499,11 @@ class QM_Dispatcher_Html extends QM_Dispatcher {
 				var menu_item = document.getElementById( 'wp-admin-bar-query-monitor' );
 				if ( menu_item ) {
 					menu_item.addEventListener( 'click', function() {
-						document.getElementById( 'query-monitor' ).className += ' qm-show';
+						document.getElementById( 'query-monitor-main' ).className += ' qm-show';
 					} );
 				}
 			} else if ( ! document.getElementById( 'wpadminbar' ) ) {
-				document.getElementById( 'query-monitor' ).className += ' qm-peek';
+				document.getElementById( 'query-monitor-main' ).className += ' qm-peek';
 			}
 		} );
 		<?php
