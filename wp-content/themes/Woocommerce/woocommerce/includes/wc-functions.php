@@ -63,3 +63,28 @@ add_action( 'post_class', function ($classes ){
 
 	return $classes;
 } );
+
+add_filter( 'woocommerce_account_menu_item_classes', 'estore_account_menu_item_classes', 10, 2 );
+function estore_account_menu_item_classes( $classes, $endpoint ) {
+
+	global $wp;
+
+	$current = isset( $wp->query_vars[ $endpoint ] );
+	if ( 'dashboard' === $endpoint && ( isset( $wp->query_vars['page'] ) || empty( $wp->query_vars ) ) ) {
+		$current = true; // Dashboard is not an endpoint, so needs a custom check.
+	}
+
+	if ( $current ) {
+		$classes[] = 'active';
+	}
+
+	return $classes;
+}
+
+add_filter( 'woocommerce_account_menu_items', 'estore_account_menu_items', 10, 1 );
+function estore_account_menu_items( $items ) {
+
+	unset( $items['downloads'] );
+
+	return $items;
+}
