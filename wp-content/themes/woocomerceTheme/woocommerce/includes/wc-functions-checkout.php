@@ -48,7 +48,7 @@ function estore_checkout_form_close(){
 	<?php
 
 }
-add_action( 'woocommerce_checkout_before_customer_details', 'estore_customer_details_start' );
+add_action( 'woocommerce_checkout_before_customer_details', 'estore_customer_details_start',100 );
 function estore_customer_details_start(){
 
 	?>

@@ -1,5 +1,5 @@
 /*
-Theme Name: woocomerce
+Theme Name: estore
 
 WooCommerce styles override
 */
@@ -60,6 +60,7 @@ table.shop_table_responsive tr td.download-actions .button {
 	}
 	table.shop_table_responsive tr th, table.shop_table_responsive tr td {
 		text-align: left;
+		vertical-align: middle;
 	}
 	table.shop_table_responsive tr td {
 		display: table-cell;
@@ -100,7 +101,7 @@ ul.products li.product img {
 ul.products li.product .button {
 	display: block;
 }
-
+/*
 @media screen and (min-width: 48em) {
 	ul.products li.product {
 		width: 30.7966666667%;
@@ -132,7 +133,7 @@ ul.products li.product .button {
 	.columns-6 ul.products li.product {
 		width: 13.4933333333%;
 	}
-}
+}*/
 
 /**
  * Single product
@@ -276,6 +277,7 @@ ul.products li.product .button {
 /**
  * Header cart
  */
+/*
 .site-header-cart {
 	position: relative;
 	margin: 0;
@@ -297,6 +299,7 @@ ul.products li.product .button {
 	margin: 0;
 	padding: 0;
 }
+*/
 
 /**
  * Star rating
@@ -310,6 +313,7 @@ ul.products li.product .button {
 	width: 5.3em;
 	font-family: 'star';
 	font-weight: 400;
+    margin: 10px auto;
 }
 
 .star-rating:before {
@@ -397,7 +401,7 @@ p.stars.selected a:not(.active):before {
 /**
  * Tabs
  */
-.woocommerce-tabs ul.tabs {
+/*.woocommerce-tabs ul.tabs {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -417,7 +421,7 @@ p.stars.selected a:not(.active):before {
 
 .woocommerce-tabs .panel h2:first-of-type {
 	margin-bottom: 1em;
-}
+}*/
 
 /**
  * Password strength meter
@@ -468,18 +472,18 @@ p.no-comments {
 	content: "";
 	display: table;
 	table-layout: fixed;
-	background-color: #0f834d;
+/*	//background-color: #0f834d;*/
 	clear: both;
 }
 
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-	background-color: #3D9CD2;
+/*	background-color: #3D9CD2;*/
 }
 
 .woocommerce-error {
-	background-color: #e2401c;
+	/*background-color: #e2401c;*/
 }
 
 .demo_store {
@@ -492,11 +496,12 @@ p.no-comments {
 	background-color: #3D9CD2;
 	z-index: 9999;
 }
+/*
 
 @media screen and (min-width: 48em) {
-	/**
+	!**
 	 * Header cart
-	 */
+	 *!
 	.site-header-cart .widget_shopping_cart {
 		position: absolute;
 		top: 100%;
@@ -511,6 +516,7 @@ p.no-comments {
 		display: block;
 	}
 }
+*/
 
 /**
  * WooCommerce widgets

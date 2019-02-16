@@ -412,3 +412,9 @@ ul.products {
 .cart_totals{
     margin-bottom: 20px;
 }
+.woocommerce .col-1, .col-2{
+     max-width:none;
+    }
+    .col2-set .form-row-last {
+         width: 0%!important; 
+    }
