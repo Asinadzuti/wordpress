@@ -168,14 +168,14 @@ font-weight: 400;
     display: inline!important;
 }
 ul.products li.product {
-    margin-right: 2.2%!important;
+    margin-right: 1.2%!important;
 }
 ul.products {
     display: flow-root!important;
 
 }
 .products {
-    margin-left: 40px !important;
+    margin-left: 8px !important;
     margin-right: -24px !important;
 }
 
