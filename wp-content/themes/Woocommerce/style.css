@@ -533,3 +533,9 @@ button.single_add_to_cart_button:hover{
     padding: 0;
     margin: 0;
 }
+.woocommerce div.product div.images img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+}

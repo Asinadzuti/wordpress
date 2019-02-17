@@ -64,9 +64,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	//require get_template_directory() . '/includes/woocommerce.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
-	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-cart.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-single.php';
 	require get_template_directory() . '/woocommerce/includes/wc-function-archive.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-checkout.php';
 }
+add_theme_support( 'woocommerce', apply_filters( 'storefront_woocommerce_args', array(
+	'single_image_width'    => 416,
+	'thumbnail_image_width' => 324,
+	'product_grid'          => array(
+	'default_columns' => 3,
+	'default_rows'    => 4,
+	'min_columns'     => 1,
+	'max_columns'     => 6,
+	'min_rows'        => 1
+	)
+   ) ) );
