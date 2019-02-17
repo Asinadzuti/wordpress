@@ -1,0 +1,6 @@
+2019-02-17T10:37:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\SimplePie\Parse\Date.php on line 52
+
+2019-02-17T11:47:00+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocommerce\includes\widget-areas.php on line 62
+
+2019-02-17T11:47:00+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocommerce\includes\widget-areas.php on line 62
+

@@ -12,11 +12,11 @@
 ?>
 
 </div><!-- #content -->
-
+<div class="container-fluid no-gutters">
 <footer id="colophon" class="site-footer">
 	<div class="site-info">
 		<div class="widgets">
-<div class="row">
+<div class="row no-gutters">
 	<div class="col-lg-3">  <?php dynamic_sidebar( 'Information' ); ?></div>
 	<div class="col-lg-3">  <?php dynamic_sidebar( 'account' ); ?></div>
 	<div class="col-lg-3">  <?php dynamic_sidebar( 'second_nformation' ); ?></div>
@@ -24,7 +24,7 @@
 </div>
 		</div>
 		<div class="coopyright">
-			<div class="row">
+			<div class="row no-gutters">
 				<div class="col-lg-7 text-right"	>
 					<span>©Copyright 2016 Bazar | All Rights Reserved</span>
 				</div>
@@ -38,8 +38,6 @@
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
-</div> <!-- container -->
-</div>
 <?php wp_footer(); ?>
 
 </body>

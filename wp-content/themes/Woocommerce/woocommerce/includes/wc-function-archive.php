@@ -21,7 +21,7 @@ function estore_archive_wrapper_end(){
 add_action( 'woocommerce_before_main_content', 'estore_archive_content_wrapper_start', 60 );
 function estore_archive_content_wrapper_start(){
 	?>
-	<div class="col-md-9">
+	<div class="col-md-12">
 	<?php
 }
 add_action( 'woocommerce_after_main_content', 'estore_archive_content_wrapper_end', 25 );
@@ -34,7 +34,7 @@ remove_filter( 'woocommerce_product_loop_start', 'woocommerce_maybe_show_product
 add_action( 'woocommerce_before_shop_loop', 'estore_out_subcategories',40 );
 function estore_out_subcategories() {
 	$cat_out = woocommerce_output_product_categories( array(
-		'before'    => '<ul class="w3ls_mobiles_grid_right_grid2">',
+		'before'    => '<ul class="">',
 		'after'     => '<div class="clearfix"></div></ul>',
 		'parent_id' => is_product_category() ? get_queried_object_id() : 0,
 	) );
@@ -63,7 +63,7 @@ function estore_hide_title_shop( $hide ) {
 add_filter( 'post_class', 'estore_add_class_loop_item' );
 function estore_add_class_loop_item($clasess){
 	if(is_shop() || is_product_taxonomy()){
-		$clasess[] = 'col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles';
+		$clasess[] = 'col-md-4  ';
 	}
 
 	return $clasess;
@@ -73,7 +73,7 @@ add_filter( 'post_class', 'estore_add_class_loop_item_cross' );
 function estore_add_class_loop_item_cross($clasess){
 	if(is_cart()){
 		if ( in_array( 'product', $clasess ) ) {
-			$clasess[] = 'col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles';
+			$clasess[] = 'col-md-4  ';
 		}
 	}
 
@@ -86,7 +86,7 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_pr
 add_action( 'woocommerce_before_shop_loop_item', 'estore_loop_product_div_open' , 5);
 function estore_loop_product_div_open(){
 	?>
-	<div class="agile_ecommerce_tab_left mobiles_grid">
+	<div class="">
 	<?php
 }
 
@@ -99,7 +99,7 @@ function estore_loop_product_div_close(){
 add_action( 'woocommerce_before_shop_loop_item_title', 'estore_loop_product_div_image_open', 5 );
 function estore_loop_product_div_image_open(){
 ?>
-	<div class="hs-wrapper hs-wrapper2 mobiles_grid">
+	<div class="">
 	<?php
 }
 add_action( 'woocommerce_before_shop_loop_item_title', 'estore_loop_product_div_image_close', 30);
@@ -113,7 +113,7 @@ function estore_loop_product_div_image_close(){
 		}
 	}
 	?>
-	<div class="w3_hs_bottom w3_hs_bottom_sub1">
+	<div class="">
 		<?php woocommerce_show_product_loop_sale_flash(); ?>
 		<ul>
 			<li>
@@ -134,7 +134,7 @@ function estore_template_loop_product_title(){
 add_action( 'woocommerce_after_shop_loop_item_title', 'estore_loop_product_div_price_open', 7 );
 function estore_loop_product_div_price_open(){
 	?>
-	<div class="simpleCart_shelfItem">
+	<div class="">
 	<?php
 }
 add_action( 'woocommerce_after_shop_loop_item', 'estore_loop_product_div_price_close', 15 );
@@ -157,8 +157,8 @@ remove_filter( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering',30
 add_action( 'woocommerce_before_shop_loop', 'estore_wrapper_count_and_ordering_start', 15 );
 function estore_wrapper_count_and_ordering_start(){
 	?>
-	<div class="w3ls_mobiles_grid_right_grid2">
-	<div class="w3ls_mobiles_grid_right_grid2_left">
+	<div class="">
+	<div class="">
 		<?php woocommerce_result_count();?>
 	</div>
 	<?php
@@ -167,10 +167,9 @@ function estore_wrapper_count_and_ordering_start(){
 add_action( 'woocommerce_before_shop_loop', 'estore_wrapper_count_and_ordering_close', 35 );
 function estore_wrapper_count_and_ordering_close(){
 	?>
-	<div class="w3ls_mobiles_grid_right_grid2_right">
+	<div class="">
 		<?php woocommerce_catalog_ordering();?>
 	</div>
-	<div class="clearfix"></div>
 	</div>
 	<?php
 }

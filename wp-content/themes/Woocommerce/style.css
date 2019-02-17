@@ -529,3 +529,7 @@ button.single_add_to_cart_button:hover{
     margin: 0;
 }
 /*-- //checkout --*/
+.no-gutters{
+    padding: 0;
+    margin: 0;
+}

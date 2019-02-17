@@ -20,9 +20,9 @@
 
 	<?php wp_head(); ?>
 </head>
-<div class="container">
 
 	<body <?php body_class(); ?>>
+			<div class="container">
 		<div id="page" class="site">
 			<header id="masthead" class="site-header">
 				<div class="loggin">
@@ -79,6 +79,7 @@
 </div>
 							</nav><!-- #site-navigation -->
 						</div>
+			</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
