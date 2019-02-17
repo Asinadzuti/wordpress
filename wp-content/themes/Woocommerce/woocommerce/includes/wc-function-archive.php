@@ -43,7 +43,7 @@ function estore_out_subcategories() {
 }
 add_filter( 'product_cat_class', 'estore_add_classes_product_cat' );
 function estore_add_classes_product_cat($classes){
-	$classes[] = 'col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles';
+	$classes[] = 'col-md-4';
 return $classes;
 }
 add_filter( 'woocommerce_subcategory_count_html', 'estore_remove_count_categories' );
@@ -64,7 +64,7 @@ function estore_hide_title_shop( $hide ) {
 add_filter( 'post_class', 'estore_add_class_loop_item' );
 function estore_add_class_loop_item($clasess){
 	if(is_shop() || is_product_taxonomy()){
-		$clasess[] = 'col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles';
+		$clasess[] = 'col-md-4';
 	}
 
 	return $clasess;
@@ -74,7 +74,7 @@ add_filter( 'post_class', 'estore_add_class_loop_item_cross' );
 function estore_add_class_loop_item_cross($clasess){
 	if(is_cart()){
 		if ( in_array( 'product', $clasess ) ) {
-			$clasess[] = 'col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles';
+			$clasess[] = 'col-md-4';
 		}
 	}
 
@@ -87,14 +87,12 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_pr
 add_action( 'woocommerce_before_shop_loop_item', 'estore_loop_product_div_open' , 5);
 function estore_loop_product_div_open(){
 	?>
-	<div class="agile_ecommerce_tab_left mobiles_grid">
 	<?php
 }
 
 add_action( 'woocommerce_after_shop_loop_item', 'estore_loop_product_div_close' , 20);
 function estore_loop_product_div_close(){
 	?>
-	</div>
 	<?php
 }
 add_action( 'woocommerce_before_shop_loop_item_title', 'estore_loop_product_div_image_open', 5 );
