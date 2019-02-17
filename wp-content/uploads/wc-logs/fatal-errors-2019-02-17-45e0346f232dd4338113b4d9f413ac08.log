@@ -4,3 +4,9 @@
 
 2019-02-17T11:47:00+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocommerce\includes\widget-areas.php on line 62
 
+2019-02-17T12:37:31+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Woocommerce/woocommerce/includes/wc-function-archive.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Woocommerce\functions.php on line 70
+
+2019-02-17T12:37:36+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Woocommerce/woocommerce/includes/wc-function-archive.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Woocommerce\functions.php on line 70
+
+2019-02-17T12:37:39+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Woocommerce/woocommerce/includes/wc-function-archive.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Woocommerce\functions.php on line 70
+
