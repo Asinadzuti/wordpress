@@ -88,3 +88,4 @@ function estore_account_menu_items( $items ) {
 
 	return $items;
 }
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);

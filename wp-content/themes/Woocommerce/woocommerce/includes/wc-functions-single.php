@@ -26,7 +26,7 @@ function estore_wrapper_product_end() {
 add_action( 'woocommerce_before_single_product_summary', 'estore_wrapper_product_image_start', 5 );
 function estore_wrapper_product_image_start() {
 	?>
-	<div class="col-md-4 single-left">
+	<div class="col-md-5">
 	<?php
 }
 
@@ -40,7 +40,7 @@ function estore_wrapper_product_image_end() {
 add_action( 'woocommerce_before_single_product_summary', 'estore_wrapper_product_entry_start', 30 );
 function estore_wrapper_product_entry_start() {
 	?>
-	<div class="col-md-8 single-right">
+	<div class="col-md-7 text">
 	<?php
 }
 

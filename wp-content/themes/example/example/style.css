@@ -1,5 +1,5 @@
 /*
-Theme Name: example thmeme
+Theme Name: example
 Theme URI: #
 Author: Artabr
 Author URI: #
@@ -168,14 +168,14 @@ font-weight: 400;
     display: inline!important;
 }
 ul.products li.product {
-    margin-right: 2.2%!important;
+    margin-right: 1.2%!important;
 }
 ul.products {
     display: flow-root!important;
 
 }
 .products {
-    margin-left: 40px !important;
+    margin-left: 8px !important;
     margin-right: -24px !important;
 }
 
@@ -532,4 +532,18 @@ button.single_add_to_cart_button:hover{
 .no-gutters{
     padding: 0;
     margin: 0;
+}
+.woocommerce div.product div.images img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+}
+.flex-viewport{
+   min-width: 436px;
+}
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    float: left;
+    width: 100%;
+    clear: none;
 }

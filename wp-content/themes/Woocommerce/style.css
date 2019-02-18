@@ -146,15 +146,6 @@ text-decoration: none;
 #nav-holder{
 	background-color: #fff;
 }
-.onsale {
-	border-color: #000!important;
-	position: absolute!important;
-	right: 81px!important;
-	top: 8px!important;
-	background: #000!important;
-	border-radius: 0px 0 15px 15px!important;
-	color: #fff!important;
-}
 .woocommerce-breadcrumb{
 	color: #2a2a2a;
 font-family: Poppins;
@@ -538,4 +529,24 @@ button.single_add_to_cart_button:hover{
     width: 100%;
     height: auto;
     box-shadow: none;
+}
+.flex-viewport{
+   min-width: 436px;
+}
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    float: left;
+    width: 100%;
+    clear: none;
+}
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+    position: absolute;
+    top: 14em;
+    right: -205px;
+}
+.woocommerce ul.products li.product .onsale {
+    top: -8px;
+    right: 96px;
+}
+.woocommerce span.onsale {
+    background-color: #000000;
 }
