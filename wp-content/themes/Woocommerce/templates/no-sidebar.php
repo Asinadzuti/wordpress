@@ -6,7 +6,7 @@
 get_header(); ?>
 	<div class="container single-section">
 		<div class="w3ls_mobiles_grids">
-			<div id="primary" class="content-area col-md-12 w3ls_mobiles_grid_left">
+			<div id="primary" class="content-area col-md-12 ">
 				<main id="main" class="site-main">
 
 					<?php

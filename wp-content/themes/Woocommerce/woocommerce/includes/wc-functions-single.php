@@ -127,7 +127,7 @@ add_action( 'woocommerce_review_after_comment_text', 'woocommerce_review_display
 
 
 add_action( 'woocommerce_output_related_products_args', function ($arg ){
-	$arg['posts_per_page'] = 10;
+	$arg['posts_per_page'] = 4;
 	return $arg;
 } );
 

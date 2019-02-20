@@ -20,6 +20,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
+			<p>1</p>
 			<?php estore_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php

@@ -550,3 +550,6 @@ button.single_add_to_cart_button:hover{
 .woocommerce span.onsale {
     background-color: #000000;
 }
+.woocommerce .woocommerce-product-rating {
+    margin-bottom: 0;
+}
