@@ -6,3 +6,5 @@
 
 2019-02-20T09:16:57+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\woocommerce\functions.php on line 97
 
+2019-02-20T13:08:42+00:00 CRITICAL syntax error, unexpected 'row' (T_STRING), expecting ')' in C:\xampp\htdocs\wordpress\wp-content\themes\woocommerce\page.php on line 27
+

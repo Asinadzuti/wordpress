@@ -13,12 +13,21 @@
  */
 get_header(); ?>
 	<div class="container single-section">
-		<div class="row">
-			<div id="primary" class="content-area col-md-12">
+			<div id="primary" class="content-area">
 				<main id="main" class="site-main">
-				<?php echo do_shortcode("[rev_slider alias=hot_deas]"); ?>
-		
-<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
+				<div class="row">
+					<div class="col-lg-4">
+						
+				<?php echo do_shortcode("[rev_slider alias=hot_deals]"); ?>
+					</div>
+					<div class="col-lg-8">
+					<?php echo do_shortcode("[rev_slider alias=shop_now]"); ?>
+					</div>
+		</div>
+		<div class="row">
+				<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
+		</div>
+
 				
 				</main><!-- #main -->
 			</div><!-- #primary -->
