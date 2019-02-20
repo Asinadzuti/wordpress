@@ -16,7 +16,9 @@ get_header(); ?>
 		<div class="row">
 			<div id="primary" class="content-area col-md-12">
 				<main id="main" class="site-main">
-				<?php dynamic_sidebar( 'posts' ); ?>
+				<?php echo do_shortcode("[rev_slider alias=hot_deas]"); ?>
+		
+<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
 				
 				</main><!-- #main -->
 			</div><!-- #primary -->
