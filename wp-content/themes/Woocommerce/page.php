@@ -25,9 +25,16 @@ get_header(); ?>
 					</div>
 		</div>
 		<div class="row">
-				<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
+		<div class="col-lg-12">
+		<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
 		</div>
-
+		</div>
+<div class="row">
+	<div class="col-lg-6">
+	<?php echo do_shortcode("[rev_slider alias=gallery]"); ?>
+		
+	</div>
+</div>
 				
 				</main><!-- #main -->
 			</div><!-- #primary -->
