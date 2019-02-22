@@ -12,7 +12,7 @@ function estore_scripts() {
 	wp_enqueue_style('countdown', get_template_directory_uri() . '/assets/css/jquery.countdown.css', array() , 'all');
 	wp_enqueue_style('popuo-box', get_template_directory_uri() . '/assets/css/popuo-box.css', array() , 'all');
 	wp_enqueue_style('fasthover', get_template_directory_uri() . '/assets/css/fasthover.css', array() , 'all');
-	wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:400,400i,700,700i&amp;subset=cyrillic', array() , 'all');
+	wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet', array() , 'all');
 
 
 }

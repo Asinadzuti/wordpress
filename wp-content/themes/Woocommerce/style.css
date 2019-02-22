@@ -12,7 +12,7 @@ a {
 }
 p {
 	color: #676767;
-	font-family: Poppins;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -49,7 +49,7 @@ h4 {
 
 h5 {
 	color: #2a2a2a;
-	font-family: Poppins;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -58,20 +58,23 @@ li{
 	margin-left: -40px;
 }
 .loggin {
-	background-color: #434343;
+    background-color: #434343;
+    padding-top: 10px ;
+    padding-bottom: 10px;
 }
 
 .loggin span {
 	color: #ffffff;
-	font-family: Poppins;
+	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
-	font-weight: 500;
+    font-weight: 500;
+    margin-right: 30px;
 }
 
 .menu-menu-1-container ul {
 	list-style-type: none;
 	margin-left: -40px;
-	margin-top: 15px;
+	margin-top: 18px;
 	margin-bottom: 18px;
 }
 
@@ -112,7 +115,7 @@ li{
 #searchform input::placeholder{
 	padding-left: 5px;
 	color: #a4a4a4;
-	font-family: Poppins;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -130,14 +133,14 @@ li{
 }
 .coopyright span{
 	color: #a9a9a9;
-font-family: Poppins;
+font-family: 'Poppins', sans-serif;
 font-size: 14px;
 font-weight: 400;
 }
 .widgets{
 	background-color: #363636;
 	color: #a9a9a9;
-font-family: Poppins;
+font-family: 'Poppins', sans-serif;
 font-size: 14px;
 font-weight: 400;
 text-decoration: none;
@@ -148,7 +151,7 @@ text-decoration: none;
 }
 .woocommerce-breadcrumb{
 	color: #2a2a2a;
-font-family: Poppins;
+font-family: 'Poppins', sans-serif;
 font-size: 13px;
 font-weight: 400;
 }
@@ -280,7 +283,7 @@ td.invert-image a img {
     top: 0.1em;
 }
 .w3view-cart {
-    background: #ff5063;
+    background-color: #d58e32;
     border: none;
     -moz-border-radius: 7%;
     -webkit-border-radius: 7%;
@@ -552,4 +555,32 @@ button.single_add_to_cart_button:hover{
 }
 .woocommerce .woocommerce-product-rating {
     margin-bottom: 0;
+}
+.width{
+    width: 1170px;
+    margin: 0 auto;
+}
+.container-fluid {
+    padding-right: 0; 
+    padding-left: 0; 
+}
+.count{
+width: 8px;
+height: 11px;
+color: #e0e3ed;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+font-weight: 500;
+}
+
+.fa-user::before{
+    content: "\f406";
+    color: #ffffff;
+}
+.fa-lock::before{
+    content: "\f023";
+    color: #ffffff;
+}
+.search-submit:before{
+    content: "\f002";
 }

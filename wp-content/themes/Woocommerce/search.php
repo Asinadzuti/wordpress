@@ -8,10 +8,8 @@
  */
 get_header(); ?>
 	<div class="container single-section">
-		<div class="w3ls_mobiles_grids">
-			<section id="primary" class="content-area col-md-8 w3ls_mobiles_grid_left">
+			<section id="primary" class="content-area">
 				<main id="main" class="site-main">
-					
 					<?php
 					if ( have_posts() ) : ?>
 						
@@ -38,11 +36,9 @@ get_header(); ?>
 					else :
 						get_template_part( 'template-parts/content', 'none' );
 					endif; ?>
-				
 				</main><!-- #main -->
 			</section><!-- #primary -->
 			<?php get_sidebar(); ?>
-		</div>
 	</div>
 <?php
 get_footer();

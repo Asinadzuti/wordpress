@@ -115,17 +115,17 @@
      */
 
     Redux::setSection( $opt_name, array(
-        'title'  => __( 'Basic Field'),
-        'id'     => 'basic',
+        'title'  => __( 'Information'),
+        'id'     => 'info',
         'desc'   => __( 'Basic field with no subsections.'),
         'icon'   => 'el el-home',
         'fields' => array(
             array(
                 'id'       => 'opt-text',
-                'type'     => 'text',
-                'title'    => __( 'Example Text'),
-                'desc'     => __( 'Example description.'),
-                'subtitle' => __( 'Example subtitle.'),
+                'type'     => 'number',
+                'title'    => __( 'Phone number'),
+                'desc'     => __( ''),
+                'subtitle' => __( 'Your phone number'),
             )
         )
     ) );

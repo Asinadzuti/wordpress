@@ -21,24 +21,24 @@
 </head>
 
 	<body <?php body_class(); ?>>
-			<div class="container">
+			<div class="container-fluid">
 		<div id="page" class="site">
 			<header id="masthead" class="site-header">
 				<div class="loggin">
-					<div class="row">
+					<div class="width row">
 						<div class="col-lg-6">
 							<span>USD</span>
 							<span>English</span>
 							<span>Help</span>
 						</div>
 						<div class="col-lg-6 text-right">
-							<span>Login</span>
-							<span>Registr</span>
+								<i class="fa fa-user" aria-hidden="true"></i><span>Login</span>
+							<i class="fas fa-lock"></i><span>Registr</span>
 						</div>
 					</div>
 				</div>
 				<div class="site-branding">
-					<div class="row">
+					<div class="width row">
 						<div class="col-lg-4 ">
 							<span>phone number</span>
 						</div>
@@ -58,7 +58,7 @@
 						</div>
 					</div>
 				</div><!-- .site-branding -->
-				 <nav id="site-navigation" class="main-navigation">
+				 <nav id="site-navigation" class="main-navigation width">
 <div class="row">
 		<div class="col-lg-6">
 				<div class="search">

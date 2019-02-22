@@ -67,9 +67,9 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/woocommerce/includes/wc-functions-cart.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-single.php';
 	require get_template_directory() . '/woocommerce/includes/wc-function-archive.php';
-	require get_template_directory() . '/woocommerce/includes/wc-functions-checkout.php';
+    require get_template_directory() . '/woocommerce/includes/wc-functions-checkout.php';
 }
-
+include_once get_template_directory().'/admin/admin-init.php';
 // add empty stars after title
 add_action( 'woocommerce_after_shop_loop_item_title', 'empty_stars', 5 );
 function empty_stars() {
@@ -94,6 +94,3 @@ function empty_stars() {
         <?php endif;
     }
 }
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
