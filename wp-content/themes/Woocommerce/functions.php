@@ -49,7 +49,6 @@ require get_template_directory() . '/includes/ajax.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/includes/navigations.php';
 
 /**
  * Load Jetpack compatibility file.

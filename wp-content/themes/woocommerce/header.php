@@ -39,8 +39,8 @@
 				</div>
 				<div class="site-branding">
 					<div class="width row">
-						<div class="col-lg-4 ">
-							<span>phone number</span>
+						<div class="col-lg-4  ">
+							<span class="number ">2300 - 3560 - 222</span>
 						</div>
 						<div class="col-lg-4 text-center">
 							<?php

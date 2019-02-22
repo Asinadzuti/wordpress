@@ -74,8 +74,8 @@ li{
 .menu-menu-1-container ul {
 	list-style-type: none;
 	margin-left: -40px;
-	margin-top: 18px;
-	margin-bottom: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .menu-menu-1-container ul li {
@@ -90,7 +90,7 @@ li{
 }
 
 .site-branding {
-	background-color: #363636;
+    background-color: #363636;
 }
 .menu-menu-1-container ul li a:hover{
 	color: #ffffff;
@@ -104,7 +104,7 @@ li{
 }
 .current_page_item{
 	background-color: #d58e32;
-	padding: 21px 10px 21px 10px!important;
+    padding: 23px 10px 24px 10px!important;
 	color: #ffffff!important;
 	text-decoration: none;
 }
@@ -124,7 +124,7 @@ li{
 }
 .search{
 	width: 489px;
-	height: 34px;
+	height: 47px;
 	border: 1px solid #2a2a2a;
 	margin-top: 15px;
 }
@@ -293,7 +293,7 @@ td.invert-image a img {
     text-align: center;
     outline: none;
     display: inline-block;
-    position: relative;
+    margin-top: 50px;
 }
 
 
@@ -583,4 +583,29 @@ font-weight: 500;
 }
 .search-submit:before{
     content: "\f002";
+}
+.number{
+    color: #d8d8d8;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 50px;
+    display: block;
+}
+.custom-logo-link{
+    margin-top: 30px;
+    display: block;
+    margin-bottom: 30px;
+}
+.search-field{
+    border: 0;
+    padding-top:8px;
+    padding-bottom: 5px;
+}
+.search-field::placeholder{
+    padding-left: 13px;
+}
+input[type="search"] {
+    -webkit-appearance: none;
+    margin-left: 5px;
 }
