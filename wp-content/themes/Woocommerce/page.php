@@ -24,11 +24,39 @@ get_header(); ?>
 					<?php echo do_shortcode("[rev_slider alias=shop_now]"); ?>
 					</div>
 		</div>
+		<section class="badge_column">
+			<div class="row">
+				<div class="col-lg-3">
+					<h2>
+					Free Shipping
+	<span>all order</span>
+					</h2>
+				</div>
+				<div class="col-lg-3">
+					<h2>
+					24/7 customer
+ <span>support</span>
+					</h2>
+				</div>
+				<div class="col-lg-3">
+					<h2>
+money back
+ <span>guaranteey</span>
+					</h2>
+				</div>
+				<div class="col-lg-3">
+					<h2>MEMBER DISCOUNT
+					 <span>first oredr</span>
+					</h2>
+				</div>
+			</div>
+		</section>
 		<div class="row">
 		<div class="col-lg-12">
 		<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
 		</div>
 		</div>
+		
 <div class="row">
 	<div class="col-lg-6">
 	<?php echo do_shortcode("[rev_slider alias=gallery]"); ?>

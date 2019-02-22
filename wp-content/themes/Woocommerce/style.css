@@ -126,7 +126,8 @@ li{
 	width: 489px;
 	height: 47px;
 	border: 1px solid #2a2a2a;
-	margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .coopyright{
 	background-color: #2a2a2a;
@@ -608,4 +609,14 @@ font-weight: 500;
 input[type="search"] {
     -webkit-appearance: none;
     margin-left: 5px;
+}
+#site-navigation{
+    box-shadow: 0 4px 6px rgba(1, 2, 2, 0.2);
+    background-color: #ffffff;
+}
+.badge_column h2{
+    color: #2a2a2a;
+}
+.badge_column span{
+    display: block;
 }
