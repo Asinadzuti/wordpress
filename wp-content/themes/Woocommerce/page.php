@@ -67,19 +67,19 @@ get_header(); ?>
 			<section class="free">
 				<div class="row">
 					<div class="col-lg-6">
-						<div class="sofa">
+						<div class="sofa text-left">
 							<h6>guest room
 								<span>sofa</span>
 							</h6>
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="chair text-center">
+						<div class="chair text-center ">
 							<h6>office chair
 								<span>collection</span></h6>
 						</div>
-						<div class="collection">
-							<h6>special collection
+						<div class="collection text-right">
+							<h6><strong>special</strong> collection
 								<span>save up 45% of furniture</span>
 							</h6>
 						</div>

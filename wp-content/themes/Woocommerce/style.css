@@ -747,6 +747,7 @@ input[type="search"] {
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
+    padding-top: 60px;
 }
 
 .chair h6 span {
@@ -770,15 +771,21 @@ input[type="search"] {
     font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
+    padding-top: 70px;
+    padding-right: 20px;
 }
 
 .collection h6 span {
-    font-family: cursive;
-    display: block;
+    color: #000000;
+font-family: Poppins;
+font-size: 18px;
+font-weight: 300;
+text-transform: uppercase;
+display: block;
 }
 
 .sofa {
-    background-color: #fbf3f7;
+    background-color: #2a2a2a;
     width: 555px;
     height: 420px;
 }
@@ -789,6 +796,8 @@ input[type="search"] {
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
+    padding-top:180px    ;
+    padding-left: 50px;
 }
 
 .sofa h6 span  {
