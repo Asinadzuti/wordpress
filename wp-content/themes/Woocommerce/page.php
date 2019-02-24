@@ -113,7 +113,12 @@ get_header(); ?>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
+					<hr>
 					<?php echo do_shortcode("[rev_slider alias=brand]"); ?>
+					<hr>
+					<h2>client feedback</h2>
+					<hr>
+					<?php echo do_shortcode("[rev_slider alias=comment]"); ?>
 				</div>
 			</div>
 		</main><!-- #main -->
