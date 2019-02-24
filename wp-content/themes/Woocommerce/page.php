@@ -94,8 +94,21 @@ get_header(); ?>
 
 			<div class="row">
 				<div class="col-lg-6">
+					<h2 class="gallery">furniture gallery</h2>
+					<hr>
 					<?php echo do_shortcode("[rev_slider alias=gallery]"); ?>
 
+				</div>
+				<div class="col-lg-6">
+					<div class="bedroom">
+						<h6>
+							<span> FROM $50.80</span>
+							Bedroom Bed
+							<button class="shop">
+								Shop now	
+							</button>
+						</h6>
+					</div>
 				</div>
 			</div>
 

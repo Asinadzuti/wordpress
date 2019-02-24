@@ -777,11 +777,11 @@ input[type="search"] {
 
 .collection h6 span {
     color: #000000;
-font-family: Poppins;
-font-size: 18px;
-font-weight: 300;
-text-transform: uppercase;
-display: block;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
 }
 
 .sofa {
@@ -796,11 +796,62 @@ display: block;
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
-    padding-top:180px    ;
+    padding-top: 180px;
     padding-left: 50px;
 }
 
-.sofa h6 span  {
+.sofa h6 span {
     display: block;
     font-size: 60px;
+}
+
+.bedroom {
+    width: 556px;
+    height: 603px;
+    background-color: #e8edf7;
+}
+
+.bedroom h6 {
+    color: #d58e32;
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 400;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.bedroom h6 span {
+    color: #79ae30;
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+}
+
+.bedroom button {
+    color: #ffffff;
+    font-family: "Poppins";
+    border: 0;
+    box-shadow: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 136px;
+    height: 54px;
+    border-radius: 3px;
+    background-color: #79ae30;
+    display: block;
+    margin-top: 30px;
+}
+
+.gallery {
+    color: #d58e32;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+hr {
+    height: 3px;
+    background-color: #e2e2e2;
 }
