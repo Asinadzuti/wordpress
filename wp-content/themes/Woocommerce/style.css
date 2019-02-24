@@ -849,8 +849,8 @@ input[type="search"] {
     color: #d58e32;
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: 0;
 }
-
 hr {
     height: 3px;
     background-color: #e2e2e2;

@@ -111,7 +111,11 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-
+			<div class="row">
+				<div class="col-lg-12">
+					<?php echo do_shortcode("[rev_slider alias=brand]"); ?>
+				</div>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
