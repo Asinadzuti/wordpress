@@ -859,3 +859,36 @@ hr {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+/* tabs */
+#wtcpl_tabs_container .each_cat ul.products li {
+    padding: 0px;
+     box-shadow: 0;
+}
+#wtcpl_tabs_container .each_cat ul.products li .onsale {
+    border-color: #fff;
+    position: absolute;
+    right: 123px;
+    top: -8px;
+    background: #000;
+    border-radius: 50%;
+    color: #FFF;
+}
+.wtcpl_category_nav li a:hover, .wtcpl_category_nav li a.active {
+    background-color: transparent;
+    color: #000000;
+}
+.wtcpl_category_nav li a:link, .wtcpl_category_nav li a:visited, .wtcpl_category_nav li a:active {
+    background-color: transparent;
+padding: 5px 5px;
+}
+.wtcpl_category_nav li a:link, .wtcpl_category_nav li a:visited, .wtcpl_category_nav li a:active {
+color: #2a2a2a;
+font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+	background:linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
+	background-size:0 1px;
+	transition:background 250ms ease 0s;
+    text-decoration:none;
+	background-size:100% 1px
+}
