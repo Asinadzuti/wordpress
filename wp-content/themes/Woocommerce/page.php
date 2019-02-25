@@ -88,7 +88,10 @@ get_header(); ?>
 			</section>
 			<div class="row">
 				<div class="col-lg-12">
-					<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
+				<div class="product_cat">
+					<h2>new furniture</h2>
+				<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
+				</div>
 				</div>
 			</div>
 
@@ -113,8 +116,11 @@ get_header(); ?>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
+					<div class="brand-icon">
 					<hr>
 					<?php echo do_shortcode("[rev_slider alias=brand]"); ?>
+					<hr>
+					</div>
 				</div>
 			</div>
 		</main><!-- #main -->

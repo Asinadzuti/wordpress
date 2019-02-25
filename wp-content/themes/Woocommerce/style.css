@@ -882,13 +882,93 @@ hr {
 padding: 5px 5px;
 }
 .wtcpl_category_nav li a:link, .wtcpl_category_nav li a:visited, .wtcpl_category_nav li a:active {
-color: #2a2a2a;
-font-family: Poppins;
-font-size: 18px;
-font-weight: 500;
+    color: #2a2a2a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
 	background:linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
 	background-size:0 1px;
 	transition:background 250ms ease 0s;
     text-decoration:none;
 	background-size:100% 1px
+}
+.product_cat h5{
+    text-align: center;
+}
+.product_cat h2{
+    color: #d58e32;
+    margin-top: 50px;
+    position: relative;
+    top: 40px;
+    left: 15px;
+}
+.woocommerce .star-rating {
+    left: 38%;
+}
+.woocommerce ul.products li.product .price {
+    display: inline-flex;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 41px;
+    background-color: #000000;
+    float: right;
+    margin-right: 10px;
+}
+.woocommerce ul.products li.product .price del {
+    color: #a5a5a5;
+    opacity: 1;
+    display: inline-flex;
+    background-color: #ffff;
+
+}
+ul.products li.product .button {
+    display: table-cell!important;
+}
+.woocommerce-Price-amount {
+    padding: 1px 10px 1px 10px;
+    font-size: 16px;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    font-size: 83%;
+    background-color: #000000;
+    color: #fff;
+    top: 17px;
+}
+#wtcpl_tabs_container .each_cat ul.products li {
+    border: 1px solid #e2e2e2;
+    box-shadow: none;
+}
+#wtcpl_tabs_container .each_cat ul.products li:hover .price ins {
+background-color: #d58e32;
+}
+ul.products li.product img {
+    width: 253px !important;
+}
+#wtcpl_tabs_container .each_cat ul.products li {
+    background-color:transparent;
+    border: none;
+}
+.woocommerce .products ul, .woocommerce ul.products {
+    display: table;
+}
+.glyphicon {
+    z-index: 11111111;
+    top: 220px;
+}
+/* arrow */
+.tp-rightarrow {
+left: 83%!important;
+}
+.tp-leftarrow {
+    left: 17%!important;
+}
+.brand-icon hr{
+    height: 1px;
+    opacity: 0.2;
+    background-color: #2a2a2a;
+}
+.wtcpl_category_nav {
+    padding: 0 0 0 0;
 }
