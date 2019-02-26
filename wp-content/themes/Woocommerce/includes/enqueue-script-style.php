@@ -8,7 +8,8 @@ function estore_scripts() {
 	wp_enqueue_style( 'estore-style', get_stylesheet_uri(), array('bootstrap-style') , 'all');
 	wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.css', array() , 'all');
 	wp_enqueue_style('flexslider', get_template_directory_uri() . '/assets/css/flexslider.css', array() , 'all');
-	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css', array() , 'all');
+	// wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css', array() , 'all');
+		wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/all.css', array() , 'all');
 	wp_enqueue_style('countdown', get_template_directory_uri() . '/assets/css/jquery.countdown.css', array() , 'all');
 	wp_enqueue_style('popuo-box', get_template_directory_uri() . '/assets/css/popuo-box.css', array() , 'all');
 	wp_enqueue_style('fasthover', get_template_directory_uri() . '/assets/css/fasthover.css', array() , 'all');

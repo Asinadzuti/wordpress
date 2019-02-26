@@ -55,7 +55,8 @@ get_header(); ?>
 					</div>
 					<div class="col-lg-3">
 						<div class="card_info">
-							<i class="fa fa-cc-paypal" aria-hidden="true"></i>
+						<i class="fas fa-allergies"></i>
+						<i class="fab fa-accessible-icon"></i>
 							<h2>MEMBER DISCOUNT
 								<span>first oredr</span>
 							</h2>
@@ -108,8 +109,9 @@ get_header(); ?>
 							<span> FROM $50.80</span>
 							Bedroom Bed
 							<button class="shop">
-								Shop now	
+								Shop now
 							</button>
+
 						</h6>
 					</div>
 				</div>

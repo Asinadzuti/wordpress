@@ -77,7 +77,7 @@ li {
 .menu-menu-1-container ul {
     list-style-type: none;
     margin-left: -40px;
-    margin-top: 20px;
+    margin-top: 29px;
     margin-bottom: 20px;
 }
 
@@ -110,9 +110,10 @@ li {
 
 .current_page_item {
     background-color: #d58e32;
-    padding: 23px 10px 24px 10px !important;
+    padding: 32px 10px 32px 10px !important;
     color: #ffffff !important;
     text-decoration: none;
+    border-top: 4px #2a2a2a;
 }
 
 #searchsubmit {
@@ -134,7 +135,7 @@ li {
 
 .search {
     width: 489px;
-    height: 47px;
+    height: 40px;
     border: 1px solid #2a2a2a;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -971,4 +972,7 @@ left: 83%!important;
 }
 .wtcpl_category_nav {
     padding: 0 0 0 0;
+}
+.free{
+    margin-top: 20px;
 }
