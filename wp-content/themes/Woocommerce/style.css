@@ -956,6 +956,7 @@ ul.products li.product img {
 }
 .glyphicon {
     z-index: 11111111;
+    right: -5px;
     top: 220px;
 }
 /* arrow */
