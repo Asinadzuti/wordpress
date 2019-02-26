@@ -14,7 +14,6 @@ function estore_scripts() {
 	wp_enqueue_style('fasthover', get_template_directory_uri() . '/assets/css/fasthover.css', array() , 'all');
 	wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet', array() , 'all');
 
-
 }
 
 add_action( 'wp_enqueue_scripts', 'estore_styles' );
