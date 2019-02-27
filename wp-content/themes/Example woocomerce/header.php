@@ -6,12 +6,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Example_theme
+ * @package woocomerce
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,38 +21,72 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mytheme' ); ?></a>
+	<div class="container-fluid">
+		<div id="page" class="site">
+			<header id="masthead" class="site-header">
+				<div class="loggin">
+				<div class="container">
+					<div class=" row">
+						<div class="col-lg-6">
+							<span>USD</span>
+							<span>English</span>
+							<span>Help</span>
+						</div>
+						<div class="col-lg-6 text-right">
+							<i class="fa fa-user" aria-hidden="true"></i><span>Login</span>
+							<i class="fas fa-lock"></i><span>Registr</span>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class=" site-branding">
+				<div class="container">
+					<div class=" row">
+						<div class="col-lg-4  ">
+							<span class="number ">2300 - 3560 - 222</span>
+						</div>
+						<div class="col-lg-4 text-center">
+							<?php
+		the_custom_logo();?>
+						</div>
+						<div class="col-lg-4 text-right">
+							<?php global $woocommerce; ?>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$mytheme_description = get_bloginfo( 'description', 'display' );
-			if ( $mytheme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $mytheme_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+							<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
+								<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
+								-
+								<?php echo $woocommerce->cart->get_cart_total(); ?>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mytheme' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+							</a>
+
+
+						</div>
+					</div>
+					</div>
+				</div><!-- .site-branding -->
+				<nav id="site-navigation" class="main-navigation ">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="search">
+									<?php get_search_form(); ?>
+								</div>
+							</div>
+							<div class="col-lg-6">
+
+								<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+						?>
+							</div>
+
+						</div>
+					</div>
+				</nav><!-- #site-navigation -->
+		</div>
+	</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
