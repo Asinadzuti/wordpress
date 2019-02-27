@@ -32,7 +32,7 @@ function estore_woocommerce_custom_checkout_billing_fields( $address_fields, $co
 
 	return $address_fields;
 }
-add_action( 'woocommerce_before_checkout_form', 'estore_checkout_form_start' );
+add_action( '	', 'estore_checkout_form_start' );
 function estore_checkout_form_start(){
 
 	?>
@@ -73,7 +73,7 @@ function estore_order_review_start(){
 	<?php
 
 }
-add_action( 'woocommerce_checkout_after_order_review', 'estore_order_review_close' );
+add_action( 'woocommerce_checkout_before_order_review', 'estore_order_review_close' );
 function estore_order_review_close(){
 
 	?>

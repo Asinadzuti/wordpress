@@ -957,7 +957,7 @@ ul.products li.product .button {
     font-size: 83%;
     background-color: #000000;
     color: #fff;
-    top: 17px;
+    top: 5px;
 }
 #wtcpl_tabs_container .each_cat ul.products li {
     border: 1px solid #e2e2e2;
@@ -1002,3 +1002,13 @@ left: 83%!important;
 .hesperiden .tp-bullet:hover, .hesperiden .tp-bullet.selected {
     background: #d58e32;
 }
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: 200px;
+}
+.cart_totals h2{
+    margin-bottom: 30px;
+    color: #2a2a2a;
+}
+/* fix col-1 */
+.woocommerce .col-1, .col-2{ 
+    max-width:none;}

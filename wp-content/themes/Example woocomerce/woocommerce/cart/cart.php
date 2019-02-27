@@ -132,7 +132,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<td colspan="6" class="actions form-inline">
 
 					<?php if ( wc_coupons_enabled() ) { ?>
-						<div class="coupon col-sm-10">
+						<div class="coupon col-sm-4">
 							<label for="coupon_code">
 								<?php esc_html_e( 'Coupon:', 'woocommerce' ); ?>
 							</label>

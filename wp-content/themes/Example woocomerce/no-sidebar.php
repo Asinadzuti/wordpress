@@ -4,21 +4,18 @@
  */
 
 get_header(); ?>
-	<div class="container single-section">
-		<div class="w3ls_mobiles_grids">
-			<div id="primary" class="content-area col-md-12 ">
-				<main id="main" class="site-main">
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 ">
 					<?php
 
 					while ( have_posts() ) : the_post();?>
 
-						<div class="row">
 						<?php if ( is_order_received_page() ) :?>
-							<div class="col-md-6 col-md-offset-3">
+							<!-- <div class="col-md-6 col-md-offset-3"> -->
 								<?php endif; ?>
 						<?php if ( is_wc_endpoint_url('lost-password') ) :?>
-							<div class="col-md-5 col-md-offset-4">
+							<!-- <div class="col-md-5 col-md-offset-4"> -->
 								<?php endif; ?>
 
 								<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -44,7 +41,6 @@ get_header(); ?>
 					endwhile; // End of the loop.
 					?>
 
-				</main><!-- #main -->
 			</div><!-- #primary -->
 		</div>
 	</div>
