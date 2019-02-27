@@ -652,6 +652,11 @@ button.single_add_to_cart_button:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
+    background-color: #363636;
+    position: relative;
+    padding: 0px 3px 0px 3px;
+    left: -6px;
+    border-radius: 50%;
 }
 
 .fa-user::before {
@@ -721,16 +726,38 @@ input[type="search"] {
     margin-top: 0;
 }
 
-.fa-cc-paypal {
-    content: "\f007";
+.fa-bullhorn {
     background-color: #fff;
     border-radius: 50%;
     padding: 20px;
     border: 1px solid #b7b7b7;
     position: relative;
-    top: -27px;
+    top: -30px;
 }
-
+.fa-arrow-left{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid #b7b7b7;
+    position: relative;
+    top: -30px;
+}
+.fa-headphones{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid #b7b7b7;
+    position: relative;
+    top: -30px;
+}
+.fa-car-side{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid #b7b7b7;
+    position: relative;
+    top: -30px;
+}
 .chair {
     background-color: #e8edf7;
     width: 555px;
@@ -971,4 +998,7 @@ left: 83%!important;
 }
 .free{
     margin-top: 20px;
+}
+.hesperiden .tp-bullet:hover, .hesperiden .tp-bullet.selected {
+    background: #d58e32;
 }

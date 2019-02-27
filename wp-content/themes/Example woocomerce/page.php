@@ -28,7 +28,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-lg-3">
 						<div class="card_info">
-							<i class="fa fa-cc-paypal" aria-hidden="true"></i>
+						<i class="fas fa-car-side"></i>
 							<h2>
 								Free Shipping
 								<span>all order</span>
@@ -37,7 +37,7 @@ get_header(); ?>
 					</div>
 					<div class="col-lg-3">
 						<div class="card_info">
-							<i class="fa fa-cc-paypal" aria-hidden="true"></i>
+						<i class="fas fa-headphones"></i>
 							<h2>
 								24/7 customer
 								<span>support</span>
@@ -46,7 +46,7 @@ get_header(); ?>
 					</div>
 					<div class="col-lg-3">
 						<div class="card_info">
-							<i class="fa fa-cc-paypal" aria-hidden="true"></i>
+						<i class="fas fa-arrow-left"></i>
 							<h2>
 								money back
 								<span>guaranteey</span>
@@ -55,8 +55,7 @@ get_header(); ?>
 					</div>
 					<div class="col-lg-3">
 						<div class="card_info">
-						<i class="fas fa-allergies"></i>
-						<i class="fab fa-accessible-icon"></i>
+						<i class="fas fa-bullhorn"></i>
 							<h2>MEMBER DISCOUNT
 								<span>first oredr</span>
 							</h2>
