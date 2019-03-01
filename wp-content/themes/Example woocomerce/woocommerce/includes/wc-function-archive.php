@@ -6,23 +6,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'woocommerce_before_main_content', 'estore_archive_wrapper_start', 40 );
 function estore_archive_wrapper_start(){
 ?>
-
+	<div class="mobiles">
 		<div class="container">
-			<div class="row">
+			<div class="w3ls_mobiles_grids">
 <?php
 }
 add_action( 'woocommerce_after_main_content', 'estore_archive_wrapper_end', 30 );
 function estore_archive_wrapper_end(){
 ?>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
+	</div>
 	<?php
 }
 
 add_action( 'woocommerce_before_main_content', 'estore_archive_content_wrapper_start', 60 );
 function estore_archive_content_wrapper_start(){
 	?>
-	<div class="col-md-9">
+	<div class="col-md-8 w3ls_mobiles_grid_right">
 	<?php
 }
 add_action( 'woocommerce_after_main_content', 'estore_archive_content_wrapper_end', 25 );
@@ -87,7 +89,7 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_pr
 add_action( 'woocommerce_before_shop_loop_item', 'estore_loop_product_div_open' , 5);
 function estore_loop_product_div_open(){
 	?>
-	<div class="mobiles_grid">
+	<div class="agile_ecommerce_tab_left mobiles_grid">
 	<?php
 }
 

@@ -26,7 +26,7 @@ function estore_wrapper_product_end() {
 add_action( 'woocommerce_before_single_product_summary', 'estore_wrapper_product_image_start', 5 );
 function estore_wrapper_product_image_start() {
 	?>
-	<div class="col-md-5">
+	<div class="col-md-4 single-left">
 	<?php
 }
 
@@ -40,7 +40,7 @@ function estore_wrapper_product_image_end() {
 add_action( 'woocommerce_before_single_product_summary', 'estore_wrapper_product_entry_start', 30 );
 function estore_wrapper_product_entry_start() {
 	?>
-	<div class="col-md-7 text">
+	<div class="col-md-8 single-right">
 	<?php
 }
 
@@ -127,7 +127,7 @@ add_action( 'woocommerce_review_after_comment_text', 'woocommerce_review_display
 
 
 add_action( 'woocommerce_output_related_products_args', function ($arg ){
-	$arg['posts_per_page'] = 4;
+	$arg['posts_per_page'] = 10;
 	return $arg;
 } );
 

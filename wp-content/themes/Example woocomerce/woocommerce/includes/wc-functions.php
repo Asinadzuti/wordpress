@@ -88,6 +88,3 @@ function estore_account_menu_items( $items ) {
 
 	return $items;
 }
-remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
-add_filter( 'wc_product_sku_enabled', '__return_false' );

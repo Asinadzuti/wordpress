@@ -22,11 +22,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
-
-		<h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
-
-		<?php woocommerce_product_loop_start(); ?>
+	<section class="related products w3l_related_products">
+		<div class="container">
+		<h3><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h3>
+			
+			<ul id="flexiselDemo2" class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
 
 			<?php foreach ( $related_products as $related_product ) : ?>
 
@@ -39,8 +39,35 @@ if ( $related_products ) : ?>
 
 			<?php endforeach; ?>
 
-		<?php woocommerce_product_loop_end(); ?>
+			</ul>
+			<script type="text/javascript">
+                jQuery(window).load(function() {
+                    jQuery("#flexiselDemo2").flexisel({
+                        visibleItems:5,
+                        animationSpeed: 1000,
+                        autoPlay: false,
+                        autoPlaySpeed: 3000,
+                        pauseOnHover: true,
+                        enableResponsiveBreakpoints: true,
+                        responsiveBreakpoints: {
+                            portrait: {
+                                changePoint:480,
+                                visibleItems: 1
+                            },
+                            landscape: {
+                                changePoint:640,
+                                visibleItems:2
+                            },
+                            tablet: {
+                                changePoint:768,
+                                visibleItems: 3
+                            }
+                        }
+                    });
 
+                });
+			</script>
+		</div>
 	</section>
 
 <?php endif;
