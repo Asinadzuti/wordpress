@@ -1014,3 +1014,9 @@ left: 83%!important;
     max-width:none;
     width: 100%!important;
 }
+.woocommerce form .form-row {
+    display: block;
+}
+.woocommerce-billing-fields h3{
+    margin-bottom: 2em;
+}
