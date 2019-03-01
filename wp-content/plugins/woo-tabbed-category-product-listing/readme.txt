@@ -5,7 +5,7 @@ Tags: woocommerce, woocommerce products, products by categories, woocommerce pro
 Requires at least: 4.7
 Tested up to: 5.0
 Requires PHP: 5.6.0
-Stable tag: 1.8.0
+Stable tag: 1.9.0
 License: GPLv2 or later
 License URI: http://www.quantumcloud.com
 
@@ -155,6 +155,9 @@ Please check: http://www.quantumcloud.com/blog/woocommerce-tabbed-category-wise-
 3. Under the settings page in admin you can find the help in "Tabbed Category" menu.
 
 == Changelog ==
+
+= 1.9.0 =
+# Admin area info update.
 
 = 1.8.0 =
 # Admin area info update.

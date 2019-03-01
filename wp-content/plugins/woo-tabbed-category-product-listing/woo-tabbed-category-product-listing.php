@@ -1,13 +1,14 @@
 <?php
-
-/*
-Plugin Name: Woo Tabbed Category Product Listing
-Plugin URI: https://www.quantumcloud.com/products/
-Description: WooCommerce addon to display Category based Product Listing in tab format on any page with a short code.
-Author: QuantumCloud
-Author URI: https://www.quantumcloud.com/
-Version: 1.8.0
-License: GPL2
+/**
+* Plugin Name: Woo Tabbed Category Product Listing
+* Plugin URI: https://www.quantumcloud.com/products/
+* Description: WooCommerce addon to display Category based Product Listing in tab format on any page with a short code.
+* Author: QuantumCloud
+* Author URI: https://www.quantumcloud.com/
+* Requires at least: 4.6
+* Version: 1.9.0
+* License: GPL2
+* Tested up to: 5.0
 */
 
 
@@ -97,34 +98,36 @@ Class Woo_Tab_Product_Category_List
                 <div class="qc_woo_free_admin_right">
                     <h2>Upgrade to Pro</h2>
                     <ul>
-                        <li>11 Modern Design Templates</li>
-                        <li>AJAX Load More and Add to Cart</li>
-                        <li>Collapsible Category Links Sidebar Widget</li>
-                        <li>Category wise Sale/Featured Products Display</li>
-                        <li>Tabbed, Accordion and Carousel modes!</li>
-                        <li>Quick View product Details in Modal</li>
-                        <li>Fixed Position Category Filters</li>
-                        <li>Color Customization Options</li>
-                        <li>Carousel Scroll or Stack Mode for Category Filters</li>
-                        <li>Front End Sorting Drop Down</li>
-   
-
+                        <li>10+ Innovative Design Templates</li>
+                        <li>AJAX Load More & Add to Cart</li>
+                        <li>AJAX Tabbed/Accordion/Carousel Filtering</li>
+                        <li>Show Category wise Featured/On Sale Products Only</li>
+                        <li>Display Sub Categories in Drop Down</li>
+                        <li>Shortcode for Hot, New, Best Buy and Featured Products</li>
+                        <li>Scroll/Stacked Category Filter Tabs</li>
+                        <li>Product Quick View (one page shop)</li>
+                        <li>Fixed Position Filter Tabs</li>
+                        <li>Front End Product Filtering & Ordering</li>
+                        <li>Floating Ajax Quick Cart!</li>
+                        <li>Selectively Display Price, Rating, Title, Cart Link</li>
+                        <li>Exclude Categories</li>
+                        <li>Sidebar Widget with Collapsible Category Links</li>
+                        <li>Customer Conversion Reporting with Charts and Graphs</li>
+                        <li>Customize Colors and Languages</li>
                     </ul>
-                    <a href="https://www.quantumcloud.com/products/woo-tabbed-category-product-listing/" target="_blank" class="upgrade_btn">Upgrade Now! </a>
-                </div>
+                    <a href="https://www.quantumcloud.com/products/woo-tabbed-category-product-listing/" target="_blank"
+                       class="upgrade_btn">Upgrade Now! </a></div>
 
-
-                <div class="qc_woo_free_admin_right copy_right_box">
-                    Check Out Our <a href="https://www.quantumcloud.com/products/woocommerce-chatbot-woowbot/" target="_blank">ChatBot for WooCommerce! </a> <br> View More <a href="https://www.quantumcloud.com/products/" target="_blank">Innovative Products</a> from QuantumCloud. <br><br>
-                </div>
 
                 <div class="qc_woo_free_admin_right copy_right_box">
 
                     Woo Tabbed was developed by Web Design Company - <a href="https://www.quantumcloud.com/"
-                    target="_blank">QuantumCloud</a>. We provide all kinds of <a href="https://www.quantumcloud.com/services/" target="_blank">Custom WordPress
+                                                                        target="_blank">QuantumCloud</a>. We provide all
+                    kinds of <a href="https://www.quantumcloud.com/services/" target="_blank">Custom WordPress
                         Development services</a>.
-                </div>
 
+
+                </div>
 
 
                 <div class="clear" style="clear:both;"></div>
@@ -423,10 +426,20 @@ function woo_tab_demo_content()
     update_option('column_number', 4);
     update_option('order_product_by', 'ASC');
 
+    add_option('woo_tabbed_plugin_do_activation_redirect', true);
 
 }
 
-
+// redirect when activation plugin...
+add_action('admin_init', 'woo_tabbed_plugin_redirect');
+function woo_tabbed_plugin_redirect(){
+    if(get_option('woo_tabbed_plugin_do_activation_redirect', false)){
+        delete_option('woo_tabbed_plugin_do_activation_redirect');
+        if(!isset($_GET['activate-multi'])){
+            wp_redirect("admin.php?page=woo-tab");
+        }
+    }
+}
 
 
 

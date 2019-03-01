@@ -11,27 +11,8 @@ function estore_woocommerce_custom_checkout_fields( $fields ) {
 
 	return $fields;
 }
-add_filter( 'woocommerce_default_address_fields', 'estore_woocommerce_custom_checkout_default_fields' );
-function estore_woocommerce_custom_checkout_default_fields($fields){
-	$fields['address_2']['label'] = 'Квартира, дом';
-	return $fields;
-}
 
-add_filter( 'woocommerce_billing_fields', 'estore_woocommerce_custom_checkout_billing_fields', 10, 2 );
-function estore_woocommerce_custom_checkout_billing_fields( $address_fields, $country ) {
 
-	$address_fields['billing_address_1']['class'] = array( 'form-row-first' );
-	$address_fields['billing_address_2']['class'] = array( 'form-row-last' );
-
-	$address_fields['billing_city']['class']      = array( 'row col-sm-4' );
-	$address_fields['billing_state']['class']     = array( 'row col-sm-4 margin-y-md' );
-	$address_fields['billing_postcode']['class']  = array( 'row col-sm-4' );
-	$address_fields['billing_phone']['class']     = array( 'form-row-first' );
-	$address_fields['billing_email']['class']     = array( 'form-row-last' );
-	$address_fields['billing_country']['class']     = array( 'margin-bottom-md' );
-
-	return $address_fields;
-}
 add_action( 'woocommerce_before_checkout_form', 'estore_checkout_form_start' );
 function estore_checkout_form_start(){
 
