@@ -28,7 +28,7 @@ function estore_woocommerce_custom_checkout_billing_fields( $address_fields, $co
 	$address_fields['billing_postcode']['class']  = array( 'row col-sm-4' );
 	$address_fields['billing_phone']['class']     = array( 'form-row-first' );
 	$address_fields['billing_email']['class']     = array( 'form-row-last' );
-	$address_fields['billing_country']['class']     = array( 'form-row-last margin-bottom-md' );
+	$address_fields['billing_country']['class']     = array( 'margin-bottom-md' );
 
 	return $address_fields;
 }
@@ -61,8 +61,6 @@ function estore_customer_details_close(){
 
 	?>
 	</div>
-	
-	<div class="col-md-4">
 	<?php
 
 }
@@ -71,6 +69,7 @@ add_action( 'woocommerce_checkout_before_order_review_heading', 'estore_order_re
 function estore_order_review_start(){
 
 	?>
+	<div class="col-md-4">
 	<?php
 
 }
