@@ -1011,4 +1011,6 @@ left: 83%!important;
 }
 /* fix col-1 */
 .woocommerce .col-1, .col-2{ 
-    max-width:none;}
+    max-width:none;
+    width: 100%!important;
+}

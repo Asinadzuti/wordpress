@@ -61,8 +61,6 @@ function estore_customer_details_close(){
 
 	?>
 	</div>
-	
-	<div class="col-md-4">
 	<?php
 
 }
@@ -71,6 +69,7 @@ add_action( 'woocommerce_checkout_before_order_review_heading', 'estore_order_re
 function estore_order_review_start(){
 
 	?>
+	<div class="col-md-4">
 	<?php
 
 }
