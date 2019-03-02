@@ -222,6 +222,7 @@ add_filter( 'woocommerce_checkout_fields' , 'remove_order_notes' );
 function remove_order_notes( $fields ) {
 		 unset($fields['order']['order_comments']);
 	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_country']);
 		 return $fields;
 		 
 }

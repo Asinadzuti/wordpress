@@ -1,0 +1,4 @@
+2019-03-02T08:41:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-seo\admin\class-admin-asset-manager.php on line 11
+
+2019-03-02T09:45:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\admin\helper\class-wc-helper-compat.php on line 2
+
