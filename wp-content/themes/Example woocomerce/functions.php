@@ -145,7 +145,7 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
+require get_template_directory() . '/inc/widget-areas.php';
 /**
  * Load WooCommerce compatibility file.
  */
@@ -160,7 +160,9 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/woocommerce/includes/wc-functions-cart.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-single.php';
 	require get_template_directory() . '/woocommerce/includes/wc-function-archive.php';
-    require get_template_directory() . '/woocommerce/includes/wc-functions-checkout.php';
+	require get_template_directory() . '/woocommerce/includes/wc-functions-checkout.php';
+	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
+
 }
 
 /*
