@@ -177,7 +177,8 @@ li {
 }
 
 ul.products li.product {
-    margin-right: 1.2% !important;
+    margin-right: 5.2% !important;
+    border: 1px solid #e2e2e2;
 }
 
 ul.products {
