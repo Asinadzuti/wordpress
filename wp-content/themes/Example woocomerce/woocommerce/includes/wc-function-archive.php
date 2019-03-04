@@ -31,16 +31,6 @@ function estore_archive_content_wrapper_end(){
 	</div>
 	<?php
 }
-remove_filter( 'woocommerce_product_loop_start', 'woocommerce_maybe_show_product_subcategories');
-add_action( 'woocommerce_before_shop_loop', 'estore_out_subcategories',40 );
-function estore_out_subcategories() {
-	$cat_out = woocommerce_output_product_categories( array(
-		'before'    => '<ul class="w3ls_mobiles_grid_right_grid2">',
-		'after'     => '<div class="clearfix"></div></ul>',
-		'parent_id' => is_product_category() ? get_queried_object_id() : 0,
-	) );
-	return $cat_out;
-}
 add_filter( 'product_cat_class', 'estore_add_classes_product_cat' );
 function estore_add_classes_product_cat($classes){
 	$classes[] = 'col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles';
@@ -114,7 +104,6 @@ function estore_loop_product_div_image_close(){
 		}
 	}
 	?>
-	<div class="w3_hs_bottom w3_hs_bottom_sub1">
 		<?php woocommerce_show_product_loop_sale_flash(); ?>
 		<ul>
 			<li>
@@ -123,7 +112,6 @@ function estore_loop_product_div_image_close(){
 				</a>
 			</li>
 		</ul>
-	</div>
 	</div>
 	<?php
 }
@@ -158,20 +146,13 @@ remove_filter( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering',30
 add_action( 'woocommerce_before_shop_loop', 'estore_wrapper_count_and_ordering_start', 15 );
 function estore_wrapper_count_and_ordering_start(){
 	?>
-	<div class="w3ls_mobiles_grid_right_grid2">
-	<div class="w3ls_mobiles_grid_right_grid2_left">
 		<?php woocommerce_result_count();?>
-	</div>
 	<?php
 }
 
 add_action( 'woocommerce_before_shop_loop', 'estore_wrapper_count_and_ordering_close', 35 );
 function estore_wrapper_count_and_ordering_close(){
 	?>
-	<div class="w3ls_mobiles_grid_right_grid2_right">
 		<?php woocommerce_catalog_ordering();?>
-	</div>
-	<div class="clearfix"></div>
-	</div>
 	<?php
 }
