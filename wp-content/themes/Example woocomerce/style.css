@@ -465,17 +465,10 @@ td.invert-image a img {
     color: #333333;
 }
 
-.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
-    background-color: #d5d5d5;
-    border-color: #d5d5d5;
-    color: #333333;
-    line-height: 30px;
-}
-
 .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
     position: absolute;
-    top: 3%;
-    right: 8%;
+    top: 72%;
+    left: 8%;
     display: block;
     height: 35px;
     width: 35px;
@@ -618,12 +611,6 @@ button.single_add_to_cart_button:hover {
     float: left;
     width: 100%;
     clear: none;
-}
-
-.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
-    position: absolute;
-    top: 14em;
-    right: -205px;
 }
 
 .woocommerce ul.products li.product .onsale {
