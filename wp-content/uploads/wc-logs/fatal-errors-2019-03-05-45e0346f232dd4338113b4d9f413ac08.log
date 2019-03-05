@@ -1,0 +1,2 @@
+2019-03-05T10:40:23+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Woocommerce/inc/custom-header.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Example woocomerce\functions.php on line 125
+

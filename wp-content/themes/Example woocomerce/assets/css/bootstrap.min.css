@@ -9031,5 +9031,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
+.single-section{
+    flex: none!important;
+    max-width: none!important;
+}
 /*# sourceMappingURL=bootstrap.css.map */

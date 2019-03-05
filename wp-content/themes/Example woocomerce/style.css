@@ -1103,5 +1103,8 @@ font-size: 13px;
 font-weight: 400;
 text-transform: uppercase;
 padding: 10px;
-
+}
+.single-section{
+    flex: none!important;
+    max-width: none!important;
 }
