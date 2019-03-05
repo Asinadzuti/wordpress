@@ -182,6 +182,7 @@ ul.products li.product {
     border: 1px solid #e2e2e2;
     width: 262px;
     margin-right: 13px;
+    margin-bottom: 30px;
 }
 
 ul.products {
@@ -952,7 +953,7 @@ hr {
 }
 
 .woocommerce .star-rating {
-    left: 38%;
+    left: auto;
 }
 
 .woocommerce ul.products li.product .price {
@@ -965,6 +966,7 @@ hr {
     background-color: #000000;
     float: right;
     margin-right: 10px;
+    margin-bottom: 12px;
 }
 
 .woocommerce ul.products li.product .price del {
@@ -1086,4 +1088,19 @@ ul.products li.product img {
     width: 262px !important;
     height: 260px !important;
     margin: 0 !important;
+}
+.product h5{
+    color: #2a2a2a;
+font-family: "Poppins";
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+}
+.add_to_cart_button{
+    color: #ffffff;
+font-family: "Poppins";
+font-size: 13px;
+font-weight: 400;
+text-transform: uppercase;
+padding: 10px;
 }

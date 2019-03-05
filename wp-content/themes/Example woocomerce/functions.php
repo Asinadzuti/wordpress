@@ -229,3 +229,12 @@ function remove_order_notes( $fields ) {
 		 
 }
 add_filter('woocommerce_enable_order_notes_field', '__return_false');
+// always display rating stars
+function filter_woocommerce_product_get_rating_html( $rating_html, $rating, $count ) { 
+	$rating_html  = '<div class="star-rating">';
+	$rating_html .= wc_get_star_rating_html( $rating, $count );
+	$rating_html .= '</div>';
+
+	return $rating_html; 
+};  
+add_filter( 'woocommerce_product_get_rating_html', 'filter_woocommerce_product_get_rating_html', 10, 3 ); 
