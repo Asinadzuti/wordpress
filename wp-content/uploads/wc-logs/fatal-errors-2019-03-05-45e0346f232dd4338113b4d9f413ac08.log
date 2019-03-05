@@ -1,2 +1,8 @@
 2019-03-05T10:40:23+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Woocommerce/inc/custom-header.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Example woocomerce\functions.php on line 125
 
+2019-03-05T14:52:05+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-seo\inc\sitemaps\class-post-type-sitemap-provider.php on line 11
+
+2019-03-05T14:52:08+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-services\classes\class-wc-connect-taxjar-integration.php on line 3
+
+2019-03-05T14:52:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\bookmark.php on line 16
+

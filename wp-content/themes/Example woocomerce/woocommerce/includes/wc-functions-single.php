@@ -11,7 +11,6 @@ add_action( 'woocommerce_before_single_product', 'estore_wrapper_product_start',
 function estore_wrapper_product_start() {
 	?>
 	<div class="single-section">
-		<div class="container">
 	<?php
 }
 
@@ -19,7 +18,6 @@ add_action( 'woocommerce_after_single_product', 'estore_wrapper_product_end', 5 
 function estore_wrapper_product_end() {
 	?>
 		</div>
-	</div>
 	<?php
 }
 
