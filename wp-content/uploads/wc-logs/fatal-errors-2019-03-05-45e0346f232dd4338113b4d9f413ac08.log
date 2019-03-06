@@ -6,3 +6,11 @@
 
 2019-03-05T14:52:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\bookmark.php on line 16
 
+2019-03-05T23:18:43+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 16
+
+2019-03-05T23:18:44+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\admin\reports\class-wc-admin-report.php on line 3
+
+2019-03-05T23:39:03+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) in C:\xampp\htdocs\wordpress\wp-content\themes\Example woocomerce\functions.php on line 260
+
+2019-03-05T23:41:41+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) in C:\xampp\htdocs\wordpress\wp-content\themes\Example woocomerce\functions.php on line 260
+

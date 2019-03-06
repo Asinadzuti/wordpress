@@ -120,13 +120,21 @@ function estore_resize_gravatar() {
 	return '80';
 }
 
-remove_filter( 'woocommerce_review_before_comment_meta', 'woocommerce_review_display_rating', 10 );
 add_action( 'woocommerce_review_after_comment_text', 'woocommerce_review_display_rating', 10 );
-
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 30 );
 
 add_action( 'woocommerce_output_related_products_args', function ($arg ){
 	$arg['posts_per_page'] = 4;
 	return $arg;
 } );
 
-
+//* Add stock status to archive pages
+function envy_stock_catalog() {
+	global $product;
+	if ( $product->is_in_stock() ) {
+			echo '<div class="stock" >' . $product->get_stock_quantity() . __( 'Availability: in stock', 'envy' ) . '</div>';
+	} else {
+			echo '<div class="out-of-stock" >' . __( 'out of stock', 'envy' ) . '</div>';
+	}
+}
+add_action( 'woocommerce_single_product_summary', 'envy_stock_catalog',40 );

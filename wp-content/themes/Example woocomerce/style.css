@@ -977,7 +977,9 @@ ul.products li.product .button {
     font-size: 83%;
     background-color: #000000;
     color: #fff;
-    top: 5px;
+    width: 134px;
+height: 40px;
+border-radius: 0;
 }
 
 #wtcpl_tabs_container .each_cat ul.products li {
@@ -1100,7 +1102,9 @@ padding: 10px;
     width: 436px;
 }
 .qty{
-    width: 30px
+    width: 73px;
+    text-align: center;
+    height: 37px;
 }
 .wc-tabs span{
     border: 1px solid #c2c2c2;
@@ -1113,4 +1117,7 @@ padding: 10px;
 }
 .wc-tabs{
     margin-top: 20px;
+}
+.quantity{
+    display: inline;
 }
