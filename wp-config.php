@@ -1,4 +1,4 @@
-<?php
+ч<?php
 /**
  * Основные параметры WordPress.
  *
@@ -20,7 +20,7 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define('DB_NAME', 'woocomerce');
+define('DB_NAME', 'rememberall');
 
 /** Имя пользователя MySQL */
 define('DB_USER', 'root');
