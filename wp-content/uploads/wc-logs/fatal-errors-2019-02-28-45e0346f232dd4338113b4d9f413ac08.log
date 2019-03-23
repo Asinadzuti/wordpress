@@ -1,8 +1,0 @@
-2019-02-28T17:04:14+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Lesson_09.4/woocommerce/includes/wc-functions.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.4\functions.php on line 79
-
-2019-02-28T17:04:18+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Lesson_09.4/woocommerce/includes/wc-functions.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.4\functions.php on line 79
-
-2019-02-28T17:04:30+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Lesson_09.4/woocommerce/includes/wc-functions.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.4\functions.php on line 79
-
-2019-02-28T17:04:42+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/Lesson_09.4/woocommerce/includes/wc-functions.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\Lesson_09.4\functions.php on line 79
-
