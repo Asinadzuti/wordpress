@@ -63,5 +63,6 @@
 				</div>
 			</header><!-- #masthead -->
   </div>
+  <?php echo do_shortcode("[rev_slider alias=agency]"); ?>
  </div>
 		<div id="content" class="site-content">
