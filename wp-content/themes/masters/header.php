@@ -43,10 +43,7 @@
 									rel="home"><?php bloginfo( 'name' ); ?></a></p>
 							<?php
 			endif;
-			if ( $master_description || is_customize_preview() ) :
 				?>
-							<?php endif; ?>
-
 						</div><!-- .site-branding -->
 					</div>
 					<div class="col-lg-7">
