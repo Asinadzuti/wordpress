@@ -2480,7 +2480,7 @@ ob_end_clean();
 			return false;
 		}
 
-		if($version_info == 'invalid'){
+		if($version_info == 'valid'){
 			update_option('revslider-valid', 'true');
 			update_option('revslider-code', $data['code']);
 			//update_option('revslider-email', $data['email']);
@@ -2855,11 +2855,11 @@ ob_end_clean();
 											break;
 											case 'youtube':
 												$infos['id'] = 'external';
-												if(!isset($layer['video_data']->id) || empty($layer['video_data']->id)) continue;
+												if(!isset($layer['video_data']->id) || empty($layer['video_data']->id)) continue 3;
 												$used_videos[$do_ssl.'//www.youtube.com/watch?v='.$layer['video_data']->id] = $infos;
 											break;
 											case 'vimeo':
-												if(!isset($layer['video_data']->id) || empty($layer['video_data']->id)) continue;
+												if(!isset($layer['video_data']->id) || empty($layer['video_data']->id)) continue 3;
 												$infos['id'] = 'external';
 												$used_videos[$do_ssl.'//vimeo.com/'.$layer['video_data']->id] = $infos;
 											break;

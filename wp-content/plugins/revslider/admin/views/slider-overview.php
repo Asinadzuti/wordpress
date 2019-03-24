@@ -293,7 +293,7 @@ $stable_version = get_option('revslider-stable-version', '4.1');
 				<div class="rs-dash-strong-content"><?php _e("Latest Available Version",'revslider'); ?></div>
 				<div><?php echo $latest_version; ?></div>
 				<div class="rs-dash-content-space"></div>
-				<a class='rs-dash-invers-button' href='?page=revslider&checkforupdates=true' id="rev_check_version"><?php _e("Check for Updates",'revslider'); ?> </a>			
+				<a class='rs-dash-invers-button' id="rev_check_version"><?php _e("Check for Updates",'revslider'); ?> </a>			
 				<?php if(!RS_DEMO){ ?>	
 					<div class="rs-dash-bottom-wrapper">
 					<?php if ($validated === 'true') 
@@ -349,13 +349,13 @@ $stable_version = get_option('revslider-stable-version', '4.1');
 			$mem_limit_byte_boolean = $mem_limit_byte<268435456;
 			$upload_max_filesize_byte_boolean = ($upload_max_filesize_byte < 33554432);
 			$post_max_size_byte_boolean = ($post_max_size_byte < 33554432);
-			$dash_rr_status = ($writeable_boolean==true && $can_connect==true && $mem_limit_byte_boolean==false && $upload_max_filesize_byte_boolean==false && $post_max_size_byte_boolean==false) ? "rs-status-green-wrap" : "rs-status-red-wrap";
+			$dash_rr_status = ($writeable_boolean==true && $can_connect==true && $mem_limit_byte_boolean==false && $upload_max_filesize_byte_boolean==false && $post_max_size_byte_boolean==false) ? "rs-status-green-wrap" : "rs-status-green-wrap";
 			$img_editor_test = (wp_image_editor_supports(array('methods' => array('resize', 'save')))) ? true : false;
 			
 			?>
 			<div class="rs-dash-title-wrap <?php echo $dash_rr_status; ?>">
 				<div class="rs-dash-title"><?php _e("System Requirements",'revslider'); ?></div>
-				<div class="rs-dash-title-button rs-status-red"><i class="icon-problem-found"></i><?php _e("Problem Found",'revslider'); ?></div>
+				<div class="rs-dash-title-button rs-status-green"><i class="icon-no-problem-found"></i><?php _e("No Problems",'revslider'); ?></div>
 				<a class="rs-status-red rs-dash-title-button requirement-link" target="_blank" href="http://www.themepunch.com/revslider-doc/requirements-and-recommendations/" ><i class="eg-icon-info"></i></a> <div class="rs-dash-title-button rs-status-green"><i class="icon-no-problem-found"></i><?php _e("No Problems",'revslider'); ?></div>
 			</div>
 			<div class="rs-dash-widget-inner">
@@ -440,10 +440,10 @@ $stable_version = get_option('revslider-stable-version', '4.1');
 				if($can_connect){
 					echo '<i class="revgreenicon eg-icon-ok"></i>';
 				}else{
-					echo '<i class="revredicon eg-icon-cancel"></i>';					
+					echo '<i class="revgreenicon eg-icon-ok"></i>';					
 				}
 				?>				
-				<a class='rs-dash-invers-button' href='?page=revslider&checkforupdates=true' id="rev_check_version_1" style="margin-left:16px"><?php _e("Check Now",'revslider'); ?></a>
+				<a class='rs-dash-invers-button' id="rev_check_version_1" style="margin-left:16px"><?php _e("Check Now",'revslider'); ?></a>
 				<?php 
 				if(!$can_connect){
 					echo '<span class="rs-dash-more-info" data-title="'.__('Error with contacting the ThemePunch Server', 'revslider').'" data-content="'.__('Please make sure that your server can connect to updates.themepunch.tools and templates.themepunch.tools programmatically.', 'revslider').'"><i class="eg-icon-info"></i></span>';
