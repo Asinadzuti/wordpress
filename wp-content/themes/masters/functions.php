@@ -159,3 +159,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_action( 'wp_enqueue_scripts', 'estore_scripts' );
+function estore_scripts() {
+	wp_enqueue_style('bootstrap.min-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array() , 'all');
+	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/fontawesome.min.css', array() , 'all');
+	wp_enqueue_style('all', get_template_directory_uri() . '/assets/css/all.min.css', array() , 'all');
+
+}
+
+add_action( 'wp_enqueue_scripts', 'estore_styles' );
+function estore_styles() {
+	wp_enqueue_script('bootstrap-script' , get_template_directory_uri() . '/assets/js/bootstrap-3.1.1.min.js', array('jquery'), true);
+}
