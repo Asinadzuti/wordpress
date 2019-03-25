@@ -58,6 +58,9 @@ get_header();
 				<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
 			</div>
 		</div>
+		
+		<div class="vert_l">
+		</div>
 		<div class="col-lg-4">
 			<div class="panel text-center">
 				<img src="" alt="">
@@ -71,6 +74,9 @@ get_header();
 				<h3>WEB DESIGN & DEVELOPMENT</h3>
 				<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
 			</div>
+		</div>
+		<div class="vert_r">
+			
 		</div>
 		<hr>
 		<div class="col-lg-4">

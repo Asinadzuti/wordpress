@@ -12,12 +12,24 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
+<div class="container">
+	
+<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			asd
+			<div class="row">
+				<div class="col-lg-4">
+				<?php dynamic_sidebar( 'Information' ); ?>
+				</div>
+				<div class="col-lg-4">
+				<?php dynamic_sidebar( 'studio' ); ?>
+				</div>
+				<div class="col-lg-4">
+				<?php dynamic_sidebar( 'touch' ); ?>
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+</div>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

@@ -124,4 +124,18 @@ li {
   margin: 0;
   padding: 0;
 }
+
+.vert_l {
+  border-left: 1px solid black;
+  height: 500px;
+  position: absolute;
+  left: 560px;
+}
+
+.vert_r {
+  border-left: 1px solid black;
+  height: 500px;
+  position: absolute;
+  right: 560px;
+}
 /*# sourceMappingURL=style.css.map */
