@@ -159,3 +159,61 @@ require get_template_directory() . '/inc/widget-areas.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+// Carbon fields
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+function crb_attach_theme_options() {
+    Container::make( 'theme_options', __( 'Theme Options' ) )
+		->add_tab( __( 'Social' ), array(
+			Field::make( 'text', 'crb_email', __( 'Notification Email' ) ),
+			Field::make( 'text', 'crb_phone', __( 'Phone Number' ) ),
+			
+	) )	
+	->add_tab( __( 'Gallery' ), array(
+		Field::make( 'media_gallery', 'crb_media_gallery', __( 'Media Gallery' ) )
+    ->set_type( array( 'image' ) )
+
+) );
+Container::make( 'post_meta', 'Custom Data' )
+    ->where( 'post_id', '=', get_option( 'page_on_front' ) )
+    ->add_tab( __( 'Profile' ), array(
+			Field::make( 'image', 'crb_image', __( 'Image' ) )
+			->set_width(50),
+			Field::make( 'text', 'crb_last_name', __( 'First Name' ) )
+			->set_width(25),
+			Field::make( 'text', 'crb_position', __( 'Position' ) )
+			->set_width(25),
+			Field::make( 'image', 'crb_image2', __( 'Image' ) )
+			->set_width(50),
+			Field::make( 'text', 'crb_last_name2', __( 'First Name' ) )
+			->set_width(25),
+			Field::make( 'text', 'crb_position2', __( 'Position' ) )
+			->set_width(25),
+			Field::make( 'image', 'crb_image3', __( 'Image' ) )
+			->set_width(50),
+			Field::make( 'text', 'crb_last_name3', __( 'First Name' ) )
+			->set_width(25),
+			Field::make( 'text', 'crb_position3', __( 'Position' ) )
+			->set_width(25),
+			Field::make( 'image', 'crb_image4', __( 'Image' ) )
+			->set_width(50),
+			Field::make( 'text', 'crb_last_name4', __( 'First Name' ) )
+			->set_width(25),
+			Field::make( 'text', 'crb_position4', __( 'Position' ) )
+			->set_width(25),
+	) )
+	->add_tab( __( 'Gallery' ), array(
+		Field::make( 'media_gallery', 'crb_media_gallery', __( 'Media Gallery' ) )
+    ->set_type( array( 'image' ) )
+
+
+	));
+}
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+    require_once( 'vendor/autoload.php' );
+    \Carbon_Fields\Carbon_Fields::boot();
+}
