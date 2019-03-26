@@ -111,49 +111,42 @@ get_header();
 			</div>
 		</div>
 	</div>
-	<?php
-						$image_id = carbon_get_post_meta( get_the_ID(), 'crb_image' );
-						$image_id = carbon_get_post_meta( get_the_ID(), 'crb_image2' );
-						$image_id = carbon_get_post_meta( get_the_ID(), 'crb_image3' );
-						$image_id = carbon_get_post_meta( get_the_ID(), 'crb_image4' );
-            $image_url = wp_get_attachment_image_url( $image_id, 'full' );
-        ?>
 	<div class="row">
 		<div class="col-lg-3">
 			<div class="card">
-				<img class="card-img-top" src="<?php echo $image_url ?>">
+				<img class="card-img-top" src="">
 				<div class="card-body">
-					<h5 class="card-title"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_last_name'); ?></h5>
-					<p class="card-text"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_position'); ?></p>
+					<h5 class="card-title"></h5>
+					<p class="card-text"></p>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-3">
 			<div class="card">
-				<img class="card-img-top" src="<?php echo $image_url ?>">
+				<img class="card-img-top" src="">
 				<div class="card-body">
 					<h5 class="card-title">
-						<?php echo carbon_get_post_meta(get_the_ID(), 'crb_last_name2'); ?></h5>
+						</h5>
 					<p class="card-text">
-						<?php echo carbon_get_post_meta(get_the_ID(), 'crb_position2'); ?></p>
+						</p>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-3">
 			<div class="card">
-				<img class="card-img-top" src="<?php echo $image_url ?>">
+				<img class="card-img-top" src="">
 				<div class="card-body">
-					<h5 class="card-title"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_last_name3'); ?></h5>
-					<p class="card-text"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_position3'); ?></p>
+					<h5 class="card-title"></h5>
+					<p class="card-text"></p>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-3">
 			<div class="card">
-				<img class="card-img-top" src="<?php echo $image_url ?>">
+				<img class="card-img-top" src="">
 				<div class="card-body">
-					<h5 class="card-title"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_last_name4'); ?></h5>
-					<p class="card-text"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_position4'); ?></p>
+					<h5 class="card-title"></h5>
+					<p class="card-text"></p>
 				</div>
 			</div>
 		</div>
@@ -176,6 +169,7 @@ get_header();
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="gallery">
+				
 				<button class="learn">
 					LOAD MORE
 				</button>
