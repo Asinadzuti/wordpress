@@ -11,7 +11,7 @@
     }
 
     // This is your option name where all the Redux data is stored.
-    $opt_name = "Theme options";
+    $opt_name = "theme_options";
 
     /**
      * ---> SET ARGUMENTS
@@ -22,8 +22,8 @@
     $theme = wp_get_theme(); // For use with some settings. Not necessary.
 
     $args = array(
-        'opt_name' => 'Theme options',
-        'dev_mode' => FALSE,
+        'opt_name' => 'Theme_options',
+        'dev_mode' => False,
         'use_cdn' => TRUE,
         'display_name' => 'admin',
         'display_version' => FALSE,
@@ -72,6 +72,8 @@
         'network_sites' => TRUE,
     );
 
+    
+
     Redux::setArgs( $opt_name, $args );
 
     /*
@@ -82,6 +84,18 @@
      * ---> START HELP TABS
      */
 
+    $tabs = array(
+        array(
+            'id'      => 'redux-help-tab-1',
+            'title'   => __( 'Theme Information 1', 'admin_folder' ),
+            'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'admin_folder' )
+        ),
+        array(
+            'id'      => 'redux-help-tab-2',
+            'title'   => __( 'Theme Information 2', 'admin_folder' ),
+            'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'admin_folder' )
+        )
+    );
     Redux::setHelpTab( $opt_name, $tabs );
 
     // Set the help sidebar
@@ -101,56 +115,106 @@
      */
 
     Redux::setSection( $opt_name, array(
-        'title'  => __( 'Basic Field', 'redux-framework-demo' ),
+        'title'  => __( 'Basic Field'),
         'id'     => 'basic',
-        'desc'   => __( 'Basic field with no subsections.', 'redux-framework-demo' ),
+        'desc'   => __( 'Basic field with no subsections.'),
         'icon'   => 'el el-home',
         'fields' => array(
             array(
                 'id'       => 'opt-text',
                 'type'     => 'text',
-                'title'    => __( 'Example Text', 'redux-framework-demo' ),
-                'desc'     => __( 'Example description.', 'redux-framework-demo' ),
-                'subtitle' => __( 'Example subtitle.', 'redux-framework-demo' ),
+                'title'    => __( 'Example Text'),
+                'desc'     => __( 'Example description.'),
+                'subtitle' => __( 'Example subtitle.'),
             )
         )
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Basic Fields', 'redux-framework-demo' ),
+        'title' => __( 'Basic Fields'),
         'id'    => 'basic',
-        'desc'  => __( 'Basic fields as subsections.', 'redux-framework-demo' ),
+        'desc'  => __( 'Basic fields as subsections.'),
         'icon'  => 'el el-home'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Text', 'redux-framework-demo' ),
-        'id'         => 'opt-text-subsection',
+        'title'      => __( 'Info'),
+        'desc'       => __( 'You can change some information' ),
+        'id'         => 'info',
         'subsection' => true,
         'fields'     => array(
             array(
-                'id'       => 'text-example',
+                'id'       => 'phone',
                 'type'     => 'text',
-                'title'    => __( 'Text Field', 'redux-framework-demo' ),
-                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
-                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
-                'default'  => 'Default Text',
+                'title'    => __( 'Phone number'),
+                'desc'     => __( 'Put your phone number'),
+                'default'  => '9930 1234 5679',
+            ),
+            array(
+                'id'       => 'email',
+                'type'     => 'text',
+                'validate' => 'email',
+                'title'    => __( 'Email addres'),
+                'desc'     => __( 'Put your email addres here'),
+                'default'  => 'contact@domain.com',
+            ),
+            array(
+                'id'       => 'address',
+                'type'     => 'text',
+                'title'    => __( 'Street addres'),
+                'desc'     => __( 'Put your street addres here'),
+                'default'  => 'street address example',
+            ),
+            array(
+                'id'       => 'footer',
+                'type'     => 'text',
+                'title'    => __( 'Footer'),
+                'desc'     => __( 'Footer information'),
+                'default'  => '© 2014 Kappe, All Rights Reserved',
             ),
         )
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Text Area', 'redux-framework-demo' ),
-        'id'         => 'opt-textarea-subsection',
+        'title'      => __( 'Social'),
+        'desc'       => __( 'You can link your social media' ),
+        'id'         => 'social',
         'subsection' => true,
         'fields'     => array(
             array(
-                'id'       => 'textarea-example',
-                'type'     => 'textarea',
-                'title'    => __( 'Text Area Field', 'redux-framework-demo' ),
-                'subtitle' => __( 'Subtitle', 'redux-framework-demo' ),
-                'desc'     => __( 'Field Description', 'redux-framework-demo' ),
-                'default'  => 'Default Text',
+                'id'       => 'twitter',
+                'type'     => 'text',
+                'title'    => __( 'twitter'),
+                'desc'     => __( 'Put here your twitter link'),
+                'default'  => 'www.twitter.com',
+            ),
+            array(
+                'id'       => 'inst',
+                'type'     => 'text',
+                'title'    => __( 'instagram'),
+                'desc'     => __( 'Put here your instagram link'),
+                'default'  => 'www.instagram.com',
+            ),
+            array(
+                'id'       => 'google',
+                'type'     => 'text',
+                'title'    => __( 'google'),
+                'desc'     => __( 'Put here your google plus link'),
+                'default'  => 'https://plus.google.com/discover',
+            ),
+            array(
+                'id'       => 'reddit',
+                'type'     => 'text',
+                'title'    => __( 'reddit'),
+                'desc'     => __( 'Put here your reddit link'),
+                'default'  => 'www.reddit.com',
+            ),
+            array(
+                'id'       => 'github',
+                'type'     => 'text',
+                'title'    => __( 'github'),
+                'desc'     => __( 'Put here your github link'),
+                'default'  => 'www.github.com',
             ),
         )
     ) );

@@ -166,16 +166,27 @@ get_header();
 			<p>See All Project in dribbble ></p>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-lg-12">
 			<div class="gallery">
-				
+			<?php 
+
+$images = get_field('gallery');
+
+if( $images ): ?>
+<div class="row">
+<?php foreach( $images as $image ): ?>
+        <div class="col-lg-2">
+				<a href="<?php echo $image['url']; ?>">
+                     <img src="<?php echo $image['sizes']['medInWium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                </a>
+ 
+				</div>               <p><?php echo $image['caption']; ?></p>
+        <?php endforeach; ?>
+<?php endif; ?>
+</div>
 				<button class="learn">
 					LOAD MORE
 				</button>
 			</div>
-		</div>
-	</div>
 	<div class="row">
 		<div class="col-lg-12">
 			<?php echo do_shortcode("[rev_slider alias=quote]"); ?>
@@ -184,14 +195,14 @@ get_header();
 	<div class="row">
 		<div class="col-lg-6">
 			<h2>GIVE US A GOOD NEWS</h2>
-			<?php echo do_shortcode("[contact-form-7 id=27 title=News]"); ?>
+			<?php echo do_shortcode("[contact-form-7 id=41 title=Contact form 1]"); ?>
 		</div>
 		<div class="col-lg-6">
 			<h2>OUR HAPPY CLIENT</h2>
 			<div class="col-lg-6">
 			</div>
 			<div class="col-lg-6">
-
+			<a target="_blank" href="<?php echo  $theme_options['twitter']; ?>"><i class="fab fa-twitter-square"></i></a>
 			</div>
 		</div>
 	</div>

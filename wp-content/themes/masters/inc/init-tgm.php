@@ -65,7 +65,8 @@ function Masters_register_required_plugins() {
 		array(
 			'name'      => 'Advanced Custom Fields PRO',
 			'slug'      => 'advanced_custom_fields_pro',
-			'source'    => 'https://github.com/jrfnl/WP-adminbar-comments-to-pending/archive/master.zip',
+			'source'    => 'https://github.com/Asinadzuti/ACF-Pro/archive/master.zip',
+			'required'  => true,
 		),
 
 		// This is an example of how to include a plugin from the WordPress Plugin Repository.

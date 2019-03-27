@@ -89,7 +89,7 @@ class ACF {
 			
 			// options
 			'show_admin'				=> true,
-			'show_updates'				=> true,
+			'show_updates'				=> false,
 			'stripslashes'				=> false,
 			'local'						=> true,
 			'json'						=> true,
