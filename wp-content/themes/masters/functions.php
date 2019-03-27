@@ -152,6 +152,9 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 require get_template_directory() . '/inc/widget-areas.php';
+
+// TGM
+require get_template_directory() . '/inc/init-tgm.php';
 // Redux 
 
 include_once get_template_directory() . '/admin/admin-init.php';
