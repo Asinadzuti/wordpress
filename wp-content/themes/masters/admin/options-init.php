@@ -23,7 +23,7 @@
 
     $args = array(
         'opt_name' => 'Theme options',
-        'dev_mode' => TRUE,
+        'dev_mode' => FALSE,
         'use_cdn' => TRUE,
         'display_name' => 'admin',
         'display_version' => FALSE,
@@ -33,7 +33,7 @@
         'intro_text' => 'You can edit content in the admin panel.',
         'footer_text' => 'All copyrights reserved',
         'menu_type' => 'menu',
-        'menu_title' => 'Primary menu',
+        'menu_title' => 'Theme options',
         'allow_sub_menu' => TRUE,
         'page_parent_post_type' => 'your_post_type',
         'customizer' => TRUE,
@@ -72,29 +72,6 @@
         'network_sites' => TRUE,
     );
 
-    // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
-    $args['share_icons'][] = array(
-        'url'   => 'https://github.com/ReduxFramework/ReduxFramework',
-        'title' => 'Visit us on GitHub',
-        'icon'  => 'el el-github'
-        //'img'   => '', // You can use icon OR img. IMG needs to be a full URL.
-    );
-    $args['share_icons'][] = array(
-        'url'   => 'https://www.facebook.com/pages/Redux-Framework/243141545850368',
-        'title' => 'Like us on Facebook',
-        'icon'  => 'el el-facebook'
-    );
-    $args['share_icons'][] = array(
-        'url'   => 'http://twitter.com/reduxframework',
-        'title' => 'Follow us on Twitter',
-        'icon'  => 'el el-twitter'
-    );
-    $args['share_icons'][] = array(
-        'url'   => 'http://www.linkedin.com/company/redux-framework',
-        'title' => 'Find us on LinkedIn',
-        'icon'  => 'el el-linkedin'
-    );
-
     Redux::setArgs( $opt_name, $args );
 
     /*
@@ -105,18 +82,6 @@
      * ---> START HELP TABS
      */
 
-    $tabs = array(
-        array(
-            'id'      => 'redux-help-tab-1',
-            'title'   => __( 'Theme Information 1', 'admin_folder' ),
-            'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'admin_folder' )
-        ),
-        array(
-            'id'      => 'redux-help-tab-2',
-            'title'   => __( 'Theme Information 2', 'admin_folder' ),
-            'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'admin_folder' )
-        )
-    );
     Redux::setHelpTab( $opt_name, $tabs );
 
     // Set the help sidebar
@@ -160,7 +125,6 @@
 
     Redux::setSection( $opt_name, array(
         'title'      => __( 'Text', 'redux-framework-demo' ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="http://docs.reduxframework.com/core/fields/text/" target="_blank">http://docs.reduxframework.com/core/fields/text/</a>',
         'id'         => 'opt-text-subsection',
         'subsection' => true,
         'fields'     => array(
@@ -177,7 +141,6 @@
 
     Redux::setSection( $opt_name, array(
         'title'      => __( 'Text Area', 'redux-framework-demo' ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="http://docs.reduxframework.com/core/fields/textarea/" target="_blank">http://docs.reduxframework.com/core/fields/textarea/</a>',
         'id'         => 'opt-textarea-subsection',
         'subsection' => true,
         'fields'     => array(
