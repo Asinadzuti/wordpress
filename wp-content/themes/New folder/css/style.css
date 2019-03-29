@@ -141,7 +141,7 @@ input, textarea, select, label {
   margin: 50px auto;
   padding: 5px;
   width: 320px;
-  background: #eef5f7;
+  background: #F6FFF0;
   border: 1px solid #cfd5da;
   border-bottom-color: #ccd1d6;
   border-radius: 3px;
@@ -180,7 +180,7 @@ input, textarea, select, label {
 
 .contact-inner:after {
   margin-top: -1px;
-  border-top-color: #eef5f7;
+  border-top-color: #F6FFF0;
 }
 
 .contact:after {
@@ -192,7 +192,7 @@ input, textarea, select, label {
   overflow: hidden;
   margin-bottom: 20px;
   padding: 5px;
-  background: #eef7f9;
+  background: #F6FFF0;
   border-radius: 2px;
 }
 .contact-input > input, .contact-input > textarea {
