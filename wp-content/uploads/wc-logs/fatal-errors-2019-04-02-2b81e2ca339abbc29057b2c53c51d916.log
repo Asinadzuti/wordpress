@@ -6,3 +6,5 @@
 
 2019-04-02T10:03:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
 
+2019-04-02T19:11:40+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\class-wp-filesystem-direct.php on line 73
+
