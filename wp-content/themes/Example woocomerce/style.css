@@ -175,13 +175,13 @@ h5 {
 ul.products li.product {
     margin: 0;
     padding: 0;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #e2e2e2!important;
     width: 262px;
     margin-right: 12px;
     margin-bottom: 30px;
     display: inline-block;
 }
-
+.porduct{}
 ul.products {
     display: flow-root !important;
 
@@ -467,20 +467,17 @@ td.invert-image a img {
 
 .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
     position: absolute;
-    top: 72%;
-    left: 8%;
+    bottom: 2em;
+    right: 2em;
     display: block;
-    height: 35px;
-    width: 35px;
-    border-radius: 3px;
     z-index: 99;
-    text-align: center
 }
-
 .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger img {
     display: none !important;
 }
-
+.pswp__caption__center {
+   display: none;
+}
 .woocommerce div.product div.images .woocommerce-product-gallery__trigger:before {
     content: "";
     display: block;
@@ -618,10 +615,6 @@ button.single_add_to_cart_button:hover {
     right: 96px;
 }
 
-.woocommerce span.onsale {
-    background-color: #000000;
-}
-
 .woocommerce .woocommerce-product-rating {
     margin-bottom: 0;
 }
@@ -645,7 +638,7 @@ button.single_add_to_cart_button:hover {
     font-weight: 500;
     background-color: #363636;
     position: relative;
-    padding: 1px 4px 1px 4px;
+    padding: 1px 12px 1px 4px;
     left: 26px;
     top: 12px;
     border-radius: 50%;
@@ -758,6 +751,7 @@ input[type="search"] {
     background-color: #e8edf7;
     width: 555px;
     height: 195px;
+    margin-bottom: 30px;
 }
 
 .chair h6 {
@@ -951,6 +945,7 @@ hr {
     float: right;
     margin-right: 10px;
     margin-bottom: 12px;
+    
 }
 
 .woocommerce ul.products li.product .price del {
@@ -978,17 +973,13 @@ ul.products li.product .button {
     background-color: #000000;
     color: #fff;
     width: 134px;
-height: 40px;
-border-radius: 0;
+    height: 40px;
+    border-radius: 0;
 }
 
 #wtcpl_tabs_container .each_cat ul.products li {
     border: 1px solid #e2e2e2;
     box-shadow: none;
-}
-
-#wtcpl_tabs_container .each_cat ul.products li:hover .price ins {
-    background-color: #d58e32;
 }
 
 ul.products li.product img {
