@@ -29,36 +29,25 @@ get_header(); ?>
 					<div class="col-lg-3">
 						<div class="card_info">
 						<i class="fas fa-car-side"></i>
-							<h2>
-								Free Shipping
-								<span>all order</span>
-							</h2>
+						<h2><?php the_field('text1'); ?></h2>
 						</div>
 					</div>
 					<div class="col-lg-3">
 						<div class="card_info">
 						<i class="fas fa-headphones"></i>
-							<h2>
-								24/7 customer
-								<span>support</span>
-							</h2>
+						<h2><?php the_field('text2'); ?></h2>
 						</div>
 					</div>
 					<div class="col-lg-3">
 						<div class="card_info">
 						<i class="fas fa-arrow-left"></i>
-							<h2>
-								money back
-								<span>guaranteey</span>
-							</h2>
+						<h2><?php the_field('text3'); ?></h2>
 						</div>
 					</div>
 					<div class="col-lg-3">
 						<div class="card_info">
 						<i class="fas fa-bullhorn"></i>
-							<h2>MEMBER DISCOUNT
-								<span>first oredr</span>
-							</h2>
+						<h2><?php the_field('text4'); ?></h2>
 
 						</div>
 					</div>

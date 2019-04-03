@@ -146,6 +146,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 require get_template_directory() . '/inc/widget-areas.php';
+// Redux
+include_once get_template_directory() . '/admin/admin-init.php';
+
 /**
  * Load WooCommerce compatibility file.
  */

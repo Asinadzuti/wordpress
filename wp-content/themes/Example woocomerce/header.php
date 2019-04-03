@@ -33,8 +33,8 @@
 							<span>Help</span>
 						</div>
 						<div class="col-lg-6 text-right">
-							<i class="fa fa-user" aria-hidden="true"></i><span><?php echo do_shortcode("[ultimatemember form_id=357]"); ?></span>
-							<i class="fas fa-lock"></i><span><?php echo do_shortcode("[ultimatemember form_id=356]"); ?></span>
+							<i class="fa fa-user " aria-hidden="true"></i><span ><?php echo do_shortcode(" [xoo_el_action type=login change_to=logout]"); ?></span>
+							<i class="fas fa-lock"></i><span  ><?php echo do_shortcode("[xoo_el_action type=register change_to=myaccount]"); ?></span>
 						</div>
 					</div>
 					</div>
@@ -43,7 +43,9 @@
 				<div class="container">
 					<div class=" row">
 						<div class="col-lg-4  ">
-							<span class="number ">2300 - 3560 - 222</span>
+							<span class="number "><?php echo  $theme_options['phone']; ?></span>
+							<div class="contact-info">
+</div>	
 						</div>
 						<div class="col-lg-4 text-center">
 							<?php
