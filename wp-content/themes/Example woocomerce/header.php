@@ -33,8 +33,8 @@
 							<span>Help</span>
 						</div>
 						<div class="col-lg-6 text-right">
-							<i class="fa fa-user" aria-hidden="true"></i><span>Login</span>
-							<i class="fas fa-lock"></i><span>Registr</span>
+							<i class="fa fa-user" aria-hidden="true"></i><span><?php echo do_shortcode("[ultimatemember form_id=357]"); ?></span>
+							<i class="fas fa-lock"></i><span><?php echo do_shortcode("[ultimatemember form_id=356]"); ?></span>
 						</div>
 					</div>
 					</div>
