@@ -19,16 +19,15 @@ else {
 }
  wp_head();
 ?>
-<div class="container-fluid">
+<div class="container-fluid ">
 	<div class="row">
 		<div class="col-lg-12">
 			<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
 		</div>
 	</div>
 	<div class="view">
-		
 	<div class="row">
-			<div class="col-lg-4 text-right">
+			<div class="col-lg-4 text-right ">
 				<h2>men’s
 	lookbook</h2>
 	<p>Lorem ipsum dolor sit amet eras facilisis
@@ -37,7 +36,7 @@ else {
 	</p>
 	<button>view now</button>
 				</div>
-			<div class="col-lg-4 text-right">
+			<div class="col-lg-4 text-right ">
 			
 				<h2>women’s
 	lookbook</h2>
@@ -46,7 +45,7 @@ else {
 				<button>view now</button>
 				</div>
 		
-			<div class="col-lg-4 text-right">
+			<div class="col-lg-4 text-right ">
 	<h2>your
 	lookbook</h2>
 				<p>See an item you like and click the  button to add it to your lookbook where you can create your own perfect look.

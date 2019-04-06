@@ -6,13 +6,8 @@
  * Version: 1.0.0
   Description: Description */
 .no-gutters {
-  paddin: 0;
-  margin: 0;
-}
-
-.container-fluid {
-  padding: 0;
-  margin: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 a {
