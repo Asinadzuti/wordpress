@@ -23,6 +23,8 @@ get_header();
 		<div class="col-lg-6">
 			<div class="block-first">
 				<h2>OUR STORY</h2>
+				
+								<?php echo  $theme_options['phone']; ?>	
 				<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
 					lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
 					nibh vulputate cursus

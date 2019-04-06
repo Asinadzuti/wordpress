@@ -1,0 +1,248 @@
+/* Theme Name: ave
+ * Author: Underscores.me
+ * Author: asinadzuti
+ * Author URI: http://underscores.me/
+ * Description: Description
+ * Version: 1.0.0
+  Description: Description */
+.no-gutters {
+  paddin: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: none;
+  text-decoration: none;
+}
+
+p {
+  color: #8e8c8c;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #575153;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: upperca;
+}
+
+li {
+  list-style: none;
+  margin-left: -40px;
+}
+
+#primary-menu ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+#primary-menu ul li a {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.site-title {
+  margin-left: 100px;
+  padding-top: 40px;
+}
+
+.site-title a {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.preheader {
+  background-color: #333333;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.login span {
+  color: #999999;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.title {
+  background: url("assets/images/background.png") no-repeat;
+}
+
+.title h1 {
+  padding-top: 130px;
+  padding-bottom: 15px;
+}
+
+.title h3 {
+  padding-bottom: 130px;
+}
+
+.header-banner {
+  background: url("assets/images/poster.png") no-repeat;
+  width: 100%;
+  height: 890px;
+}
+
+.header-banner button {
+  position: absolute;
+  bottom: -400px;
+  padding: 15px;
+  right: 100px;
+  border: 2px solid #737373;
+  background-color: transpatent;
+  color: #454647;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#primary-menu {
+  padding-top: 40px;
+}
+
+.view {
+  margin-top: 50px;
+  background-color: #f8f8f8;
+  pding-bottom: 0;
+}
+
+.view h2 {
+  color: #575153;
+  font-size: 48px;
+  padding-left: 57px;
+  padding-right: 62px;
+  padding-top: 50px;
+}
+
+.view p {
+  padding-left: 200px;
+  padding-right: 62px;
+}
+
+.view button {
+  margin-right: 62px;
+  color: #454647;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #737373;
+  background-color: transparent;
+  padding: 9px;
+}
+
+#nav-holder {
+  background-color: #fff;
+}
+
+.wtcpl_category_nav li a:hover, .wtcpl_category_nav li a.active {
+  background-color: #ffffff;
+  color: #40d6d6;
+}
+
+.wtcpl_category_nav li a:link, .wtcpl_category_nav li a:visited, .wtcpl_category_nav li a:active {
+  background-color: #ffffff;
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.wtcpl_category_nav ul {
+  text-align: left;
+}
+
+.product_content {
+  background-color: #ffffff;
+  padding: 40px 0 27px 0;
+  margin-bottom: 30px;
+  min-height: 280px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.products {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+ul.products li.product .woocommerce-loop-product__title {
+  font-size: 1rem;
+  display: none;
+}
+
+ul.products li.product .price {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  color: #9a9a9a;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+ul.products li.product .button {
+  display: none;
+}
+
+#wtcpl_tabs_container .each_cat ul.products li {
+  background: #fff;
+  margin: 12px 5px;
+  padding: 8px;
+  -webkit-box-shadow: 0 0 0 0 #ccc;
+          box-shadow: 0 0 0 0 #ccc;
+}
+/*# sourceMappingURL=style.css.map */

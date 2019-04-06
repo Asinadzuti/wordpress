@@ -1,0 +1,560 @@
+2019-04-06T07:16:02+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\advanced_custom_fields_pro\pro\fields\class-acf-field-flexible-content.php on line 3
+
+2019-04-06T07:16:10+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+
+2019-04-06T07:20:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+
+2019-04-06T08:07:04+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:26:49+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:30:10+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\classes\debug_bar.php on line 8
+
+2019-04-06T08:30:49+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:31:33+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:31:55+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:33:28+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:35:04+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:38:43+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T08:41:54+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:09:49+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:11:19+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:11:49+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:12:50+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:17:34+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:17:48+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:18:03+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:18:42+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:19:38+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:20:44+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:22:23+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:22:33+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:23:26+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:24:13+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:24:15+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:24:33+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:24:35+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:26:19+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:27:40+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:28:53+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:29:15+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T09:30:59+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T12:40:28+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T12:44:27+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T12:50:14+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T12:54:34+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T12:59:01+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:00:10+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:00:44+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:01:42+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:02:32+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:02:46+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:04:36+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:05:56+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:07:17+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:07:41+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+
+2019-04-06T13:08:45+00:00 CRITICAL Uncaught Error: Call to undefined function estore_woocommerce_cart_link() in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): estore_woocommerce_cart_link_fragment(Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(179): apply_filters('woocommerce_add...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::get_refreshed_fragments('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(79): do_action('wc_ajax_get_ref...')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+# in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions-cart.php on line 18
+

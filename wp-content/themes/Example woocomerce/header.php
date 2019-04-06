@@ -43,10 +43,9 @@
 				<div class="container">
 					<div class=" row">
 						<div class="col-lg-4  ">
-							<span class="number "><?php echo  $theme_options['phone']; ?></span>
-							<div class="contact-info">
-</div>	
-						</div>
+							<span class="number ">
+								<?php echo  $theme_options['phone']; ?>		
+					</div>
 						<div class="col-lg-4 text-center">
 							<?php
 		the_custom_logo();?>
