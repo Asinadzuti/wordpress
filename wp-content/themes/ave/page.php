@@ -25,27 +25,35 @@ else {
 			<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
 		</div>
 	</div>
+	<div class="view">
+		
 	<div class="row">
-		<div class="col-lg-4 text-right">
+			<div class="col-lg-4 text-right">
+				<h2>men’s
+	lookbook</h2>
+	<p>Lorem ipsum dolor sit amet eras facilisis
+	consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+	Elementum metus facilisis ut phasellu.
+	</p>
+	<button>view now</button>
+				</div>
+			<div class="col-lg-4 text-right">
+			
+				<h2>women’s
+	lookbook</h2>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
+	Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</p>
+				<button>view now</button>
+				</div>
 		
-			<h2>men’s
-lookbook</h2>
-<p>Lorem ipsum dolor sit amet eras facilisis
-consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-Elementum metus facilisis ut phasellu.
-</p>
-<button>view now</button>
+			<div class="col-lg-4 text-right">
+	<h2>your
+	lookbook</h2>
+				<p>See an item you like and click the  button to add it to your lookbook where you can create your own perfect look.
+	It’s like your own boutique!</p>
+				<button>view now</button>
 			</div>
-		<div class="col-lg-4 text-right">
-		
-			<h2>women’s
-lookbook</h2>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
-Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</p>
-			<button>view now</button>
-			</div>
-	
-
+		</div>
 	</div>
 	</div>
 
