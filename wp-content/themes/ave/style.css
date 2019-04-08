@@ -63,6 +63,14 @@ h5 {
   text-transform: upperca;
 }
 
+h6 {
+  color: #575153;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 li {
   list-style: none;
   margin-left: -40px;
@@ -215,6 +223,11 @@ li {
 ul.products li.product .woocommerce-loop-product__title {
   font-size: 1rem;
   display: none;
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 ul.products li.product .price {
@@ -235,9 +248,132 @@ ul.products li.product .button {
 
 #wtcpl_tabs_container .each_cat ul.products li {
   background: #fff;
-  margin: 12px 5px;
+  margin: 12px 14px;
   padding: 8px;
-  -webkit-box-shadow: 0 0 0 0 #ccc;
-          box-shadow: 0 0 0 0 #ccc;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+#wtcpl_tabs_container .each_cat ul.products li:hover > .woocommerce-loop-product__title {
+  display: block;
+}
+
+.widget-title {
+  padding-top: 50px;
+}
+
+.menu-item a {
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.social {
+  background-color: #00c8c8;
+}
+
+.social .fab {
+  background-color: #ffffff;
+  color: #00c8c8;
+  font-size: 40px;
+  margin-top: 26px;
+  margin-left: 20px;
+}
+
+.poster {
+  background: url("assets/images/bgposter.png") no-repeat;
+  width: 714px;
+  height: 400px;
+  margin-left: 30px;
+}
+
+.poster button {
+  margin-right: 62px;
+  color: #454647;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #737373;
+  background-color: transparent;
+  padding: 9px;
+  margin-left: 20px;
+}
+
+.poster p {
+  padding-right: 60%;
+  padding-left: 20px;
+}
+
+.poster h2 {
+  font-size: 48px;
+  color: #575153;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.poster h5 {
+  padding-left: 20px;
+}
+
+.poster h5 {
+  padding-left: 20px;
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.poster2 {
+  background: url("assets/images/bgposter2.png") no-repeat;
+  width: 1120px;
+  height: 400px;
+  margin-left: 30px;
+}
+
+.poster2 button {
+  margin-right: 62px;
+  color: #454647;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #737373;
+  background-color: transparent;
+  padding: 9px;
+  margin-left: 20px;
+}
+
+.poster2 p {
+  padding-right: 55%;
+  padding-left: 20px;
+}
+
+.poster2 h2 {
+  font-size: 48px;
+  color: #575153;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.poster2 h5 {
+  padding-left: 20px;
+  color: #727272;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.poster2 h3 {
+  color: #00c8c8;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 25px;
+  padding-left: 60%;
+  margin-top: -150px;
 }
 /*# sourceMappingURL=style.css.map */

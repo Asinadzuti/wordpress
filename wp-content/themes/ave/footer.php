@@ -12,25 +12,31 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ave' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ave' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ave' ), 'ave', '<a href="http://underscores.me/">asinadzuti</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3">
+		<?php dynamic_sidebar( 'footer-1' ); ?>
+		</div>
+		<div class="col-lg-3">
+		<?php dynamic_sidebar( 'footer-2' ); ?>
+		</div>
+		<div class="col-lg-3">
+		<?php dynamic_sidebar( 'footer-3' ); ?>
+		</div>
+		<div class="col-lg-3">
+		<?php dynamic_sidebar( 'footer-4' ); ?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 offset-3">
+			<?php dynamic_sidebar( 'award' ); ?>
+		</div>
+		<div class="social col-lg-3">
+			<?php dynamic_sidebar( 'social' ); ?>
+		</div>
+	</div>
+</div>
+	<?php wp_footer(); ?>
 
 </body>
 </html>

@@ -4,55 +4,52 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 add_action( 'widgets_init', 'estore_widgets_init' );
-function estore_widgets_init() {
+
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'estore' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'estore' ),
-		'before_widget' => '<section id="%1$s" class="widget w3ls_mobiles_grid_left_grid %2$s">',
-		'after_widget'  => '</div></section>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3><div class="w3ls_mobiles_grid_left_grid_sub">',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Сайдбар магазина', 'estore' ),
-		'id'            => 'sidebar-shop',
-		'description'   => esc_html__( 'Add widgets here.', 'estore' ),
-		'before_widget' => '<section id="%1$s" class="widget w3ls_mobiles_grid_left_grid %2$s">',
-		'after_widget'  => '</div></section>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3><div class="w3ls_mobiles_grid_left_grid_sub">',
-	) );
-	register_sidebar( array(
-		'name'          => 'Подвал левый',
+		'name'          => 'First footer section',
 		'id'            => 'footer-1',
 		'before_widget' => '<section id="%1$s" class="widget info %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
 	) );
 	register_sidebar( array(
-		'name'          => 'Подвал центр левый',
+		'name'          => 'Second footer section',
 		'id'            => 'footer-2',
 		'before_widget' => '<section id="%1$s" class="widget info %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
 	) );
 	register_sidebar( array(
-		'name'          => 'Подвал центр правый',
+		'name'          => 'Third footer section',
 		'id'            => 'footer-3',
 		'before_widget' => '<section id="%1$s" class="widget info %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
 	) );
 	register_sidebar( array(
-		'name'          => 'Подвал правый',
+		'name'          => 'Fourth footer section',
 		'id'            => 'footer-4',
 		'before_widget' => '<section id="%1$s" class="widget info %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
 	) );
-}
+	register_sidebar( array(
+		'name'          => 'Award Winner',
+		'id'            => 'award',
+		'before_widget' => '<section id="%1$s" class="widget info %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Social information',
+		'id'            => 'social',
+		'before_widget' => '<section id="%1$s" class="widget info %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
+	) );
