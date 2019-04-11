@@ -1,48 +1,18 @@
-
 jQuery(document).ready(function($){
-
-
-	/* ---- Countdown timer ---- */
-
-	$('#counter').countdown({
-		timestamp : (new Date()).getTime() + 11*24*60*60*1000
+	$('.search-field').keypress(function(eventObject){
+		var searchTerm = $(this).val();
+		if(searchTerm.length > 2){
+			$.ajax({
+				url : '/wordpress/wp-admin/admin-ajax.php',
+				type: 'POST',
+				data:{
+					'action':'codyshop_ajax_search',
+					'term'  :searchTerm
+				},
+				success:function(result){
+					$('.codyshop-ajax-search').fadeIn().html(result);
+				}
+			});
+		}
 	});
-
-
-	/* ---- Animations ---- */
-
-	$('#links a').hover(
-		function(){ $(this).animate({ left: 3 }, 'fast'); },
-		function(){ $(this).animate({ left: 0 }, 'fast'); }
-	);
-
-	$('footer a').hover(
-		function(){ $(this).animate({ top: 3 }, 'fast'); },
-		function(){ $(this).animate({ top: 0 }, 'fast'); }
-	);
-
-
-
-    $(document).ready(function () {
-        $('#horizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true   // 100% fit in a container
-        });
-    });
-
-    $('.cart-contents').hover(
-        console.log('yes'),
-        function () {
-            if (window.innerWidth < 768) {
-                return;
-            }
-            $('.site-header-cart>.widget_shopping_cart').stop().slideDown();
-        },
-        function () {
-            if (window.innerWidth < 768) {
-                return;
-            }
-            $('.site-header-cart>.widget_shopping_cart').stop().slideUp(500);
-        });
 });

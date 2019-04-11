@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-add_action( 'widgets_init', 'estore_widgets_init' );
+// add_action( 'widgets_init', 'estore_widgets_init' );
 
 	register_sidebar( array(
 		'name'          => 'First footer section',

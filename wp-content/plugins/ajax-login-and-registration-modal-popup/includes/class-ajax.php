@@ -17,6 +17,8 @@ class LRM_AJAX
         // First check the nonce, if it fails the function will break
         self::_verify_nonce( 'security-login', 'ajax-login-nonce' );
 
+        self::_maybe_debug();
+
         LRM_Core::get()->call_pro('check_captcha', 'login');
 
         // Nonce is checked, get the POST data and sign user on
@@ -62,6 +64,7 @@ class LRM_AJAX
             }
         }
 
+
         if ( is_wp_error($user_signon) ){
 
             do_action('lrm/login_fail', $user_signon);
@@ -76,19 +79,21 @@ class LRM_AJAX
             $action = lrm_setting('redirects/login/action');
             $redirect_url = LRM_Redirects_Manager::get_redirect( 'login', $user_signon->ID );
 
-            wp_send_json_success(array(
+            wp_send_json_success(apply_filters('lrm/login/success_response', array(
                 'logged_in' => true,
                 'user_id'   => $user_signon->ID,
                 'message'   => $message,
                 'action'    => $redirect_url ? 'redirect' : $action,
                 'redirect_url'=> $redirect_url,
-            ));
+            )));
         }
     }
 
     public static function signup() {
         // Verify nonce
         self::_verify_nonce( 'security-signup', 'ajax-signup-nonce' );
+
+        self::_maybe_debug();
 
         LRM_Core::get()->call_pro('check_captcha', 'signup' );
 
@@ -129,6 +134,10 @@ class LRM_AJAX
             remove_action( 'register_new_user', 'wp_send_new_user_notifications' );
         } else {
             $password = wp_generate_password(10, true);
+        }
+
+	    if ( !lrm_setting( 'general/terms/off' ) && !isset($_POST['registration_terms']) ) {
+            wp_send_json_error(array('message' => LRM_Settings::get()->setting('messages/registration/must_agree_with_terms'), 'for'=>'registration_terms'));
         }
 
         if ( !$user_login ) {
@@ -319,14 +328,14 @@ class LRM_AJAX
             $action = lrm_setting('redirects/registration/action');
             $redirect_url = $user_signon ? LRM_Redirects_Manager::get_redirect( 'registration', $user_signon->ID ) : '';
 
-            wp_send_json_success( array(
+            wp_send_json_success( apply_filters('lrm/registration/success_response', array(
                 'logged_in' => $user_signon ? true : false,
                 'user_id'   => $user_id ? $user_id : false,
                 'message'   => $user_signon ? lrm_setting( 'messages/registration/success' ) : lrm_setting( 'messages/registration/success_please_login' ),
 
                 'redirect_url' => $redirect_url,
                 'action'       => $action,
-            ) );
+            )) );
         } else {
 
             do_action('lrm/registration_fail', $user_id);
@@ -340,6 +349,8 @@ class LRM_AJAX
     public static function lostpassword() {
         // First check the nonce, if it fails the function will break
         self::_verify_nonce( 'security-lostpassword', 'ajax-forgot-nonce' );
+
+        self::_maybe_debug();
 
         $errors = new WP_Error();
 
@@ -411,7 +422,7 @@ class LRM_AJAX
                         $reset_pass_url,
                         wp_login_url(),
                     ),
-                    LRM_Settings::get()->setting('mails/lost_password/body')
+                    LRM_Settings::get()->setting('mails/lost_password/body', true)
                 );
 
                 $mail_sent = LRM_Mailer::send( $to, $subject, $mail_body, 'lost_password' );
@@ -486,9 +497,9 @@ class LRM_AJAX
             reset_password($user, $new_pass);
             setcookie( $rp_cookie, ' ', time() - YEAR_IN_SECONDS, $rp_path, COOKIE_DOMAIN, is_ssl(), true );
 
-            wp_send_json_success(array(
+            wp_send_json_success( apply_filters('lrm/password_reset/success_response', array(
                 'message'=> __( 'Your password has been reset.' ) . ' <a href="' . esc_url( wp_login_url() ) . '" class="lrm-login">' . __( 'Log in' ) . '</a>'
-            ));
+            )) );
         }
 
         wp_send_json_error(array(
@@ -561,6 +572,18 @@ class LRM_AJAX
 
         if ( !isset($_POST[$post_key]) || !wp_verify_nonce($_POST[$post_key], $nonce_key) ) {
             wp_send_json_error(array('message' => LRM_Settings::get()->setting('messages/other/invalid_nonce')));
+        }
+    }
+
+    /**
+     * Display PHP errors to simplify plugin debug
+     * @since 2.03
+     */
+    public static function _maybe_debug() {
+        if ( lrm_setting('advanced/debug/ajax') ) {
+            ini_set('display_errors',1);
+            ini_set('display_startup_errors',1);
+            error_reporting(-1);
         }
     }
 

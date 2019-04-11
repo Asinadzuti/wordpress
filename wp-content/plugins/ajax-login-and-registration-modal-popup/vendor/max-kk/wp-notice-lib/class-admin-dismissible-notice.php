@@ -176,20 +176,3 @@ class WP_Admin_Dismissible_Notice
         return self::$instance;
     }
 } // end Admin_Notice_Helper
-
-if (!function_exists('wp_dismissible_notice')) {
-    /**
-     * Queues up a message to be displayed to the user
-     *
-     * @param string $key Unique key
-     * @param string $message The text to show the user
-     * @param string $type 'info', 'success', 'error', 'warning'
-     * @param string string $required_capability Capability to view and dismiss 'manage_options' by default
-     * @param string $save_state_to 'option', 'user_meta'
-     */
-
-    function wp_dismissible_notice($key, $message, $type = 'info', $required_capability = 'manage_options', $save_state_to = 'option')
-    {
-        WP_Admin_Dismissible_Notice::get()->enqueue($key, $message, $type, $required_capability, $save_state_to);
-    }
-}

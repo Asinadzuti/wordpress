@@ -37,7 +37,7 @@ class LRM_Settings {
 
         add_action( 'admin_notices', array( $this, 'beg_for_review' ) );
 
-        wp_dismissible_notice( 'v2',
+        lrm_dismissible_notice( 'v2',
             sprintf(
                 '<strong>AJAX Login & registration modal notice:</strong> you have installed version 2.0 that contains a lot of updates and tweaks. Please review your settings and reconfigure <a href="%s">after-login/registration actions</a>!',
                 admin_url('options-general.php?page=login-and-register-popup&section=redirects')
@@ -45,7 +45,7 @@ class LRM_Settings {
         );
 
         if ( LRM_WPML_Integration::is_wpml_active() ) {
-            wp_dismissible_notice('wpml',
+            lrm_dismissible_notice('wpml',
                 sprintf(
                     '<strong>AJAX Login & registration modal notice:</strong> since version 2.0 WPML translation process is has been slightly changed: now you should do the translation in a plugin Settings instead of using WPML Strings Translations module. More in <a href="https://docs.maxim-kaminsky.com/lrm/kb/multi-language-support-via-wpml/">docs >></a>',
                     admin_url('options-general.php?page=login-and-register-popup&section=redirects')
@@ -56,7 +56,7 @@ class LRM_Settings {
         $latest_pro_version = '1.50';
 
         if ( lrm_is_pro() && ! lrm_is_pro( $latest_pro_version ) && !defined("LRM_HIDE_PRO_UPDATE_NOTICE") ) {
-            wp_dismissible_notice('lrm_pro_update_1.50',
+            lrm_dismissible_notice('lrm_pro_update_1.50',
                 sprintf(
                     'Looks like newer version %s of "AJAX Login and Registration modal popup PRO" plugin is available! Please go to Plugins menu and run the update or open your cabinet and <a href="%s" target="_blank">download it</a>!',
                     $latest_pro_version,
@@ -64,7 +64,6 @@ class LRM_Settings {
                 )
             );
         }
-
 
         add_action( 'underdev/settings/enqueue_scripts', array( $this, 'settings_enqueue_scripts' ) );
 
@@ -353,6 +352,17 @@ class LRM_Settings {
                 'sanitize'    => array( new CoreFields\Select(), 'sanitize' ),
             ) );
 
+        $ADVANCED_SECTION->add_group( __( 'Debug', 'ajax-login-and-registration-modal-popup' ), 'debug' )
+            ->add_field( array(
+                'slug'        => 'ajax',
+                'name'        => __('Enable debug mode for public AJAX requests. Required to simply find an error messages.', 'ajax-login-and-registration-modal-popup' ),
+                'description' => __('Please disable it once problem was solved to improve security!', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => false,
+                'addons'      => array('label' => __( 'Yes' )),
+                'render'      => array( new CoreFields\Checkbox(), 'input' ),
+                'sanitize'    => array( new CoreFields\Checkbox(), 'sanitize' ),
+            ) );
+
         $ADVANCED_SECTION->add_group( __( 'Uninstall', 'ajax-login-and-registration-modal-popup' ), 'uninstall' )
             ->add_field( array(
                 'slug'        => 'remove_all_data',
@@ -492,7 +502,7 @@ class LRM_Settings {
                 'name'        => __('HTML email template', 'ajax-login-and-registration-modal-popup' ),
                 'default'     => '{{CONTENT}}',
                 'description' => __('Put here your custom mail html template + css + tag {{CONTENT}} (required).', 'ajax-login-and-registration-modal-popup')
-                    . sprintf('<a href="%s">Tutorial >></a>', 'https://trello.com/c/OX5IIUEr/10-how-to-style-email-templates'),
+                    . sprintf('<a href="%s" target="_blank">Tutorial >></a>', 'https://docs.maxim-kaminsky.com/lrm/kb/how-to-style-email-templates/'),
                 'render'      => array( new LRM_Field_Textarea_With_Html_Extended(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Textarea_With_Html_Extended(), 'sanitize' ),
                 'addons'      => array(
@@ -624,11 +634,18 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'terms',
                 'name'        => __('Form: Terms', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => 'I agree with the <a href=\'#0\'>Terms</a>',
+                'default'     => 'I agree with the <a href=\'/terms\'>Terms</a>. <i>Edit this in Settings => Ajax Login Modal => Expressions tab => Registration section</i>',
                 'description' => 'sanitized by wp_kses_post',
                 'render'      => array( new LRM_Field_Textarea_With_Html(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Textarea_With_Html(), 'sanitize' ),
             ) )
+	        ->add_field( array(
+		        'slug'        => 'must_agree_with_terms',
+		        'name'        => __('Message: Must agree with the terms', 'ajax-login-and-registration-modal-popup' ),
+		        'default'        => 'Please agree with the terms to continue!',
+		        'render'      => array( new LRM_Field_Text(), 'input' ),
+		        'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
+	        ) )
             ->add_field( array(
                 'slug'        => 'button',
                 'name'        => __('Form button: Create account', 'ajax-login-and-registration-modal-popup' ),
@@ -952,6 +969,8 @@ class LRM_Settings {
 
         //$this->register_wpml_strings();
         LRM_WPML_Integration::register_strings();
+
+        //LRM_Import_Export_Manager::register_settings( $this->settings );
     }
 
 
@@ -1074,13 +1093,11 @@ class LRM_Settings {
             throw new Exception('Invalid $setting_slug: ' . $setting_slug);
         }
 
-
-
         $res = update_option( 'lrm_' . $setting_path[0] . '[' . $setting_path[1] . ']', $new_value );
 
-        var_dump( 'lrm_' . $setting_path[0] );
-        var_dump( $new_value );
-        var_dump( get_option('lrm_' . $setting_path[0]  ) );
+//        var_dump( 'lrm_' . $setting_path[0] );
+//        var_dump( $new_value );
+//        var_dump( get_option('lrm_' . $setting_path[0]  ) );
 
         return  $res;
     }
@@ -1204,6 +1221,19 @@ class LRM_Settings {
         }
 
         return $fields;
+    }
+
+    /**
+     * Get all fields from section
+     *
+     * @param string $section_slug
+     *
+     * @since 1.24
+     *
+     * @return \underDEV\Utils\Settings\Field[]
+     */
+    public function get_sections(  ) {
+        return $this->settings->get_sections(  );
     }
 
     private function _reset_translations() {

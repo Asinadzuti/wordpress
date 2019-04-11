@@ -28,10 +28,11 @@ if ( ! function_exists( 'mytheme_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-
+		
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'mytheme' ),
+			'menu-1' => esc_html__( 'Main menu', 'mytheme' ),
+			'login' => esc_html__( 'Login', 'registration' ),
 		) );
 		add_theme_support( 'html5', array(
 			'search-form',
@@ -68,29 +69,7 @@ if ( ! function_exists( 'mytheme_setup' ) ) :
 	
 	}
 endif;
-add_action( 'after_setup_theme', 'mytheme_setup' );
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-function mytheme_content_width() {
-	// This variable is intended to be overruled from themes.
-	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
-	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'mytheme_content_width', 640 );
-}
-add_action( 'after_setup_theme', 'mytheme_content_width', 0 );
-
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-add_action( 'widgets_init', 'mytheme_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -98,9 +77,9 @@ add_action( 'widgets_init', 'mytheme_widgets_init' );
 function mytheme_scripts() {
 	wp_enqueue_style( 'mytheme-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'mytheme-navigation', get_template_directory_uri() . 'assets/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'mytheme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'mytheme-skip-link-focus-fix', get_template_directory_uri() . 'assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'mytheme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -135,6 +114,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 require get_template_directory() . '/inc/widget-areas.php';
+
+require get_template_directory() . '/inc/ajax.php';
+
 // Redux
 include_once get_template_directory() . '/admin/admin-init.php';
 
@@ -183,16 +165,7 @@ function estore_styles() {
 	wp_enqueue_script('imagezoom' , get_template_directory_uri() . '/assets/js/imagezoom.js', array('jquery'), true);
 	wp_enqueue_script('countdown' , get_template_directory_uri() . '/assets/js/jquery.countdown.js', array('jquery'), true);
 	wp_enqueue_script('minicart' , get_template_directory_uri() . '/assets/js/minicart.js', array('jquery'), true);
-	wp_enqueue_script('ajax-search' , get_template_directory_uri() . '/assets/js/ajax-search.js', array('jquery'), true);
-	wp_localize_script('ajax-search', 'search_form' , array(
-		'url' => admin_url( 'admin-ajax.php' ),
-		'nonce' => wp_create_nonce('search-nonce')
-	));
-	wp_enqueue_script('ajax-quick' , get_template_directory_uri() . '/assets/js/ajax-quick-veiw.js', array('jquery'), true);
-	wp_localize_script('ajax-quick', 'ajax_quick' , array(
-		'url' => admin_url( 'admin-ajax.php' ),
-		'nonce' => wp_create_nonce('quick-nonce')
-	));
+
 	wp_enqueue_script('script' , get_template_directory_uri() . '/assets/js/script.js', array('jquery'));
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -241,3 +214,28 @@ add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_arg
 	$args['columns'] = 4; // arranged in 2 columns
 	return $args;
 }
+
+function search_ajax() { ?>
+
+	jQuery(document).ready(function($){
+	$(‘.search-field’).keypress(function(eventObject){
+	var searchTerm = $(this).val();
+	if(searchTerm.length > 2){
+	$.ajax({
+	url : »,
+	type: ‘POST’,
+	data:{
+	‘action’:’codyshop_ajax_search’,
+	‘term’ :searchTerm
+	},
+	success:function(result){
+	$(‘.codyshop-ajax-search’).fadeIn().html(result);
+	}
+	});
+	}
+	});
+	});
+	
+	<?php }
+	add_action( 'wp_footer', 'search_ajax' );
+	

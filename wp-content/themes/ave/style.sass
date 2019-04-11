@@ -5,10 +5,10 @@
  * Description: Description
  * Version: 1.0.0
   Description: Description */
+// deffoult
 .no-gutters
-  margin-right: 0
-  margin-left: 0
-
+  padding: 0
+  margin: 
 a 
   color: none
   text-decoration: none
@@ -63,9 +63,10 @@ h6
 li 
   list-style: none
   margin-left: -40px
-
-#primary-menu
+// Header
+.menu-header
   ul 
+    margin-top: 27px
     li
       display: inline
       margin-left: 15px
@@ -75,6 +76,17 @@ li
         font-size: 13px
         font-weight: 400
         text-transform: uppercase
+.menu-login-container
+  ul 
+    margin-top: 10px
+    li
+      display: inline
+      margin-left: 15px
+      a
+        color: #999999
+        font-family: Montserrat
+        font-size: 13px
+        font-weight: 400
 .site-title
   margin-left: 100px
   padding-top: 40px
@@ -86,8 +98,7 @@ li
     text-transform: uppercase
 .preheader
   background-color: #333333
-  padding-top: 2px
-  padding-bottom: 2px
+  height: 45px
 .login
   span
     color: #999999
@@ -107,11 +118,11 @@ li
   height: 890px
   button
     position: absolute
-    bottom: 0
+    bottom: -100px
     padding: 15px
     right: 100px
     border: 2px solid #737373
-    background-color: transpatent
+    background-color: transparent
     color: #454647
     font-family: Montserrat
     font-size: 16px
@@ -119,10 +130,27 @@ li
     text-transform: uppercase
 #primary-menu
   padding-top: 40px
+// footer
+.widget-title
+  padding-top: 50px
+.menu-item
+  a
+    color: #727272
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 300
+.social
+  background-color: #00c8c8
+  .fab
+    background-color: #ffffff
+    color: #00c8c8
+    font-size: 40px
+    margin-top: 26px
+    margin-left: 20px
+// home page
 .view
   margin-top: 50px
-  background-color: #f8f8f8
-  pding-bottom:  0
+  background-color: #f8f8f8  
   h2
     color: #575153
     font-size: 48px
@@ -198,24 +226,10 @@ ul.products li.product .button
   margin: 12px 14px
   padding: 8px
   box-shadow: 0 0 0 0
-#wtcpl_tabs_container .each_cat ul.products li:hover>.woocommerce-loop-product__title 
+#wtcpl_tabs_container .each_cat ul.products li:hover .woocommerce-loop-product__title 
   display: block
-.widget-title
-  padding-top: 50px
-.menu-item
-  a
-    color: #727272
-    font-family: Montserrat
-    font-size: 14px
-    font-weight: 300
-.social
-  background-color: #00c8c8
-  .fab
-    background-color: #ffffff
-    color: #00c8c8
-    font-size: 40px
-    margin-top: 26px
-    margin-left: 20px
+
+// look book page
 .poster
   background: url('assets/images/bgposter.png') no-repeat
   width: 714px
@@ -289,3 +303,57 @@ ul.products li.product .button
     padding-right: 25px
     padding-left: 60%
     margin-top: -150px
+// the brand page
+.massonry
+  margin-top: -114px
+
+// cart
+  
+.w3view-cart 
+  background-color: #00c8c8
+  border: none
+  width: 155px
+  height: 45px
+  text-align: center
+  outline: none
+  display: inline-block
+
+.w3view-cart 
+  .count     
+    color: #ffffff
+    font-family: Montserrat
+    font-size: 13px
+    font-weight: 400
+    position: relative
+    top: 12px
+  .fa-shopping-cart
+    color: #ffffff
+    position: relative
+    right: 50px
+    font-size: 17px
+    top: 12px
+.site-header-cart .woocommerce-mini-cart__empty-message 
+  padding: 1rem
+
+  // Search form
+.search-form
+  border: 1px solid #e7e7e7
+  width: 190px
+  height: 30px
+  margin-top: 25px
+  input
+    border: 0
+    width: 145px
+    background-color: transparent
+  input::placeholder
+    padding-left: 10px
+  input[type="text"]:focus 
+    margin-left: 10px
+  input[type="text"]:focus 
+    margin-left: 10px
+  button
+    background-color: transparent
+    border: 0
+    box-shadow: 0
+    position: static
+    padding: 0

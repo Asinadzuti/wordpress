@@ -34,20 +34,24 @@
 									<span>currency</span>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-3">
 								<div class="login">
-									<span>register</span>
-									<span>Sign in</span>									
+								<?php wp_nav_menu( [ 
+		'theme_location'  => 'login'
+	] ); ?>
 									<?php global $woocommerce; ?>
 
-										<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
-											<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
-											-
-											<?php echo $woocommerce->cart->get_cart_total(); ?>
-
-										</a>
-
 								</div>
+							</div>
+							<div class="col-lg-3 text-left">
+								
+								<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
+									<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
+									-
+									<?php echo $woocommerce->cart->get_cart_total(); ?>
+
+								</a>
+
 							</div>
 						</div>
 						</div>
@@ -73,14 +77,12 @@
 							<?php endif; ?>
 						</div><!-- .site-branding -->
 					<div class="col-lg-4">
+					
 						<nav id="site-navigation" class="main-navigation">
-							<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ave' ); ?></button> -->
-											<?php
-							wp_nav_menu( array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'primary-menu',
-							) );	
-							?>
+						<?php wp_nav_menu( [ 
+		'container_class' => 'menu-header',
+		'theme_location'  => 'menu-1'
+	] ); ?>
 							
 						</nav><!-- #site-navigation -->
 					</div>

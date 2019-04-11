@@ -137,7 +137,6 @@ ul.lrm-switcher {
 
 .lrm-form {
     padding: .5em 1.4em .1em !important;
-    margin: 0;
 }
 .lrm-form .fieldset {
     position: relative;
@@ -633,22 +632,4 @@ a.jetpack-sso {
     .jetpack-sso.button {
         line-height: 22px;
     }
-}
-
-/* UltimateMember Registration form customization */
-
-.lrm-signup-section .um-button.um-alt{
-    display: none;
-}
-
-.um-register.um {
-    max-width: unset !important;
-}
-
-.lrm-signup-section .um-col-alt{
-    padding-bottom: 1.9em;
-}
-
-.lrm-signup-section #um-submit-btn {
-    width: 100%;
 }

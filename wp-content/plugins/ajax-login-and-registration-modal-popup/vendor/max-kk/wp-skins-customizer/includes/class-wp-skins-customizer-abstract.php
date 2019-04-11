@@ -144,6 +144,7 @@ abstract class WP_Skins_Customizer_Abstract
             'setting_type' => 'option',         // Optional. 'theme_mod' or 'option'. Default: 'theme_mod'
             'setting_transport' => 'postMessage',
             'sanitize_callback' => '',
+            'input_attrs' => [],
 
             'css' => $css_map_corrected,
         ), $options);
@@ -227,6 +228,7 @@ abstract class WP_Skins_Customizer_Abstract
                             'priority' => 10, // Optional. Order priority to load the control. Default: 10
                             'type' => $setting['type'],
                             'choices' => $setting['choices'],
+                            'input_attrs' => $setting['input_attrs'],
                             'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
                         )
                     )
@@ -240,6 +242,7 @@ abstract class WP_Skins_Customizer_Abstract
                         'priority' => 10, // Optional. Order priority to load the control. Default: 10
                         'type' => $setting['type'],
                         'choices' => $setting['choices'],
+                        'input_attrs' => $setting['input_attrs'],
                         'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
                     )
                 );

@@ -110,7 +110,14 @@ var LRM = LRM ? LRM : {};
 				  passwordField = togglePass.parent().find('input');
 
 			('password' == passwordField.attr('type')) ? passwordField.attr('type', 'text') : passwordField.attr('type', 'password');
-			(togglePass.data("hide") == togglePass.text()) ? togglePass.text(togglePass.data("show")) : togglePass.text(togglePass.data("hide"));
+
+			if ( togglePass.hasClass("hide-password--on") )  {
+				togglePass.attr( "title", togglePass.data("show") );
+				togglePass.removeClass("hide-password--on");
+			} else {
+				togglePass.attr( "title", togglePass.data("hide") );
+				togglePass.addClass("hide-password--on");
+			}
 			//focus and move cursor to the end of input field
 			passwordField.putCursorAtEnd();
 		});
@@ -233,6 +240,8 @@ var LRM = LRM ? LRM : {};
 				if ( $(window).width() > 600 ) {
 					$formModal.find(".lrm-signup-section input:first").focus();
 				}
+
+				$("#signup-password").trigger("keyup");
 			}, 100);
 
 			if (event) {
@@ -268,6 +277,10 @@ var LRM = LRM ? LRM : {};
 					$formModal.find(".lrm-reset-password-section input[data-autofocus]").focus();
 				}
 			}, 100);
+
+			if (event) {
+				event.preventDefault();
+			}
 
 			// $formLogin.removeClass('is-selected');
 			// $formSignup.removeClass('is-selected');
@@ -325,7 +338,7 @@ var LRM = LRM ? LRM : {};
 
 					if (response.data.message) {
 						if (!response.data.for) {
-							LRM_Form.set_message( $form, response.data.message, response.success );
+							LRM_Form.set_message( $form, response.data.message, !response.success );
 							//$form.find(".lrm-form-message").html(response.data.message);
 
 							// if (!response.success) {
@@ -334,17 +347,22 @@ var LRM = LRM ? LRM : {};
 
 							$form.closest(".lrm-user-modal-container").animate({scrollTop: 80}, 400);
 						} else {
-							$form.find('input[name="' + response.data.for + '"]').addClass('has-error')
-								  .next('span').html(response.data.message).addClass('is-visible');
-							$form.find(".lrm-form-message").removeClass("lrm-is-error").html("");
+							// Tweak in case this selector is Missing
+							if ( 0 === $form.find('input[name="' + response.data.for + '"]').length ) {
+								alert(response.data.message);
+							} else {
+								$form.find('input[name="' + response.data.for + '"]').addClass('has-error')
+									  .next('.lrm-error-message').html(response.data.message).addClass('is-visible');
+								$form.find(".lrm-form-message").removeClass("lrm-is-error").html("");
 
+							}
 						}
 					}
 
 					// $form.data("action") for get
 					$(document).triggerHandler('lrm/ajax_response', [response, $form, $form.data("action")]);
 
-					console.log(response);
+					//console.log(response);
 
 					// If user Logged in After Login or Registration
 					// If Email Verify after Registration enabled - we skip this
@@ -398,7 +416,9 @@ var LRM = LRM ? LRM : {};
 		});
 
 		setTimeout(function () {
-			$('#lrm-password1,#lrm-password2').trigger('keyup');
+			if ( $('#lrm-password1,#lrm-password2').length > 0 ) {
+				$('#lrm-password1,#lrm-password2').trigger('keyup');
+			}
 		}, 500);
 
 	}
@@ -447,7 +467,12 @@ var LRM = LRM ? LRM : {};
 		set_message: function($form, message_html, is_error) {
 			var $message = $form.find(".lrm-form-message");
 
-			$message.html( message_html );
+			// Tweak in case this selector is Missing
+			if ( 0 !== $message.length ) {
+				$message.html(message_html);
+			} else {
+				alert(message_html);
+			}
 
 			var modal_is_visible = $(".lrm-user-modal").hasClass('is-visible');
 
@@ -459,6 +484,8 @@ var LRM = LRM ? LRM : {};
 
 			if ( is_error ) {
 				$message.addClass("lrm-is-error");
+			} else {
+				$message.removeClass("lrm-is-error");
 			}
 		}
 	};
@@ -471,50 +498,71 @@ var LRM = LRM ? LRM : {};
 	 * @returns {*}
 	 */
 	function checkPasswordStrength( $pass1, $pass2, $strengthResult ) {
-		var pass1 = $pass1.val();
-		if ( !$pass2 ) {
-			var pass2 = pass1;
-		} else {
-			var pass2 = $pass2.val();
-		}
+		LRM.loadPasswordMeter(function() {
+			var pass1 = $pass1.val();
+			if (!$pass2) {
+				var pass2 = pass1;
+			} else {
+				var pass2 = $pass2.val();
+			}
 
-		$strengthResult.removeClass( 'short bad good strong' );
+			$strengthResult.removeClass('short bad good strong');
 
-		// Extend our blacklist array with those from the inputs & site data
-		var blacklistArray = ["querty", "password", "132", "123"].concat( wp.passwordStrength.userInputBlacklist() )
+			// Extend our blacklist array with those from the inputs & site data
+			var blacklistArray = ["querty", "password", "132", "123"].concat(wp.passwordStrength.userInputBlacklist())
 
-		// Get the password strength
-		var strength = wp.passwordStrength.meter( pass1, blacklistArray, pass2 );
+			// Get the password strength
+			var strength = wp.passwordStrength.meter(pass1, blacklistArray, pass2);
 
-		// Add the strength meter results
-		switch ( strength ) {
+			// Add the strength meter results
+			switch (strength) {
 
-			case 2:
-				$strengthResult.addClass( 'bad' ).html( LRM.l10n.password_is_bad );
-				break;
-
-			case 3:
-				$strengthResult.addClass( 'good' ).html( LRM.l10n.password_is_good );
-				break;
-
-			case 4:
-				$strengthResult.addClass( 'strong' ).html( LRM.l10n.password_is_strong );
-				break;
-
-			case 5:
-				if ( $pass2 ) {
-					$strengthResult.addClass( 'short' ).html( LRM.l10n.passwords_is_mismatch );
+				case 2:
+					$strengthResult.addClass('bad').html(LRM.l10n.password_is_bad);
 					break;
-				}
 
-			default:
-				$strengthResult.addClass( 'short' ).html( LRM.l10n.password_is_short );
+				case 3:
+					$strengthResult.addClass('good').html(LRM.l10n.password_is_good);
+					break;
 
+				case 4:
+					$strengthResult.addClass('strong').html(LRM.l10n.password_is_strong);
+					break;
+
+				case 5:
+					if ($pass2) {
+						$strengthResult.addClass('short').html(LRM.l10n.passwords_is_mismatch);
+						break;
+					}
+
+				default:
+					$strengthResult.addClass('short').html(LRM.l10n.password_is_short);
+
+			}
+
+			//console.log( "Pass strength: ", strength );
+
+			return strength;
+		});
+	}
+
+	LRM.passwordMeterIsLoaded = false;
+	LRM.passwordMeterIsLoading = false;
+	LRM.loadPasswordMeter = function ( callback ) {
+		if ( LRM.passwordMeterIsLoaded ) {
+			callback();
+			return;
 		}
+		// From "wp-admin/js/password-strength-meter.min.js?ver=5.0.4"
+		window.wp=window.wp||{};var passwordStrength;!function(a){wp.passwordStrength={meter:function(b,c,d){if(a.isArray(c)||(c=[c.toString()]),b!=d&&d&&d.length>0)return 5;if("undefined"==typeof window.zxcvbn)return-1;var e=zxcvbn(b,c);return e.score},userInputBlacklist:function(){var b,c,d,e,f=[],g=[],h=["user_login","first_name","last_name","nickname","display_name","email","url","description","weblog_title","admin_email"];for(f.push(document.title),f.push(document.URL),c=h.length,b=0;b<c;b++)e=a("#"+h[b]),0!==e.length&&(f.push(e[0].defaultValue),f.push(e.val()));for(d=f.length,b=0;b<d;b++)f[b]&&(g=g.concat(f[b].replace(/\W/g," ").split(" ")));return g=a.grep(g,function(b,c){return!(""===b||4>b.length)&&a.inArray(b,g)===c})}},passwordStrength=wp.passwordStrength.meter}(jQuery);
 
-		//console.log( "Pass strength: ", strength );
+		LRM.passwordMeterIsLoading = true;
 
-		return strength;
+		// Usage
+		$.cachedScript( LRM.password_zxcvbn_js_src ).done(function( script, textStatus ) {
+			LRM.passwordMeterIsLoaded = true;
+			callback();
+		});
 	}
 
 //});
@@ -537,4 +585,24 @@ jQuery.fn.putCursorAtEnd = function () {
 			jQuery(this).val(jQuery(this).val());
 		}
 	});
+};
+
+/**
+ * @since 2.02
+ *
+ * @param url
+ * @param options
+ * @returns {*}
+ */
+jQuery.cachedScript = function( url, options ) {
+	// Allow user to set any option except for dataType, cache, and url
+	options = jQuery.extend( options || {}, {
+		dataType: "script",
+		cache: true,
+		url: url
+	});
+
+	// Use $.ajax() since it is more flexible than $.getScript
+	// Return the jqXHR object so we can chain callbacks
+	return jQuery.ajax( options );
 };

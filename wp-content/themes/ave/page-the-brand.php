@@ -22,7 +22,7 @@ else {
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-        <img src="https://via.placeholder.com/227x180.jpg/#d7d7d7" alt="">
+        <img src="https://via.placeholder.com/570x400.jpg/#d7d7d7" alt="">
 
     </div>
     <div class="col-lg-6">
@@ -33,7 +33,7 @@ else {
 <img src="https://via.placeholder.com/570x400.jpg/#d7d7d7" alt="">
     </div>
     <div class="col-lg-6">
-        <img src="https://via.placeholder.com/570x400.jpg/#d7d7d7" alt="">
+        <img class="massonry" src="https://via.placeholder.com/570x400.jpg/#d7d7d7" alt="">
 <h4>our values, vision and strategy</h4>
 <h5>The above image would be a great place for an advertising video</h5>
 <p>Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.

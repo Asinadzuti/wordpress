@@ -29,6 +29,7 @@ class LRM_Core {
         add_action('wp_footer', array($this, 'wp_footer__action'), 1);
 
         add_action('init', array('LRM_Updater', 'init'));
+        add_action( 'template_redirect', array($this, 'template_redirect'), 99 );
 
         if ( !class_exists('LRM_Pro') ) {
             add_action('lrm_login_form', array($this, 'form_fblogin__action'));
@@ -48,7 +49,7 @@ class LRM_Core {
         }
 
         // RUN PRO UPDATER
-        if ( file_exists(LRM_PATH . 'vendor/plugin-update-checker/plugin-update-checker.php') && is_admin() && lrm_is_pro() ) {
+        if ( file_exists(LRM_PATH . 'vendor/plugin-update-checker/plugin-update-checker.php') && is_admin() && lrm_is_pro() && !lrm_is_pro('1.50') ) {
 
             require LRM_PATH . 'vendor/plugin-update-checker/plugin-update-checker.php';
             $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
@@ -63,7 +64,10 @@ class LRM_Core {
         //    $this->process_ajax();
         //}
 
-        add_filter('plugin_action_links_' . LRM_BASENAME, array($this, 'add_settings_link'));
+
+        if ( !defined("LRM_IN_BUILD_FREE") ) {
+            add_filter('plugin_action_links_' . LRM_BASENAME, array($this, 'add_settings_link'));
+        }
 
         new LRM_Admin_Menus();
 
@@ -136,6 +140,23 @@ class LRM_Core {
 
 
     /**
+     * Redirect the user to the 'redirect_to' param is he's located on the login/registration page
+     *
+     * @since 2.03
+     */
+    public function template_redirect() {
+        if ( ! is_user_logged_in() || ! isset($_GET['redirect_to']) ) {
+            return;
+        }
+
+        $pages = LRM_Pages_Manager::_get_pages_arr();
+
+        if ( isset( $pages[get_the_ID()]) ) {
+            wp_safe_redirect( $_GET['redirect_to'] );
+        }
+    }
+
+    /**
      *
      * @since 1.0
      */
@@ -203,7 +224,7 @@ class LRM_Core {
      * @param string    $function
      * @return mixed
      */
-    public function call_pro($function, $param1 = false) {
+    public function call_pro( $function, $param1 = false ) {
         if ( class_exists('LRM_Pro') ) {
             return LRM_Pro::get()->$function($param1);
         }
@@ -234,9 +255,9 @@ class LRM_Core {
         $required_scripts = array('jquery');
 
         // For the Password Reset page
-        if ( get_the_ID() == LRM_Pages_Manager::get_page_id('restore-password') ) {
-            $required_scripts[] = 'password-strength-meter';
-        }
+//        if ( get_the_ID() == LRM_Pages_Manager::get_page_id('restore-password') ) {
+//            $required_scripts[] = 'password-strength-meter';
+//        }
 
         wp_enqueue_script('lrm-modal', LRM_URL . 'assets/lrm-core.js', $required_scripts, LRM_ASSETS_VER, true);
 
@@ -252,6 +273,7 @@ class LRM_Core {
         }
 
         $script_params = array(
+            'password_zxcvbn_js_src' => includes_url( '/js/zxcvbn.min.js' ),
             'redirect_url'       => '',
             'ajax_url'           => $ajax_url,
             //'ajax_url'           => add_query_arg( 'lrm', '1', admin_url('admin-ajax.php') ),
