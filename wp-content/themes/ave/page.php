@@ -11,57 +11,33 @@
  *
  * @package Ave
  */
-if(is_page(23)) {
- get_header('home');
-}
-else {
- get_header();
-}
- wp_head();
+
+get_header();
 ?>
-<div class="container-fluid ">
-	<div class="row">
-		<div class="col-lg-12">
-			<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
-		</div>
-	</div>
-		<div class="row">
-			<div class="col-lg-4 text-right ">
-				<div class="view">
-				<h2>men’s
-					lookbook</h2>
-				<p>Lorem ipsum dolor sit amet eras facilisis
-					consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-					Elementum metus facilisis ut phasellu.
-				</p>
-				<button>view now</button>
-				</div>
-			</div>
-			<div class="col-lg-4 text-right ">
-<div class="view">
-<h2>men’s
-					lookbook</h2>
-				<p>Lorem ipsum dolor sit amet eras facilisis
-					consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-					Elementum metus facilisis ut phasellu.
-				</p>
-				<button>view now</button>
-				</div>
-			</div>
 
-			<div class="col-lg-4 text-right ">
-				<div class="view">
-				<h2>men’s
-					lookbook</h2>
-				<p>Lorem ipsum dolor sit amet eras facilisis
-					consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-					Elementum metus facilisis ut phasellu.
-				</p>
-				<button>view now</button></div>
-			</div>
-		</div>
-</div>
-
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+<div class="container">
+<div class="row">
 
 <?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'template-parts/content', 'page' );
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+		endwhile; // End of the loop.
+		?>
+</div>
+</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php
+get_sidebar();
 get_footer();

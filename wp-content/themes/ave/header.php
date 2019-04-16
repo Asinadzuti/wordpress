@@ -37,7 +37,7 @@
 							<div class="col-lg-3">
 								<div class="login">
 								<?php wp_nav_menu( [ 
-		'theme_location'  => 'login'
+		'theme_location'  => 'Login menu'
 	] ); ?>
 									<?php global $woocommerce; ?>
 
@@ -81,7 +81,7 @@
 						<nav id="site-navigation" class="main-navigation">
 						<?php wp_nav_menu( [ 
 		'container_class' => 'menu-header',
-		'theme_location'  => 'menu-1'
+		'theme_location'  => 'Main menu'
 	] ); ?>
 							
 						</nav><!-- #site-navigation -->
