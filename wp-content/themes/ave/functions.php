@@ -30,10 +30,13 @@ if ( ! function_exists( 'mytheme_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 		
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Main menu', 'mytheme' ),
-			'login' => esc_html__( 'Login', 'registration' ),
-		) );
+		add_action('after_setup_theme', 'register_custom_menus');
+
+		function register_custom_menus() {
+				register_nav_menus( array(
+						'menu-1' => __('Main Menu'),
+						'login' => __('Login') ) );
+		}
 		add_theme_support( 'html5', array(
 			'search-form',
 			'comment-form',
@@ -191,51 +194,3 @@ function remove_order_notes( $fields ) {
 }
 add_filter('woocommerce_enable_order_notes_field', '__return_false');
 // always display rating stars
-function filter_woocommerce_product_get_rating_html( $rating_html, $rating, $count ) { 
-	$rating_html  = '<div class="star-rating">';
-	$rating_html .= wc_get_star_rating_html( $rating, $count );
-	$rating_html .= '</div>';
-
-	return $rating_html; 
-};  
-
-/**
- * Change number of related products output
- */ 
-function woo_related_products_limit() {
-  global $product;
-	
-	$args['posts_per_page'] = 4;
-	return $args;
-}
-add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
-  function jk_related_products_args( $args ) {
-	$args['posts_per_page'] = 4; // 4 related products
-	$args['columns'] = 4; // arranged in 2 columns
-	return $args;
-}
-
-function search_ajax() { ?>
-
-	jQuery(document).ready(function($){
-	$(‘.search-field’).keypress(function(eventObject){
-	var searchTerm = $(this).val();
-	if(searchTerm.length > 2){
-	$.ajax({
-	url : »,
-	type: ‘POST’,
-	data:{
-	‘action’:’codyshop_ajax_search’,
-	‘term’ :searchTerm
-	},
-	success:function(result){
-	$(‘.codyshop-ajax-search’).fadeIn().html(result);
-	}
-	});
-	}
-	});
-	});
-	
-	<?php }
-	add_action( 'wp_footer', 'search_ajax' );
-	

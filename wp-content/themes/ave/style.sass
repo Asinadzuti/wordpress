@@ -12,7 +12,9 @@
 a 
   color: none
   text-decoration: none
-
+a:hover
+  color: #ffffff!important
+  text-decoration: none
 p 
   color: #8e8c8c
   font-family: Roboto
@@ -347,7 +349,7 @@ ul.products li.product .button
     background-color: transparent
   input::placeholder
     padding-left: 10px
-  input[type="text"]:focus 
+  input[type="text"] 
     margin-left: 10px
   input[type="text"]:focus 
     margin-left: 10px
@@ -357,3 +359,114 @@ ul.products li.product .button
     box-shadow: 0
     position: static
     padding: 0
+
+// Single product
+.product_title
+  color: #575153
+  font-family: Montserrat
+  font-size: 18px
+  font-weight: 400
+  text-transform: uppercase
+.summary 
+  .price
+    color: #9a9a9a
+    font-family: Montserrat
+    font-size: 30px
+    font-weight: 300
+    text-transform: 
+.variations
+  tr
+    display: grid
+    margin-right: 20px
+    td
+      select
+        border: 1px solid #e7e7e7
+        color: #989898
+        font-family: Montserrat
+        font-size: 13px
+        font-weight: 300
+        height: 35px
+  tbody
+    display: flex
+  label
+    color: #575153
+    font-family: Montserrat
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+
+.quantity
+  label
+    display: block
+  input
+    height: 35px
+    width: 45px
+    border: 1px solid #e7e7e7
+    color: #989898
+    font-family: Montserrat
+    font-size: 13px
+    font-weight: 300
+    text-align: center
+.single_add_to_cart_button
+  width: 241px
+  height: 59px
+  background-color: #333333
+  color: #ffffff
+  font-family: Montserrat
+  font-size: 16px
+  font-weight: 400
+  text-transform: uppercase
+  border: 0
+.quantity
+  margin-bottom: 20px
+  margin-top: 5px
+.woocommerce-tabs ul.tabs 
+  list-style: none
+  margin: 0
+  padding: 0
+  display: inline-flex
+  text-align: left
+  margin-left: 15px
+  li
+    background-color: #f8f8f8
+    a
+      font-family: Montserrat
+      font-size: 16px
+      font-weight: 700
+      line-height: 20px
+      text-transform: uppercase
+      color: #575153
+      padding:
+          left: 40px
+          right: 40px
+.woocommerce-tabs ul.tabs 
+  li:hover
+    background-color: #333333
+    a
+      color: #575153
+.woocommerce-tabs ul.tabs li.active
+  background-color: #333333
+  a
+    color: #ffffff
+.woocommerce-Tabs-panel
+  h2
+    display: none
+  p
+    background-color: #ffffff
+.woocommerce-Tabs-panel
+  margin-left: 15px
+
+// widget
+.widget_nav_menu
+  .menu-login-container
+    ul 
+      padding-left: 0
+      li
+        display: block
+        margin-left: 0
+        padding-left: 0
+        a
+          color: #999999
+          font-family: Montserrat
+          font-size: 13px
+          font-weight: 400

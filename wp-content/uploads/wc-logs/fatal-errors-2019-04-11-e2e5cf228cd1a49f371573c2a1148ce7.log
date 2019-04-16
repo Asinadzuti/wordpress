@@ -1,2 +1,10 @@
 2019-04-11T07:57:28+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\advanced_custom_fields_pro\includes\locations\class-acf-location-page-parent.php on line 3
 
+2019-04-11T20:58:37+00:00 CRITICAL syntax error, unexpected '*', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-single-product.php on line 46
+
+2019-04-11T20:58:59+00:00 CRITICAL syntax error, unexpected '*', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-single-product.php on line 46
+
+2019-04-11T21:00:42+00:00 CRITICAL syntax error, unexpected '*', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-single-product.php on line 46
+
+2019-04-11T21:00:49+00:00 CRITICAL syntax error, unexpected '*', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-single-product.php on line 46
+
