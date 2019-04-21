@@ -7,6 +7,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 /*
  * Wrappers single product
  */
+add_action( 'woocommerce_before_main_content', 'estore_add_breadcrumbs', 20 );
+function estore_add_breadcrumbs(){
+	?>
+
+<div class="container-fluid">
+<div class="row no-gutters text-center">
+					<div class="col-lg-12">
+						<div class="title">
+							<h1>Product view</h1>
+							<h2><?php woocommerce_breadcrumb(); ?></h2>
+						</div>
+					</div>
+				</div>
+
+	<?php
+}
 add_action( 'woocommerce_before_single_product', 'estore_wrapper_product_start', 5 );
 function estore_wrapper_product_start() {
 	?>

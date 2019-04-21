@@ -222,3 +222,25 @@
     /*
      * <--- END SECTIONS
      */
+
+    Redux::setSection( $opt_name, array(
+        'title' => __( 'Page edits'),
+        'id'    => 'page',
+        'desc'  => __( 'Basic fields as subsections.'),
+        'icon'  => 'el el-home'
+    ) );
+
+    Redux::setSection( $opt_name, array(
+        'title'      => __( 'Women'),
+        'desc'       => __( 'You can change some information' ),
+        'id'         => 'woman_page',
+        'subsection' => true,
+        'fields'     => array(
+            array(
+                'id'       => 'page_info',
+                'type'     => 'text',
+                'title'    => __( 'Page Info'),
+                'desc'     => __( 'information about this page'),
+            ),
+        )
+    ) );

@@ -20,6 +20,14 @@ else {
  wp_head();
 ?>
 <div class="container">
+<div class="row no-gutters text-center">
+					<div class="col-lg-12">
+						<div class="title">
+              <h1><?php single_post_title(); ?></h1>
+              <h3>Latest Posts - mens & womens</h3>
+						</div>
+					</div>
+				</div>
   <div class="row">
     <div class="col-lg-6">
         <img src="https://via.placeholder.com/570x400.jpg/#d7d7d7" alt="">

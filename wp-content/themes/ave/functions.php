@@ -46,6 +46,7 @@ if ( ! function_exists( 'xxxxx_setup' ) ) :
 		register_nav_menus( array(
 			'Main menu' => esc_html__( 'Main menu', 'xxxxx' ),
 			'Login menu' => esc_html__( 'Login menu', 'xxxxx' ),
+			'Buy from us' => esc_html__( 'Buy from us', 'xxxxx' ),
 		) );
 
 		/*
@@ -221,3 +222,11 @@ function remove_order_notes( $fields ) {
 }
 add_filter('woocommerce_enable_order_notes_field', '__return_false');
 // always display rating stars
+
+// breadcrumps
+add_filter( 'woocommerce_breadcrumb_defaults', 'my_change_breadcrumb_delimiter' );
+function my_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimiter from '/' to '>'
+	$defaults['delimiter'] = ' - ';
+	return $defaults;
+}

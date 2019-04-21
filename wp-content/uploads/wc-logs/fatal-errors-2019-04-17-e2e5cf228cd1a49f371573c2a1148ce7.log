@@ -1,0 +1,6 @@
+2019-04-17T08:17:36+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\cart\cart.php on line 21
+
+2019-04-17T14:59:18+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\themes\ave\admin\redux-framework\inc\class.redux_api.php on line 13
+
+2019-04-17T14:59:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\themes\ave\woocommerce\includes\wc-functions.php on line 2
+

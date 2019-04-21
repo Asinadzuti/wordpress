@@ -92,14 +92,6 @@
 								</div>
 					</div>
 				</div>
-				<div class="row no-gutters text-center">
-					<div class="col-lg-12">
-						<div class="title">
-							<h1><?php single_post_title(); ?></h1>
-							<h3>Latest Posts - mens & womens</h3>
-						</div>
-					</div>
-				</div>
 				</header><!-- #masthead -->
 
 			</div>

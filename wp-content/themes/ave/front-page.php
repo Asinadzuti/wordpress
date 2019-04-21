@@ -57,7 +57,8 @@ else {
 					consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
 					Elementum metus facilisis ut phasellu.
 				</p>
-				<button>view now</button></div>
+        <button>view now</button>
+      </div>
 			</div>
 		</div>
 </div>

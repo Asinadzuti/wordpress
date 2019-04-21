@@ -20,6 +20,14 @@ else {
  wp_head();
 ?>
 <div class="container-fluid">
+<div class="row no-gutters text-center">
+					<div class="col-lg-12">
+						<div class="title">
+							<h1><?php single_post_title(); ?></h1>
+							<h2></h2>
+						</div>
+					</div>
+				</div>
 <div class="row">
   <div class="col-lg-6">
     <div class="poster">

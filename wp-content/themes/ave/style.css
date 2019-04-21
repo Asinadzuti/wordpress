@@ -97,16 +97,16 @@ li {
   text-transform: uppercase;
 }
 
-.menu-login-container ul {
+.menu-login-menu-container ul {
   margin-top: 10px;
 }
 
-.menu-login-container ul li {
+.menu-login-menu-container ul li {
   display: inline;
   margin-left: 15px;
 }
 
-.menu-login-container ul li a {
+.menu-login-menu-container ul li a {
   color: #999999;
   font-family: Montserrat;
   font-size: 13px;
@@ -265,7 +265,7 @@ li {
   margin-right: 0 !important;
 }
 
-ul.products li.product .woocommerce-loop-product__title {
+.product_content ul li h5 {
   font-size: 1rem;
   display: none;
   color: #727272;
@@ -273,6 +273,10 @@ ul.products li.product .woocommerce-loop-product__title {
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.product_content ul li:hover > h5 {
+  display: block;
 }
 
 ul.products li.product .price {
@@ -297,10 +301,6 @@ ul.products li.product .button {
   padding: 8px;
   -webkit-box-shadow: 0 0 0 0;
           box-shadow: 0 0 0 0;
-}
-
-#wtcpl_tabs_container .each_cat ul.products li:hover .woocommerce-loop-product__title {
-  display: block;
 }
 
 .poster {
@@ -480,6 +480,10 @@ ul.products li.product .button {
   padding: 0;
 }
 
+.single-section {
+  padding-top: 30px;
+}
+
 .product_title {
   color: #575153;
   font-family: Montserrat;
@@ -610,20 +614,96 @@ ul.products li.product .button {
   margin-left: 15px;
 }
 
-.widget_nav_menu .menu-login-container ul {
+.widget_nav_menu .menu-login-menu-container #menu-login-menu-1 {
   padding-left: 0;
 }
 
-.widget_nav_menu .menu-login-container ul li {
+.widget_nav_menu .menu-login-menu-container #menu-login-menu-1 li {
   display: block;
   margin-left: 0;
   padding-left: 0;
 }
 
-.widget_nav_menu .menu-login-container ul li a {
+.widget_nav_menu .menu-login-menu-container #menu-login-menu-1 li a {
   color: #999999;
   font-family: Montserrat;
   font-size: 13px;
   font-weight: 400;
+}
+
+.local_stores button {
+  margin-right: 62px;
+  color: #454647;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #737373;
+  background-color: transparent;
+  padding: 9px;
+  margin-left: 20px;
+}
+
+.local_stores button:hover {
+  background-color: #00c8c8;
+  color: #ffffff;
+}
+
+.woocommerce-breadcrumb {
+  padding-bottom: 110px;
+}
+
+.woocommerce-breadcrumb a {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.um input[type=submit].um-button, .um-disabled:active {
+  background-color: #00c8c8 !important;
+}
+
+.um-right {
+  border-radius: 0 !important;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #737373;
+  background-color: #737373;
+}
+
+.um-col-alt .um-half a {
+  background: #ffffff !important;
+  border-radius: 0px !important;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.um-col-alt input {
+  background: #ffffff !important;
+  border-radius: 0px !important;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-registr h1 {
+  color: #575153;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 24%;
 }
 /*# sourceMappingURL=style.css.map */

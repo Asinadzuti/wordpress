@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $cross_sells ) : ?>
 
-	<div class="cross-sells">
+	<div class="cross-sells col-md-8 ">
 
 		<h2><?php _e( 'You may be interested in&hellip;', 'woocommerce' ) ?></h2>
 

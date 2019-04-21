@@ -1,0 +1,4 @@
+2019-04-19T07:37:09+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\contact-form-7\modules\select.php on line 8
+
+2019-04-19T12:16:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\admin-filters.php on line 11
+
