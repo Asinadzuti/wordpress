@@ -53,3 +53,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		'before_title'  => '<h6 class="widget-title">',
 		'after_title'   => '</h6>',
 	) );
+	register_sidebar( array(
+		'name'          => 'Category tabs',
+		'id'            => 'category',
+		'before_widget' => '<section id="%1$s" class="category_tabs %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
+	) );

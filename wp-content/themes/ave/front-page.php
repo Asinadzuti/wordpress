@@ -19,16 +19,16 @@ else {
 }
  wp_head();
 ?>
+<?php echo do_shortcode('[product_categories number="7" parent="0"]' ); ?>
 <div class="container-fluid ">
 	<div class="row">
 		<div class="col-lg-12">
-			<?php echo do_shortcode("[wtcpl-product-cat]"); ?>
 		</div>
 	</div>
 		<div class="row">
 			<div class="col-lg-4 text-right ">
 				<div class="view">
-				<h2>men’s
+				<h2>menus
 					lookbook</h2>
 				<p>Lorem ipsum dolor sit amet eras facilisis
 					consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
@@ -39,7 +39,7 @@ else {
 			</div>
 			<div class="col-lg-4 text-right ">
 <div class="view">
-<h2>men’s
+<h2>menus
 					lookbook</h2>
 				<p>Lorem ipsum dolor sit amet eras facilisis
 					consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
@@ -51,7 +51,7 @@ else {
 
 			<div class="col-lg-4 text-right ">
 				<div class="view">
-				<h2>men’s
+				<h2>menus
 					lookbook</h2>
 				<p>Lorem ipsum dolor sit amet eras facilisis
 					consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.

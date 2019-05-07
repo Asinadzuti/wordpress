@@ -1,0 +1,6 @@
+2019-04-29T07:30:52+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\includes\widgets\class-um-search-widget.php on line 6
+
+2019-04-29T07:30:53+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+
+2019-04-29T07:30:57+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\custom-background.php on line 14
+

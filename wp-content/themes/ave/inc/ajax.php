@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-// ajax поиск по сайту
+// ajax search
 function codyshop_ajax_search(){ 	
 	$args = array( 
 		'post_type'        => 'any', 

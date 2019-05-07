@@ -1,9 +1,9 @@
 /*
-Divi Icon Expansion Pack by Divi Space, an Aspen Grove Studios company
-Licensed under the GNU General Public License v2 (see ../license.txt)
+WP and Divi Icons by Divi Space, an Aspen Grove Studios company
+Licensed under the GNU General Public License v3 (see ../license.txt)
 
 This plugin includes code based on parts of the Divi theme and/or the
-Divi Builder by Elegant Themes, licensed GPLv2 (see ../license.txt).
+Divi Builder by Elegant Themes, licensed GPLv2, used under GPLv3 in this project by special permission (see ../license.txt).
 */
 
 (function($) {
@@ -22,7 +22,7 @@ Divi Builder by Elegant Themes, licensed GPLv2 (see ../license.txt).
 				.attr('data-icon', thisIcon);
 	});
 
-	$('*[data-icon^=\'agsdi-\']:not(.agsdi-nocss-skip)').each(function(iconNumber) {
+	$('*[data-icon^=\'agsdi-\']:not(.agsdi-nocss-skip),*[data-icon^=\'agsdix-s\']:not(.agsdi-nocss-skip)').each(function(iconNumber) {
 		var $this = $(this);
 		var iconName = $this.data('icon');
 		
@@ -49,20 +49,49 @@ Divi Builder by Elegant Themes, licensed GPLv2 (see ../license.txt).
 			}
 		}
 		
+		if (iconName[5] == 'x') {
+			var secondDashPos = iconName.indexOf('-', 7);
+			if (secondDashPos == -1) {
+				return;
+			}
+			var iconSet = iconName.substr(0, secondDashPos);
+		} else {
+			var iconSet = 'agsdi';
+		}
+		
+		switch (iconSet) {
+			case 'agsdi':
+				var iconUrl = ags_divi_icons_config.pluginDirUrl + '/svg/ags_icon_' + iconName.substr(6) + '.svg';
+				break;
+			case 'agsdix-smt':
+				var iconUrl = ags_divi_icons_config.pluginDirUrl + '/icon-packs/material/fallback/' + iconName.substr(12) + '.svg';
+				break;
+			case 'agsdix-sao':
+				var iconUrl = ags_divi_icons_config.pluginDirUrl + '/icon-packs/ags-angular/icons/o_' + iconName.substr(11) + '.svg';
+				break;
+			default:
+				return;
+		}
 		
 		$this.addClass('agsdi-nocss-icon agsdi-nocss-icon-' + iconNumber);
 		
-		$.get(ags_divi_icons_config.pluginDirUrl + '/svg/ags_icon_' + iconName.substr(6) + '.svg', null, function(svg) {
+		$.get(iconUrl, null, function(svg) {
 			
 			var $svg = $(svg).find('svg:first');
 			$svg.find('[stroke!=\'none\']').attr('stroke', iconColor);
 			$svg.find('[fill!=\'none\']').attr('fill', iconColor);
 			$svg.prepend('<style>*{stroke-width: 2px;}</style>');
 			
+			var $meta = $svg.children('metadata');
+			if ($meta.length) {
+				$iconsStyle.append('\n\n/*\nOriginal SVG metadata for the following line:\n' + $meta.text() + '\n*/\n');
+				$meta.remove();
+			}
+			
 			var $tempContainer = $('<div>').append($svg);
 			
 			// SVG Data URI based on https://css-tricks.com/using-svg/
-			$iconsStyle.append('.agsdi-nocss-icon-' + iconNumber + ':before,.agsdi-nocss-icon-' + iconNumber + ':after{background-image:url(data:image/svg+xml;base64,' + $.agsdi_base64.encode($tempContainer.html()) + ');}');
+			$iconsStyle.append('.agsdi-nocss-icon-' + iconNumber + ':before,.agsdi-nocss-icon-' + iconNumber + ':after{background-image:url(data:image/svg+xml;base64,' + $.agsdi_base64.encode($tempContainer.html()) + ');}\n');
 		}, 'xml');
 		
 	});

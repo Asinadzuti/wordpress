@@ -1,33 +1,42 @@
 /*
-Divi Icon Expansion Pack by Divi Space, an Aspen Grove Studios company
-Licensed under the GNU General Public License v2 (see ../license.txt)
+WP and Divi Icons by Divi Space, an Aspen Grove Studios company
+Licensed under the GNU General Public License v3 (see ../license.txt)
 
 This plugin includes code based on parts of the Divi theme and/or the
-Divi Builder by Elegant Themes, licensed GPLv2 (see ../license.txt).
+Divi Builder by Elegant Themes, licensed GPLv2, used under GPLv3 in this project by special permission (see ../license.txt).
 */
-
-ul.et_font_icon li[data-icon^='agsdi-'],
-ul.et-fb-font-icon-list li[data-icon^='agsdi-'] {
-	background-color: #ffe0bf;
-}
-ul.et_font_icon li.et_active[data-icon^='agsdi-'],
-ul.et-fb-font-icon-list li.et_active[data-icon^='agsdi-'] {
-	background-color: #ff8500;
-	border-radius: 0;
-}
 
 .agsdi-picker-credit {
 	color: #aaa;
 	font-size: 13px;
-	line-height: 1em;
+	line-height: 1.5em;
 	font-style: italic;
+	max-width: 520px;
+	display: block;
 }
 .agsdi-picker-credit a {
 
 }
 
+input.agsdi-picker-search-divi, input.agsdi-picker-search-tinymce {
+	display: block;
+	width: 300px;
+	margin: 10px 0;
+}
+input.agsdi-picker-search-tinymce {
+	padding: 2px 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+#agsdi-admin-page h2 {
+	margin-top: 2em;
+}
+#agsdi-instructions h2 {
+	margin-top: 1.5em;
+}
 #agsdi-instructions .agsdi-icon {
 	font-size: 24px;
+	color: #f060e1;
 }
 #agsdi-admin-page ul {
 	list-style: disc;
@@ -42,18 +51,20 @@ ul.et-fb-font-icon-list li.et_active[data-icon^='agsdi-'] {
 }
 .mce-agsdi-icon-picker .agsdi-icons *[data-icon],
 .mce-agsdi-icon-preview *[data-icon] {
-	font-size: 24px;
+	font-size: 32px;
 	width: 1em;
 	height: 1em;
 	display: inline-block;
 }
 .mce-agsdi-icon-picker .agsdi-icons *[data-icon] {
-	padding: 5px;
+	padding: 10px;
 }
 .mce-agsdi-icon-picker .agsdi-icons *[data-icon]:before,
 .mce-agsdi-icon-preview *[data-icon]:before {
 	display: inline-block;
 	height: 1em;
+	vertical-align: top;
+	text-align: center;
 }
 .mce-agsdi-icon-picker .agsdi-icons *[data-icon]:after,
 .mce-agsdi-icon-preview *[data-icon]:after {
@@ -89,86 +100,14 @@ ul.et-fb-font-icon-list li.et_active[data-icon^='agsdi-'] {
 .mce-agsdi-credit .agsdi-picker-credit-separator {
 	display: none;
 }
-/* End styling for TinyMCE */
-
-/** License key activation styles **/
-#ds_icon_expansion_license_key_form {
-	background-color: #fff;
-	border: 1px solid #1c3244;
-	text-align: center;
-	display: table;
+.mce-agsdi-multi-color-message p, .mce-agsdi-style-inherit-message p {
+	white-space: normal;
 }
-#ds_icon_expansion_license_key_form > * {
-	display: table-cell;
-}
-#ds_icon_expansion_license_key_form_logo_container {
-	background-color: #1c3244;
-	padding: 20px;
-	margin: 0;
-	vertical-align: middle;
-}
-#ds_icon_expansion_license_key_form_logo_container a {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-#ds_icon_expansion_license_key_form_logo_container img {
+.mce-agsdi-multi-color-message p {
 	height: 100px;
+	overflow-y: auto;
 }
-#ds_icon_expansion_license_key_form_title {
-	color: #1c3244;
-	font-size: 22px;
-	margin: 0;
-	margin-bottom: 15px;
-	line-height: 1.2em;
+.mce-agsdi-style-inherit-message p {
+	font-style: italic;
 }
-#ds_icon_expansion_license_key_form p {
-	margin-bottom: 20px;
-}
-#ds_icon_expansion_license_key_form p.submit {
-	margin: 0;
-	margin-top: 20px;
-	padding: 0;
-	text-align: center;
-}
-#ds_icon_expansion_license_key_form label {
-	display: table;
-	width: 100%;
-}
-#ds_icon_expansion_license_key_form label > * {
-	display: table-cell;
-}
-#ds_icon_expansion_license_key_form label > span {
-	width: 100px;
-	text-align: left;
-	font-weight: bold;
-}
-#ds_icon_expansion_license_key_form input[type="text"] {
-	width: 100%;
-}
-#ds_icon_expansion_license_key_form_body {
-	padding: 20px;
-	width: 340px;
-}
-#ds_icon_expansion_license_key_form_error {
-	color: #f00000;
-	text-align: left;
-	margin-top: 2px;
-	margin-left: 100px;
-}
-#ds_icon_expansion_license_key_activation_page #ds_icon_expansion_license_key_form {
-	margin: 0 auto;
-	margin-top: 50px;
-}
-@media (max-width: 699px) {
-	#ds_icon_expansion_license_key_form, #ds_icon_expansion_license_key_form > * {
-		display: block;
-	}
-	#ds_icon_expansion_license_key_form_logo_container {
-		background-color: #1c3244;
-		padding: 10px;
-	}
-	#ds_icon_expansion_license_key_form_body {
-		width: auto;
-	}
-}
-/** End license key activation styles **/
+/* End styling for TinyMCE */

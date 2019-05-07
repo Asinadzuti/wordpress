@@ -1,2 +1,10 @@
 2019-04-21T10:27:56+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\advanced_custom_fields_pro\includes\locations\class-acf-location-current-user.php on line 3
 
+2019-04-21T14:07:35+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\advanced_custom_fields_pro\includes\locations\class-acf-location-nav-menu-item.php on line 3
+
+2019-04-21T14:26:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\image.php on line 25
+
+2019-04-21T14:26:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 285
+
+2019-04-21T15:14:32+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\class-wp-filesystem-direct.php on line 73
+

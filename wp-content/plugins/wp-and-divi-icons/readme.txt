@@ -1,12 +1,12 @@
-=== WP and Divi Icons ===
+﻿=== WP and Divi Icons ===
 Contributors: aspengrovestudios
 Tags: icon, icons, svg, divi, extra
 Requires at least: 2.2
-Tested up to: 4.9.7
+Tested up to: 5.1.1
 Requires PHP: 5.0
-Stable tag: 1.0.1
-License: GPLv2
-License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Stable tag: 1.1.0
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl.html
 
 Adds 300+ new icons to the WordPress editor and the Divi & Extra framework, helping you build standout WordPress web designs.
 
@@ -57,5 +57,9 @@ Divi is a registered trademark of Elegant Themes, Inc. This product is not affil
 2. The "Insert icon" button in the WordPress editor toolbar
 
 == Changelog ==
+=== 1.1.0 ===
+* enhancement: reduced size of icons to speed up display
+* bug fix: Search functionality missing on New Backend Divi Builder
+
 === 1.0.1 ===
 * First release on WordPress.org

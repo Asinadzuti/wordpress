@@ -8,9 +8,10 @@
 // deffoult
 .no-gutters
   padding: 0
-  margin: 
+.padding_zero
+  padding: 0
 a 
-  color: none
+  color: unset
   text-decoration: none
 a:hover
   color: #ffffff!important
@@ -110,9 +111,9 @@ li
 .title
   background: url('assets/images/background.png') no-repeat
   h1
-    padding-top: 130px
+    padding-top: 110px
     padding-bottom: 15px
-  h3
+  h2
     padding-bottom: 130px
 .header-banner
   background: url('assets/images/poster.png') no-repeat
@@ -176,69 +177,16 @@ li
 #nav-holder
   background-color: #fff
 
-.wtcpl_category_nav li a:hover, .wtcpl_category_nav li a.active 
-  background-color: #ffffff
-  color: #40d6d6
-
-.wtcpl_category_nav li a:link, .wtcpl_category_nav li a:visited, .wtcpl_category_nav li a:active 
-  background-color: #ffffff
-  color: #727272
-  font-family: Montserrat
-  font-size: 13px
-  font-weight: 400
-  text-transform: uppercase
-
-.wtcpl_category_nav ul
-  text-align: left
-.product_content 
-  background-color: #ffffff
-  padding: 40px 0 27px 0
-  margin-bottom: 30px
-  min-height: 280px
-  overflow: hidden
-  width: 100%
-  border-radius: 5px
-.products 
-  margin-left: 0 !important
-  margin-right: 0 !important
-.product_content
-  ul
-    li
-      h5
-        font-size: 1rem
-        display: none
-        color: #727272
-        font-family: Montserrat
-        font-size: 13px
-        font-weight: 400
-        text-transform: uppercase
-.product_content ul li:hover > h5
-  display: block
-ul.products li.product 
-  .price
-    display: block
-    position: absolute
-    top: 17px
-    left: 17px
-    color: #9a9a9a
-    font-family: Montserrat
-    font-size: 21px
-    font-weight: 300
-    text-transform: uppercase
-ul.products li.product .button 
-  display: none
-#wtcpl_tabs_container .each_cat ul.products li 
-  background: #fff
-  margin: 12px 14px
-  padding: 8px
-  box-shadow: 0 0 0 0
-
 // look book page
 .poster
   background: url('assets/images/bgposter.png') no-repeat
   width: 714px
   height: 400px
-  margin-left: 30px
+  position: absolute
+  display: block
+  top: 0
+  left: 50%
+  // float: right
   button
     margin-right: 62px  
     color: #454647
@@ -453,8 +401,8 @@ ul.products li.product .button
   a
     color: #ffffff
 .woocommerce-Tabs-panel
-  h2
-    display: none
+  // h2
+  //   display: none
   p
     background-color: #ffffff
 .woocommerce-Tabs-panel
@@ -486,11 +434,47 @@ ul.products li.product .button
     border: 2px solid #737373
     background-color: transparent
     padding: 9px
-    margin-left: 20px
   button:hover
     background-color: #00c8c8
     color: #ffffff
-
+    border: 0
+  h4
+    margin-bottom: 20px
+    margin-top: 30px
+.info_addres
+  margin-top: 40px
+  background-color: #f8f8f8
+  h4
+    margin-top: 40px
+    margin-left: 10px
+    font-weight: 600
+    margin-bottom: 20px
+  h5
+    margin-left: 10px
+    font-weight: 500
+  p
+    margin-left: 10px
+  ul
+    margin-top: 30px  
+    li
+      color: #8e8c8c
+      font-family: Montserrat
+      font-size: 14px
+      font-weight: 300
+      margin-top: 10px
+      i
+        margin-right: 20px
+        margin-left: 20px
+  .social_icons
+    margin-left: 7px
+    i
+      font-size: 18px
+      margin-left: 10px
+      padding: 8px
+      border-radius: 50%
+      background-color: #727272
+      color: #ffffff
+      
 // breadcrumps
 .woocommerce-breadcrumb
   padding-bottom: 110px
@@ -542,3 +526,110 @@ ul.products li.product .button
     text-transform: uppercase
     text-align: center
     margin-right: 24%
+// other 
+
+.wtcpl_category_nav li a:hover, .wtcpl_category_nav li a.active 
+  background-color: #ffffff
+  color: #40d6d6
+
+.wtcpl_category_nav li a:link, .wtcpl_category_nav li a:visited, .wtcpl_category_nav li a:active 
+  background-color: #ffffff
+  color: #727272
+  font-family: Montserrat
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+
+.wtcpl_category_nav ul
+  text-align: left
+.product_content 
+  background-color: #ffffff
+  padding: 40px 0 27px 0
+  margin-bottom: 30px
+  min-height: 280px
+  overflow: hidden
+  width: 100%
+  border-radius: 5px
+
+.product_content
+  ul
+    li
+      h5
+        font-size: 1rem
+        // display: none
+        color: #727272
+        font-family: Montserrat
+        font-size: 13px
+        font-weight: 400
+        text-transform: uppercase
+ul.products li.product 
+  .price
+    display: block
+    position: absolute
+    top: 17px
+    left: 17px
+    color: #9a9a9a
+    font-family: Montserrat
+    font-size: 21px
+    font-weight: 300
+    text-transform: uppercase
+    z-index: 999999
+// ul.products li.product .button 
+//   display: none
+#wtcpl_tabs_container .each_cat ul.products li 
+  background: #fff
+  margin: 12px 14px
+  padding: 8px
+  box-shadow: 0 0 0 
+  
+//   // product card1
+// .columns-4 ul.products li.product
+//   float: left
+//   display: block
+.hs-wrapper2
+  width: 350px!important
+  height: 400px!important
+.product
+  h5
+    color: #727272
+    font-family: Montserrat
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+    text-align: center
+    margin-top: 10px
+    display: none
+.columns-4 ul.products li.product
+  width: 350px!important
+  height: 400px!important
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2)
+  margin: 
+    left: 20px
+    right: 20px
+  padding: 0
+ul.products li.product .button 
+  width: 180px
+  height: 23px
+  background-color: #333333
+  color: #ffffff
+  font-family: Montserrat
+  font-size: 16px
+  font-weight: 400
+  text-transform: uppercase
+  border: 0
+  text-align: center
+  margin: auto
+  z-index: 99999
+  position: relative
+  display: none
+ul.products li.product:hover > h5
+  display: block
+ul.products li.product:hover > .button
+  display: block
+
+latest               
+most liked
+best sellers  
+price low to high 
+price high to low

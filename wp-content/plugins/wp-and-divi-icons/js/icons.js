@@ -1,15 +1,15 @@
 /*
-Divi Icon Expansion Pack by Divi Space, an Aspen Grove Studios company
-Licensed under the GNU General Public License v2 (see ../license.txt)
+WP and Divi Icons by Divi Space, an Aspen Grove Studios company
+Licensed under the GNU General Public License v3 (see ../license.txt)
 
 This plugin includes code based on parts of the Divi theme and/or the
-Divi Builder by Elegant Themes, licensed GPLv2 (see ../license.txt).
+Divi Builder by Elegant Themes, licensed GPLv2, used under GPLv3 in this project by special permission (see ../license.txt).
 */
 
 jQuery(document).ready(function($) {
-	$('.et-pb-icon:not([data-icon]):contains(agsdi-)').each(function() {
+	$('.et-pb-icon:not([data-icon]):contains(agsdi-),.et-pb-icon:not([data-icon]):contains(agsdix-)').each(function() {
 		var iconId = $(this).text();
-		if (iconId.substr(0,6) == 'agsdi-') {
+		if (iconId.substr(0,6) == 'agsdi-' || iconId.substr(0,7) == 'agsdix-') {
 			$(this).attr('data-icon', iconId).html('');
 		}
 	});

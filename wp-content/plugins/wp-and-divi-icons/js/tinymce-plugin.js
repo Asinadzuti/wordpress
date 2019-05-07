@@ -1,16 +1,18 @@
 /*
-This file was copied from WordPress by Automattic, licensed under the
-GNU General Public License version 2 or later (see ../license.txt for GPLv2).
-This file also contains code copied from and based on TinyMCE by
-Ephox Corporation, licensed under the GNU Lesser General Public License
-(LGPL; see ../license-tinymce.txt).
+This file was copied from WordPress, copyright 2011-2019 by the contributors,
+licensed under the GNU General Public License version 2 or later (see
+../license.txt for GPLv3).
+This file also contains code copied from and based on TinyMCE, copyright
+Ephox Corporation, licensed by this project under the GPLv3 (see ../license.txt).
 
 Original file path: wp-includes/js/tinymce/plugins/wpgallery/plugin.js
 Also includes code from wp-includes/js/tinymce/plugins/image/plugin.js
 Also includes code from wp-includes/js/tinymce/themes/modern/theme.js
 
-Modified by Aspen Grove Studios on July 20-26, 2018 to implement icon
-insertion functionality and remove unnecessary code.
+Modified by Jonathan Hall on July 20-26, 2018, in August 2018,
+and on September 4, 11, and 12, 2018 to implement icon insertion functionality
+and remove unnecessary code.
+Modified by Jonathan Hall 2019-03-22, 2019-03-25.
 */
 
 /* global tinymce */
@@ -39,16 +41,9 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
   }
   
   function create(data) {
-	if (data.title) {
-		title = data.title;
-	} else {
-		var firstDashPos = data.icon.indexOf('-');
-		title = (firstDashPos == -1 ? data.icon : data.icon.substr(firstDashPos + 1)) + ' icon';
-	}
 	var $icon = $('<span>').attr({
-		'data-icon': data.icon,
 		'contenteditable': false
-		}).addClass('agsdi-icon').text(title);
+		}).addClass('agsdi-icon');
     write(data, $icon[0]);
     return $icon[0];
   }
@@ -86,8 +81,6 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
   }
   
    function write(newData, icon) {
-		console.log('write');
-		console.log(icon);
 	   var $icon = $(icon);
 	   var style = '';
 	   if (newData.color) {
@@ -96,18 +89,25 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
 	   if (newData.size) {
 		style += 'font-size:' + newData.size + ';';
 	   }
+	   if (!newData.title || !newData.title.trim()) {
+			newData.title = getDefaultIconTitle(newData.icon);
+	   }
 	   $icon.attr({
 			'data-icon': newData.icon,
 			'data-mce-style': style,
 			style: style,
 			'class': 'agsdi-icon' + (newData['class'] ? ' ' + newData['class'] : '')
-		});
+		}).text(newData.title);
+  }
+  
+  function getDefaultIconTitle(icon) {
+	var lastSpacePos = icon.lastIndexOf(' ');
+	var firstDashPos = icon.indexOf('-', lastSpacePos == -1 ? 0 : lastSpacePos);
+	return (firstDashPos == -1 ? icon : icon.substr(firstDashPos + 1)).replace(/\-/g, ' ') + ' icon';
   }
   
    function getSelectedIcon(editor) {
     var iconElm = editor.selection.getNode();
-	console.log('selection:');
-	console.log(iconElm);
     if (iconElm) {
 		var $iconElm = $(iconElm);
 		if ($iconElm.is('a')) {
@@ -205,6 +205,11 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
     renderHtml: function () {
       var self = this;
 	  var $iconPicker = $('<div>').attr('id', self._id).addClass(self.classes.toString());
+	  $('<input>').attr({
+		type: 'search',
+		placeholder: 'Search icons...',
+		oninput: 'agsdi_search(this);'
+	  }).addClass('agsdi-picker-search-tinymce').appendTo($iconPicker);
 	  var $iconPickerIcons = $('<div>').addClass('agsdi-icons').appendTo($iconPicker);
 	  var renderIcons = function($iconPickerIcons) {
 		$iconPickerIcons.empty();
@@ -308,7 +313,7 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
 	  var $credit = $('<div>')
 							.attr('id', this._id)
 							.addClass(this.classes.toString() + ' agsdi-picker-credit')
-							.html('WP &amp; Divi Icons by <a href="https://aspengrovestudios.com/?utm_source=ds-icon-expansion&amp;utm_medium=plugin-credit-link&amp;utm_content=wp-editor" target="_blank">Aspen Grove Studios</a><div class="agsdi-picker-credit-promo">&nbsp;</div>');
+							.html('WP &amp; Divi Icons Pro by <a href="https://aspengrovestudios.com/?utm_source=wp-and-divi-icons&amp;utm_medium=plugin-credit-link&amp;utm_content=wp-editor" target="_blank">Aspen Grove Studios</a><br>' + '<div class="agsdi-picker-credit-promo agsdi-picker-credit-promo-tinymce"></div><br>');
       return $credit[0].outerHTML;
     }
   });
@@ -394,6 +399,53 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
   });
   tinymce.ui.Factory.add('agsdi-icon-preview', IconPreview);
   
+  var Message = tinymce.ui.Widget.extend({
+    init: function (settings) {
+      var self = this;
+      self._super(settings);
+	  if (this.settings.className) {
+		self.classes.add(this.settings.className);
+	  }
+    },
+    repaint: function () {
+      var self = this;
+      var style, rect, borderBox, borderW, borderH = 0, lastRepaintRect;
+      style = self.getEl().style;
+      rect = self._layoutRect;
+      lastRepaintRect = self._lastRepaintRect || {};
+      var doc = document;
+      borderBox = self.borderBox;
+      borderW = borderBox.left + borderBox.right + 8;
+      borderH = borderBox.top + borderBox.bottom;
+      if (rect.x !== lastRepaintRect.x) {
+        style.left = rect.x + 'px';
+        lastRepaintRect.x = rect.x;
+      }
+      if (rect.y !== lastRepaintRect.y) {
+        style.top = rect.y + 'px';
+        lastRepaintRect.y = rect.y;
+      }
+      if (rect.w !== lastRepaintRect.w) {
+        style.width = rect.w - borderW + 'px';
+        lastRepaintRect.w = rect.w;
+      }
+      if (rect.h !== lastRepaintRect.h) {
+        style.height = rect.h - borderH + 'px';
+        lastRepaintRect.h = rect.h;
+      }
+      self._lastRepaintRect = lastRepaintRect;
+      self.fire('repaint', {}, false);
+      return self;
+    },
+    renderHtml: function () {
+      return $('<div>')
+					.attr('id', this._id)
+					.addClass(this.classes.toString())
+					.append($('<p>').html(this.settings.message))[0].outerHTML;
+    }
+  });
+  tinymce.ui.Factory.add('agsdi-message', Message);
+  
   function getDialogItems(editor) {
 	  function onSizeSliderChange(event) {
 		var sizeControl = event.control.rootControl.find('#size')[0];
@@ -417,7 +469,18 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
 					name: 'icon',
 					type: 'agsdi-icon-picker',
 					onchange: function(event) {
-						this.rootControl.find('#preview')[0].setIcon(this.value());
+						var icon = this.value();
+						this.rootControl.find('#preview')[0].setIcon(icon);
+						if (icon.substr(0, 11) == 'agsdix-smc-') {
+							this.rootControl.find('#color').parent().hide();
+							this.rootControl.find('#colorpicker').hide();
+							this.rootControl.find('#multi-color-message').show();
+						} else {
+							this.rootControl.find('#color').parent().show();
+							this.rootControl.find('#colorpicker').show();
+							this.rootControl.find('#multi-color-message').hide();
+						}
+						$(this.rootControl.find('#title')[0].getEl()).attr('placeholder', getDefaultIconTitle(icon));
 					},
 					onload: function() {
 						var previewControl = this.rootControl.find('#preview')[0];
@@ -456,6 +519,13 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
 								}
 							  },
 							  {
+								name: 'multi-color-message',
+								type: 'agsdi-message',
+								hidden: true,
+								className: 'agsdi-multi-color-message',
+								message: ags_divi_icons_tinymce_config.multiColorMessage
+							  },
+							  {
 								name: 'size',
 								type: 'textbox',
 								label: 'Icon size',
@@ -470,7 +540,6 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
 											} else if (sliderValue > 128) {
 												sliderValue = 128;
 											}
-											console.log(sliderValue);
 											event.control.rootControl.find('#size_slider')[0].value(sliderValue);
 										}
 									}
@@ -502,6 +571,12 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
 								type: 'textbox',
 								label: 'Icon class(es)'
 							  },
+							  {
+								name: 'style-inherit-message',
+								type: 'agsdi-message',
+								className: 'agsdi-style-inherit-message',
+								message: ags_divi_icons_tinymce_config.styleInheritMessage
+							  }
 							]
 						}
 					]
@@ -572,7 +647,6 @@ tinymce.PluginManager.add('agsdi_icons', function( editor ) {
 			  onSubmit: curry(
 				  function submitForm(editor, evt) {
 				    if (selectedIcon) {
-						console.log('re-selecting icon');
 						var $linkParent = $(selectedIcon).parent('a');
 						editor.selection.select($linkParent.length ? $linkParent[0] : selectedIcon);
 					}

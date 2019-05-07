@@ -230,3 +230,4 @@ function my_change_breadcrumb_delimiter( $defaults ) {
 	$defaults['delimiter'] = ' - ';
 	return $defaults;
 }
+// others
